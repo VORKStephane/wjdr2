@@ -1,0 +1,151 @@
+{
+    "wjdr2": {
+        "actors": {
+            "characteristics": {
+                "ws": "CC",
+                "bs": "CT",
+                "s": "F",
+                "t": "E",
+                "ag": "Ag",
+                "int": "Int",
+                "wp": "FM",
+                "fel": "Soc",
+                "a": "A",
+                "w": "B",
+                "sb": "BF",
+                "tb": "BE",
+                "m": "M",
+                "mag": "Mag",
+                "ip": "PF",
+                "fp": "PD"
+            }
+        },
+        "items": {
+            "header": {
+                "commonValues": "Propriétés de l'objet",
+                "weapon": "Propriété de l'arme",
+                "description": "Description"
+            },
+            "label": {
+                "newItem" : "Nouveau {itemType}", 
+                "price" : "Prix",
+                "weight" : "Enc",
+                "rarity" : "Disponibilité"
+            },
+            "itemType": {
+                "item": "Objet",
+                "weapon": "Arme",
+                "armor": "Armure",
+                "spell": "Sort",
+                "trait": "Talent",
+                "skill": "Compétence",
+                "madness" : "Folie",
+                "mutation" : "Mutation"
+            },
+            "rarity": {
+                "none": "-",
+                "mainstream": "Banal",
+                "veryOrdinary": "Très courant",
+                "prettyOrdinary": "Assez courant",
+                "ordinary": "Courant",
+                "unusual": "Inhabituel",
+                "veryRare": "Très rare",
+                "prettyRare": "Assez rare",
+                "rare": "Rare"
+            },
+            "weapon": {
+                "header": {
+                    "range": "Portée de l'arme"
+                },
+                "label": {
+                    "group": "Groupe d'arme : ",
+                    "damage": "Dégâts : ",
+                    "range": "Portée",
+                    "isCloseCombat": "Arme de contact ? ",
+                    "isOnlyCloseRange": "Courte portée uniquement ? ",
+                    "attributes": "Attributs : "
+                },
+                "wGroup": {
+                    "none": "-",
+                    "crossbows": "Arbalètes",
+                    "longBows": "Arcs longs",
+                    "heavy": "Armes lourdes",
+                    "powder": "Armes à poudre",
+                    "cavalry": "Armes de cavalerie",
+                    "throwing": "Armes de jet",
+                    "parying": "Armes de parade",
+                    "fencing": "Armes d'escrime",
+                    "mechanical": "Armes mécaniques",
+                    "stunning": "Armes paralysantes",
+                    "flail": "Fléaux",
+                    "rockThrowing": "Lance-pierres"
+                },
+                "wAttributes": {
+                    "grapeShot": "A mitraille",
+                    "pummeling": "Assomante",
+                    "defensive": "Défensive",
+                    "tiring": "Epuisante",
+                    "balanced": "Equilibrée",
+                    "experimental": "Expérimentale",
+                    "immobilizing": "Immobilisante",
+                    "slow": "Lente",
+                    "impact": "Percutante",
+                    "piercing": "Perforante",
+                    "unreliable": "Peu fiable",
+                    "precise": "Précise",
+                    "fast": "Rapide",
+                    "special": "Spéciale"
+                }
+            },
+            "skill" : {
+                "label" : {
+                    "characteristic" : "Caractéristique",
+                    "isAdvanced" : "Compétence avancée"
+                }
+            },
+            "spell" : {
+                "header" : {
+                    "spellValues" : "Description du sort",
+                    "ingredient" : "Ingrédient"
+                },
+                "label" : {
+                    "magicType" : "Type de magie",
+                    "school" : "Ecole de magie",
+                    "difficulty" : "Difficulté",
+                    "ingredientName" : "Nom de l'ingrédient",
+                    "ingredientBonus" : "Bonus",
+                    "incantationTime" : "Temps d'incantation"
+                },
+                "magicTypes" : {
+                    "petty" : "Magie commune",
+                    "arcanic" : "Magie occulte",
+                    "divine" : "Magie divine",
+                    "darkMagic" : "Sombre savoir"
+                },
+                "schools" : {
+                    "pettyDivine" : "Magie commune (Divine)",
+                    "pettyArcane" : "Magie commune (Occulte)",
+                    "pettyHedge" : "Magie commune (Vulgaire)",
+                    "fire" : "Domaine du Feu",
+                    "light" : "Domaine de la Lumière",
+                    "death" : "Domaine de la Mort",
+                    "shadow" : "Domaine de l'Ombre",
+                    "life" : "Domaine de la Vie",
+                    "metal" : "Domaine du Métal",
+                    "beast" : "Domaine de la Bête",
+                    "heaven" : "Domaine des Cieux",
+                    "chaos" : "Domaine du Chaos",
+                    "necromancy" : "Domaine de la Nécromancie",
+                    "manann" : "Domaine de Manann",
+                    "morr" : "Domaine de Morr",
+                    "myrmidia" : "Domaine de Myrmidia",
+                    "ranald" : "Domaine de Ranald",
+                    "shallya" : "Domaine de Shallya",
+                    "taalRhya" : "Domaine de Taal et Rhya",
+                    "ulric" : "Domaine d'Ulric",
+                    "verena" : "Domaine de Verena"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <section class="itemSheet">
+        <article id="spellDescriptionSection">
+            <h2>{{ localize "wjdr2.items.spell.header.spellValues" }}</h2>
+            <table>
+                <tr>
+                    <th>{{ localize "wjdr2.items.spell.label.magicType"}}</th>
+                    <th>{{ localize "wjdr2.items.spell.label.school" }}</th>
+                    <th>{{ localize "wjdr2.items.spell.label.difficulty" }}</th>
+                    <th>{{ localize "wjdr2.items.spell.label.incantationTime" }}</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="data.magicType" class="magicTypeSelect">
+                            {{#select data.magicType }}
+                            {{#each config.magicTypes as |name type| }}
+                                <option value="{{type}}">{{ localize name }}</option>
+                            {{/each }}
+                            {{/select }}
+                        </select>
+                    </td>
+                    <td>
+                        <!-- TODO Add handling of magic type change -->
+                        <select name="data.school" class="spellSchoolSelect">
+                            {{#select data.school }}
+                            {{#each config.arcaneMagicSchools as |name type| }}
+                                <option value="{{type}}">{{ localize name }}</option>
+                            {{/each }}
+                            {{/select }}
+                        </select>
+                    </td>
+                    <td><input name="data.difficulty" type="text" value="{{data.difficulty}}" data-dtype="Number"/></td>
+                    <td><input name="data.incantationTime" type="text" value="{{data.incantationTime}}" data-dtype="Number"/></td>
+                </tr>
+            </table>
+            <h3>{{ localize "wjdr2.items.spell.header.ingredient"}}</h3>
+            <table>
+                <tr>
+                    <th>{{ localize "wjdr2.items.spell.label.ingredientName" }}</th>
+                    <th>{{ localize "wjdr2.items.spell.label.ingredientBonus" }}</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="data.ingredient" value="{{data.ingredient}}"/></td>
+                    <td><input type="text" name="data.ingredientBonus" value="{{data.ingredientBonus}}" data-dtype="Number"/></td>
+                </tr>
+            </table>
+        </article>
+        
+        <article class="itemDescriptionSection">
+			<h2>{{ localize "wjdr2.items.header.description" }}</h2>
+			{{editor content=data.itemDescription target="data.itemDescription" button=true owner=owner editable="editable" }}
+		</article>
+    </section>
+</form>

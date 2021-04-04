@@ -1,0 +1,23 @@
+.sheet form {
+  display: flex;
+  flex-direction: column;
+}
+.sheet .itemSheet {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sheet .itemSheet table tr td {
+  text-align: center;
+}
+.sheet .itemSheet table tr td select {
+  width: 100%;
+}
+.sheet .itemSheet .itemDescriptionSection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sheet .itemSheet .itemDescriptionSection .editor {
+  height: 100%;
+}

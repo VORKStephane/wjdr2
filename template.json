@@ -1,0 +1,66 @@
+{
+    "Actor": {
+      "type" : ["Character", "NPC"],
+      "templates" : {}
+    },
+    "Item": {
+      "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness"],
+      "templates" : {
+        "itemPrice" : { "price" : 0 },
+        "itemWeight" : { "weight" : 0 },
+        "itemRarity" : { "rarity" : "ordinary" },
+        "itemDescription" : { "description" : "" }
+      },
+      "item": {
+        "templates" : ["itemPrice", "itemDescription", "itemRarity", "itemWeight"],
+        "group": ""
+      },
+      "weapon" : {
+        "templates" : [
+          "itemPrice", 
+          "itemDescription", 
+          "itemRarity", 
+          "itemWeight"
+        ],
+        "group" : "wjdr2.items.weapon.wGroup.none",
+        "damage" : 0,
+        "weaponAttributes" : [],
+        "closeCombat" : true,
+        "range" : "",
+        "onlyCloseRange" : false
+      },
+      "armor" : {
+        "templates" : ["itemPrice", "itemDescription", "itemRarity", "itemWeight"],
+        "protectionValue" : 1,
+        "protectedZones" : []
+      },
+      "trait" : {
+        "templates" : ["itemDescription"]
+      }, 
+      "skill" : {
+        "templates" : ["itemDescription"],
+        "isAdvanced" : false,
+        "specialization" : "",
+        "characteristic" : "",
+        "traits" : []
+      }, 
+      "spell" : {
+        "templates" : ["itemDescription"],
+        "magicType" : "",
+        "school" : "",
+        "difficulty" : 0,
+        "incantationTime" : 0.5,
+        "ingredient" : "",
+        "ingredientBonus" : 1
+      },
+      "madness" : {
+        "templates" : ["itemDescription"]
+      },
+      "mutation" : {
+        "templates" : ["itemDescription"],
+        "fearIndex" : 1,
+        "multiple" : false,
+        "variantes" : []
+      }
+    }
+  }

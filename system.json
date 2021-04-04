@@ -1,0 +1,24 @@
+{
+  "name": "wjdr2",
+  "title": "Warhammer Roleplay Game - Second Edition",
+  "description": "System for second edition of Warhammer Roleplay Game",
+  "version": 0.40,
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "author": "Calamity Stouf",
+  "esmodules": ["wjdr2.js"],
+  "styles": ["styles/wjdr2.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
+  "gridDistance": 2,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "wound",
+  "initiative" : "1d10 + @agility",
+  "license": "LICENSE.txt"
+}

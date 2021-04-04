@@ -1,0 +1,68 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <section class="itemSheet">
+		<article id="itemCommonSection">
+			<h2>{{ localize "wjdr2.items.header.commonValues" }}</h2>
+			<table>
+				<tr>
+					<th>{{ localize "wjdr2.items.label.price" }}</th>
+					<th>{{ localize "wjdr2.items.label.weight" }}</th>
+					<th>{{ localize "wjdr2.items.label.rarity" }}</th>
+				</tr>
+				<tr>
+					<td><input name="data.itemPrice" type="text" value="{{data.itemPrice}}"/></td>
+					<td><input name="data.itemWeight" type="text" value="{{data.itemWeight}}" data-dtype="Number"/></td>
+					<td>
+						<select name="data.itemRarity">
+						{{#select data.itemRarity}}
+						{{#each config.rarity as |name type|}}
+							<option value="{{type}}">{{ localize name }}</option>
+						{{/each}}
+						{{/select}}
+					</select>
+				</td>
+				</tr>
+			</table>
+		</article>
+
+		<article id="weaponDescriptionSection">
+			<h2>{{ localize "wjdr2.items.header.weapon" }}</h2>
+			{{ localize "wjdr2.items.weapon.label.group" }}
+			<select name="data.group">
+				{{#select data.group}}
+				{{#each config.weaponGroups as |name type| }}
+					<option value="{{type}}">{{localize name }}</option>
+				{{/each }}
+				{{/select }}
+			</select>
+			<br>
+			{{ localize "wjdr2.items.weapon.label.damage" }}
+			<input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number"/>
+
+			{{ localize "wjdr2.items.weapon.label.attributes" }}
+		
+
+			<h3>{{ localize "wjdr2.items.weapon.header.range" }}</h3>
+			<table>
+				<tr>
+					<th>{{ localize "wjdr2.items.weapon.label.isCloseCombat" }}</th>
+					<th>{{ localize "wjdr2.items.weapon.label.range" }}</th>
+					<th>{{ localize "wjdr2.items.weapon.label.isOnlyCloseRange" }}</th>
+				</tr>
+				<tr>
+					<td><input name="data.closeCombat" type="checkbox" {{checked data.closeCombat}} data-dtype="Boolean"/></td>
+					<td><input name="data.range" type="text" value="{{data.range}}"/></td>
+					<td><input name="data.onlyCloseRange" type="checkbox" {{checked data.onlyCloseRange}} data-dtype="Boolean"/></td>
+				</tr>
+			</table>
+		</article>
+
+		<article class="itemDescriptionSection">
+			<h2>{{ localize "wjdr2.items.header.description" }}</h2>
+			{{editor content=data.itemDescription target="data.itemDescription" button=true owner=owner editable="editable" }}
+		</article>
+    </section>
+</form>
