@@ -30,7 +30,8 @@
                 "newItem" : "Nouveau {itemType}", 
                 "price" : "Prix",
                 "weight" : "Enc",
-                "rarity" : "Disponibilité"
+                "rarity" : "Disponibilité",
+                "quality" : "Qualité"
             },
             "itemType": {
                 "item": "Objet",
@@ -52,6 +53,12 @@
                 "veryRare": "Très rare",
                 "prettyRare": "Assez rare",
                 "rare": "Rare"
+            },
+            "quality" : {
+                "medium" : "Qualité moyenne",
+                "mediocre" : "Qualité médiocre",
+                "good" : "Bonne qualité",
+                "outstanding" : "Qualité exceptionnelle"
             },
             "weapon": {
                 "header": {

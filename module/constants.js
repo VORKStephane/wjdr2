@@ -67,6 +67,13 @@ wjdr2.weaponGroups = {
 	rockThrowing : "wjdr2.items.weapon.wGroup.rockThrowing"
 };
 
+wjdr2.quality = {
+	medium : "wjdr2.items.quality.medium",
+	mediocre : "wjdr2.items.quality.mediocre",
+	good : "wjdr2.items.quality.good",
+	outstanding : "wjdr2.items.quality.outstanding"
+}
+
 wjdr2.rarity = {
     none : "wjdr2.items.rarity.none",
     mainstream : "wjdr2.items.rarity.mainstream",

@@ -4,13 +4,14 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <section class="itemSheet">
-		<article id="itemCommonSection">
+		<article class="itemCommonSection">
 			<h2>{{ localize "wjdr2.items.header.commonValues" }}</h2>
 			<table>
 				<tr>
 					<th>{{ localize "wjdr2.items.label.price" }}</th>
 					<th>{{ localize "wjdr2.items.label.weight" }}</th>
 					<th>{{ localize "wjdr2.items.label.rarity" }}</th>
+					<th>{{ localize "wjdr2.items.label.quality" }}</th>
 				</tr>
 				<tr>
 					<td><input name="data.itemPrice" type="text" value="{{data.itemPrice}}"/></td>
@@ -22,8 +23,17 @@
 							<option value="{{type}}">{{ localize name }}</option>
 						{{/each}}
 						{{/select}}
-					</select>
-				</td>
+						</select>
+					</td>
+					<td>
+						<select name="data.itemQuality">
+							{{#select data.itemQuality}}
+							{{#each config.quality as |name type|}}
+								<option value="{{type}}">{{ localize name }}</option>
+							{{/each}}
+							{{/select}}
+						</select>
+					</td>
 				</tr>
 			</table>
 		</article>
