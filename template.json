@@ -62,7 +62,7 @@
         "templates" : ["itemDescription"],
         "fearIndex" : 1,
         "multiple" : false,
-        "variantes" : []
+        "variantes" : ""
       }
     }
   }

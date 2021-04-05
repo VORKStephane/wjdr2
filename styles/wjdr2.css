@@ -21,3 +21,11 @@
 .sheet .itemSheet .itemDescriptionSection .editor {
   height: 100%;
 }
+.sheet .itemSheet .mutationVariantsDescription {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sheet .itemSheet .mutationVariantsDescription .editor {
+  height: 100%;
+}

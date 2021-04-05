@@ -26,13 +26,6 @@
                 "weapon": "Propriété de l'arme",
                 "description": "Description"
             },
-            "label": {
-                "newItem" : "Nouveau {itemType}", 
-                "price" : "Prix",
-                "weight" : "Enc",
-                "rarity" : "Disponibilité",
-                "quality" : "Qualité"
-            },
             "itemType": {
                 "item": "Objet",
                 "weapon": "Arme",
@@ -42,6 +35,13 @@
                 "skill": "Compétence",
                 "madness" : "Folie",
                 "mutation" : "Mutation"
+            },
+            "label": {
+                "newItem" : "Nouveau {itemType}", 
+                "price" : "Prix",
+                "weight" : "Enc",
+                "rarity" : "Disponibilité",
+                "quality" : "Qualité"
             },
             "rarity": {
                 "none": "-",
@@ -152,6 +152,11 @@
                     "ulric" : "Domaine d'Ulric",
                     "verena" : "Domaine de Verena"
                 }
+            },
+            "mutation" : {
+                "variantHeader" : "Variantes",
+                "fearIndex" : "Indice de peur",
+                "isMultiple" : "Mutation multiple ?"
             }
         }
     }

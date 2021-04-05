@@ -1,0 +1,29 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+
+    <section class="itemSheet">
+        <article>
+            <table>
+                <tr>
+                    <th>{{ localize "wjdr2.items.mutation.fearIndex" }}</th>
+                    <th>{{ localize "wjdr2.items.mutation.isMultiple" }}</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="data.fearIndex" value="{{data.fearIndex}}" data-dtype="Number" /></td>
+                    <td><input name="data.isMultiple" type="checkbox" {{checked data.isMultiple}} data-dtype="Boolean" /></td>
+                </tr>
+            </table>
+        </article>
+        <article class="itemDescriptionSection">
+			<h2>{{ localize "wjdr2.items.header.description" }}</h2>
+			{{editor content=data.itemDescription target="data.itemDescription" button=true owner=owner editable="editable" }}
+		</article>
+        <article class="mutationVariantsDescription">
+            <h2>{{ localize "wjdr2.items.mutation.variantHeader" }}</h2>
+            {{editor content=data.variantes target="data.variantes" button=true owner=owner editable="editable" }}
+        </article>
+    </section>
+</form>
