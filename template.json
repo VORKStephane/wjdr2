@@ -25,7 +25,7 @@
           "itemQuality"
         ],
         "group" : "wjdr2.items.weapon.wGroup.none",
-        "damage" : 0,
+        "damage" : "",
         "weaponAttributes" : [],
         "closeCombat" : true,
         "range" : "",
