@@ -1,0 +1,46 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <section class="itemSheet">
+		<article class="itemCommonSection">
+			<h2>{{ localize "wjdr2.items.header.commonValues" }}</h2>
+			<table>
+				<tr>
+					<th>{{ localize "wjdr2.items.label.price" }}</th>
+					<th>{{ localize "wjdr2.items.label.weight" }}</th>
+					<th>{{ localize "wjdr2.items.label.rarity" }}</th>
+					<th>{{ localize "wjdr2.items.label.quality" }}</th>
+				</tr>
+				<tr>
+					<td><input name="data.itemPrice" type="text" value="{{data.itemPrice}}"/></td>
+					<td><input name="data.itemWeight" type="text" value="{{data.itemWeight}}" data-dtype="Number"/></td>
+					<td>
+						<select name="data.itemRarity">
+						{{#select data.itemRarity}}
+						{{#each config.rarity as |name type|}}
+							<option value="{{type}}">{{ localize name }}</option>
+						{{/each}}
+						{{/select}}
+						</select>
+					</td>
+					<td>
+						<select name="data.itemQuality">
+							{{#select data.itemQuality}}
+							{{#each config.quality as |name type|}}
+								<option value="{{type}}">{{ localize name }}</option>
+							{{/each}}
+							{{/select}}
+						</select>
+					</td>
+				</tr>
+			</table>
+		</article>
+
+		<article class="itemDescriptionSection">
+			<h2>{{ localize "wjdr2.items.header.description" }}</h2>
+			{{editor content=data.itemDescription target="data.itemDescription" button=true owner=owner editable="editable" }}
+		</article>
+    </section>
+</form>
