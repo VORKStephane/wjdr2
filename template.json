@@ -1,7 +1,111 @@
 {
-    "Actor": {
-      "type" : ["Character", "NPC"],
-      "templates" : {}
+    "Actor" : {
+      "types" : ["character", "npc"],
+      "templates" : {
+        "basic" : {
+          "race" : "",
+          "attributes" : {
+            "rollable" : {
+              "ws": 20,
+              "bs": 20,
+              "s": 20,
+              "t": 20,
+              "ag": 20,
+              "int": 20,
+              "wp": 20,
+              "fel": 20
+            },
+            "nonRollable" : {
+              "a": 1,
+              "w": 8,
+              "sb": 0,
+              "tb": 0,
+              "m": 4,
+              "mag": 0,
+              "ip": 0,
+              "fp": 0
+            }
+          },
+          "inventory" : [],
+          "talents" : [],
+          "skills" : [],
+          "damageReduction" : {
+            "head" : 0,
+            "rightArm" : 0,
+            "leftArm" : 0,
+            "body" : 0,
+            "rightLeg" : 0,
+            "leftLeg" : 0
+          }
+        },
+        "careers" : [],
+        "mutations" : [],
+        "madnesses" : [],
+        "spells" : []
+      },
+      "character" : {
+        "templates" : ["basic", "careers", "mutations", "madnesses", "spells"],
+        "rollableAttributeModification" : {
+          "ws" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "bs" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "s" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "t" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "ag" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "int" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "wp" : {
+            "base" : 20,
+            "advance" : 0
+          },
+          "fel" : {
+            "base" : 20,
+            "advance" : 0
+          }
+        },
+        "nonRollableAttributeModification" : {
+          "a": {
+            "base" : 1,
+            "advance" : 0
+          },
+          "w": {
+            "base" : 8,
+            "advance" : 0
+          },
+          "mag": {
+            "base" : 0,
+            "advance" : 0
+          }
+        },
+        "gender" : "",
+        "age" : 30,
+        "eyeColor" : "",
+        "hairColor" : "",
+        "height" : "",
+        "weight" : "",
+        "specialTrait" : "",
+        "astralSign" : "",
+        "biography" : ""
+      },
+      "npc" : {
+        "templates" : ["basic"]
+      }
     },
     "Item": {
       "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness"],
