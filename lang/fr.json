@@ -1,6 +1,14 @@
 {
     "wjdr2": {
         "actors": {
+            "navLabel" : {
+                "abilities" : "Capacités",
+                "combat" : "Combat",
+                "armor" : "Protection",
+                "inventory" : "Inventaire",
+                "spells" : "Sorts",
+                "description" : "Description"
+            },
             "characteristics": {
                 "ws": "CC",
                 "bs": "CT",
