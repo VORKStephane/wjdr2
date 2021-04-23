@@ -1,0 +1,23 @@
+<form class="actor-sheet {{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+    </header>
+
+    <section class="rollableAttributes grid grid-8col">
+        {{#each data.basic.attributes.rollable as |attribute key|}}
+            <div class="rAttribute flexrow flex-group-center">
+                <label>A</label>
+            </div>
+        {{/each}}
+    </section>
+
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="abilities">{{ localize "wjdr2.actors.navLabel.abilities" }}</a>
+        <a class="item" data-tab="combat">{{ localize "wjdr2.actors.navLabel.combat" }}</a>
+        <a class="item" data-tab="armor">{{ localize "wjdr2.actors.navLabel.armor" }}</a>
+        <a class="item" data-tab="inventory">{{ localize "wjdr2.actors.navLabel.inventory" }}</a>
+        <a class="item" data-tab="spells">{{ localize "wjdr2.actors.navLabel.spells" }}</a>
+        <a class="item" data-tab="description">{{ localize "wjdr2.actors.navLabel.description" }}</a>
+    </nav>
+</form>

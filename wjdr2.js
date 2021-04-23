@@ -1,4 +1,5 @@
 import WjdrItemSheet from "./templates/sheets/WjdrItemSheet.js" ;
+import WjdrActorSheet from "./templates/sheets/WjdrActorSheet.js";
 import {wjdr2} from "./module/constants.js";
 
 Hooks.once("init", init());
@@ -14,7 +15,9 @@ async function init() {
 
 async function replaceSystemSheets() {
 	// Actor sheets
-
+	Actors.unregisterSheet("core", ActorSheet);
+	Actors.registerSheet("wjdr2", WjdrActorSheet, { makeDefault : true });
+	console.log("Default Actor sheets have been invalidated and replaced by actor sheets from WJDR2 sytem");
 
 	// Item sheets
 	Items.unregisterSheet("core", ItemSheet);
