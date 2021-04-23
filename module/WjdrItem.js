@@ -1,4 +1,5 @@
-export class WjdrItem extends Item {
+export default class WjdrItem extends Item {
+    
     prepareData() {
         super.prepareData();
 
