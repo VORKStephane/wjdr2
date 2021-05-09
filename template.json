@@ -6,21 +6,37 @@
           "race" : "",
           "attributes" : {
             "rollable" : {
-              "ws": 20,
-              "bs": 20,
-              "s": 20,
-              "t": 20,
-              "ag": 20,
-              "int": 20,
-              "wp": 20,
-              "fel": 20
+              "ws": {
+                "value" : 0
+              },
+              "bs": {
+                "value" : 0
+              },
+              "s": {
+                "value" : 0
+              },
+              "t": {
+                "value" : 0
+              },
+              "ag": {
+                "value" : 0
+              },
+              "int": {
+                "value" : 0
+              },
+              "wp": {
+                "value" : 0
+              },
+              "fel": {
+                "value" : 0
+              }
             },
             "nonRollable" : {
-              "a": 1,
-              "w": 8,
+              "a": 0,
+              "w": 0,
               "sb": 0,
               "tb": 0,
-              "m": 4,
+              "m": 0,
               "mag": 0,
               "ip": 0,
               "fp": 0
@@ -29,6 +45,8 @@
           "inventory" : [],
           "talents" : [],
           "skills" : [],
+          "armors" : [],
+          "weapons" : [],
           "damageReduction" : {
             "head" : 0,
             "rightArm" : 0,

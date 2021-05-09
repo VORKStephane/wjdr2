@@ -5,10 +5,8 @@
     </header>
 
     <section class="rollableAttributes grid grid-8col">
-        {{#each data.basic.attributes.rollable as |attribute key|}}
-            <div class="rAttribute flexrow flex-group-center">
-                <label>{{key}}</label>
-            </div>
+        {{#each data.attributes.rollable as |attribute id|}}
+            <button name="{{attribute}}" value="{{attribute}}" class="rollableAttribute">{{ localize attribute.label }} : {{attribute.value}}</button>
         {{/each}}
     </section>
 

@@ -1,14 +1,14 @@
 export const wjdr2 = {};
 
 wjdr2.rollableCharacteristic = {
-	ws : "wjdr2.actors.characteristics.ws",
-	bs : "wjdr2.actors.characteristics.bs",
-	s : "wjdr2.actors.characteristics.s",
-	t : "wjdr2.actors.characteristics.t",
-	ag : "wjdr2.actors.characteristics.ag",
-	int : "wjdr2.actors.characteristics.int",
-	wp : "wjdr2.actors.characteristics.wp",
-	fel : "wjdr2.actors.characteristics.fel"
+	"ws" : "wjdr2.actors.characteristics.ws",
+	"bs" : "wjdr2.actors.characteristics.bs",
+	"s" : "wjdr2.actors.characteristics.s",
+	"t" : "wjdr2.actors.characteristics.t",
+	"ag" : "wjdr2.actors.characteristics.ag",
+	"int" : "wjdr2.actors.characteristics.int",
+	"wp" : "wjdr2.actors.characteristics.wp",
+	"fel" : "wjdr2.actors.characteristics.fel"
 };
 
 wjdr2.magicTypes = {
