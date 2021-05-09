@@ -5,7 +5,7 @@ import {
 export default class WjdrItemSheet extends ItemSheet {
 	get template() {
 		// Template for Item sheet has to be in the same folder
-		return `./systems/wjdr2/templates/sheets/${this.item.data.type}-sheet.html`;
+		return `./systems/wjdr2/templates/sheets/items/${this.item.data.type}-sheet.html`;
 	}
 
 	getData() {
