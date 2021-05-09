@@ -4,7 +4,7 @@
             "navLabel" : {
                 "abilities" : "Capacités",
                 "combat" : "Combat",
-                "armor" : "Protection",
+                "afflictions" : "Afflictions",
                 "inventory" : "Inventaire",
                 "spells" : "Sorts",
                 "description" : "Description",
