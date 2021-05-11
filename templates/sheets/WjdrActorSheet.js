@@ -1,6 +1,6 @@
 export default class WjdrActorSheet extends ActorSheet {
     get template() {
-        return `./systems/wjdr2/templates/sheets/${this.actor.data.type}-sheet.html`;
+        return `./systems/wjdr2/templates/sheets/actors/${this.actor.data.type}-sheet.html`;
     }
 
     getData() {
