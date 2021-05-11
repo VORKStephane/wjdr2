@@ -1,7 +1,7 @@
 import WjdrItemSheet from "./templates/sheets/WjdrItemSheet.js";
-import WjdrItem from "./module/WjdrItem.js";
+import WjdrItem from "./module/items/WjdrItem.js";
 import WjdrActorSheet from "./templates/sheets/WjdrActorSheet.js";
-import WjdrActor from "./module/WjdrActor.js";
+import WjdrActor from "./module/actors/WjdrActor.js";
 import {wjdr2} from "./module/constants.js";
 
 Hooks.once("init", init());
