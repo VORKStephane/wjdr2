@@ -1,4 +1,9 @@
 {
+    "ACTOR" : {
+        "TypeCharacter" : "Personnage",
+        "TypeNpc" : "PNJ"
+    },
+    
     "wjdr2": {
         "actors": {
             "navLabel" : {
