@@ -3,7 +3,16 @@
         "TypeCharacter" : "Personnage",
         "TypeNpc" : "PNJ"
     },
-    
+    "ITEM" : {
+        "TypeItem" : "Objet",
+        "TypeWeapon" : "Arme",
+        "TypeArmor" : "Armure",
+        "TypeTrait" : "Talent",
+        "TypeSkill" : "Compétence",
+        "TypeSpell" : "Sort",
+        "TypeMutation" : "Mutation",
+        "TypeMadness" : "Folie"
+    },
     "wjdr2": {
         "actors": {
             "navLabel" : {
