@@ -1,6 +1,6 @@
-import {
-	replaceOptionList
-} from "../../module/html-utils.js" ;
+// import {
+// 	replaceOptionList
+// } from "../../module/html-utils.js" ;
 
 export default class WjdrItemSheet extends ItemSheet {
 	get template() {

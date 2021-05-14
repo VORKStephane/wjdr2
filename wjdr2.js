@@ -1,8 +1,9 @@
-import WjdrItemSheet from "./templates/sheets/WjdrItemSheet.js";
+import WjdrItemSheet from "./module/items/sheets/WjdrItemSheet.js";
 import WjdrItem from "./module/items/WjdrItem.js";
-import WjdrActorSheet from "./templates/sheets/WjdrActorSheet.js";
+import WjdrActorSheet from "./module/actors/sheets/WjdrActorSheet.js";
 import WjdrActor from "./module/actors/WjdrActor.js";
 import {wjdr2} from "./module/constants.js";
+import {preloadHandlebarsTemplates} from "./module/handlebarTemplates.js";
 
 Hooks.once("init", init());
 
@@ -11,6 +12,7 @@ async function init() {
 
 	CONFIG.wjdr2 = wjdr2;
 	replaceSystemSheets();
+	preloadHandlebarsTemplates();
 
 	console.log("System for Warhammer Roleplay Game - Second Edition initialized");
 }
@@ -23,7 +25,7 @@ async function replaceSystemSheets() {
 	console.log("Default Actor sheets have been invalidated and replaced by actor sheets from WJDR2 sytem");
 
 	// Item sheets
-	// CONFIG.Item.entityClass = WjdrItem;
+	CONFIG.Item.entityClass = WjdrItem;
 	Items.unregisterSheet("core", ItemSheet);
 	Items.registerSheet("wjdr2", WjdrItemSheet, { makeDefault : true });
 	console.log("Default Item sheets have been invalidated and replaced by item sheets from WJDR2 sytem");
