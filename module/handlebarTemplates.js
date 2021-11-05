@@ -5,9 +5,6 @@
  */
  export const preloadHandlebarsTemplates = async function() {
     return loadTemplates([
-  
-      // Shared Partials
-      
       // Actor Sheet Partials
       "systems/wjdr2/templates/actors/parts/abilities.html",
       "systems/wjdr2/templates/actors/parts/combat.html",
