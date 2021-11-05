@@ -7,12 +7,20 @@ export default class WjdrActorSheet extends ActorSheet {
         const data = super.getData();
         data.config = CONFIG.wjdr2;
 
-        var rollableCharacteristic = data.actor.data.data.attributes.rollable;
-
-        for ( let [a, attribute] of Object.entries(rollableCharacteristic)) {
-            attribute.label = CONFIG.wjdr2.rollableCharacteristic[a];
-        }
+        this.setAttributesLabel(data);        
 
         return data;
+    }
+
+    /**
+     * Set the attributes' label to properly display them in the UI
+     * @param {Object} data represents the sheet's data 
+     */
+    setAttributesLabel(data) {
+        // Rollable attributes
+        for (let [a, attribute] of Object.entries(data.actor.data.data.attributes.rollable)) {
+            console.log(`${a} : ${data.config.rollableCharacteristic[a]}`);
+            attribute.label = data.config.rollableCharacteristic[a];
+        }
     }
 }
