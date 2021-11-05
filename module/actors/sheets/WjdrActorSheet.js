@@ -7,9 +7,9 @@ export default class WjdrActorSheet extends ActorSheet {
         const data = super.getData();
         data.config = CONFIG.wjdr2;
 
-        console.log(Object.entries(data.actor.data.attributes.rollable));
+        var rollableCharacteristic = data.actor.data.data.attributes.rollable;
 
-        for ( let [a, attribute] of Object.entries(data.actor.data.attributes.rollable)) {
+        for ( let [a, attribute] of Object.entries(rollableCharacteristic)) {
             attribute.label = CONFIG.wjdr2.rollableCharacteristic[a];
         }
 
