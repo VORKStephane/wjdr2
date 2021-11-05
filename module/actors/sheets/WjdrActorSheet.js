@@ -22,5 +22,12 @@ export default class WjdrActorSheet extends ActorSheet {
             console.log(`${a} : ${data.config.rollableCharacteristic[a]}`);
             attribute.label = data.config.rollableCharacteristic[a];
         }
+
+        // TO DO
+        // Non-Rollable attributes
+        // for (let [a, attribute] of Object.entries(data.actor.data.data.attributes.nonRollable)) {
+        //     console.log(`${a} : ${data.config.rollableCharacteristic[a]}`);
+        //     attribute.label = data.config.rollableCharacteristic[a];
+        // }
     }
 }
