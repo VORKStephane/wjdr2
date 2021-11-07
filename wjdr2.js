@@ -5,14 +5,16 @@ import WjdrActor from "./module/actors/WjdrActor.js";
 import {wjdr2} from "./module/constants.js";
 import {preloadHandlebarsTemplates} from "./module/handlebarTemplates.js";
 
-Hooks.once("init", init());
+Hooks.once("init", function initGame() {
+	init();
+	preloadHandlebarsTemplates();
+} );
 
 async function init() {
 	console.log("Initializing System for Warhammer Roleplay Game - Second Edition");
 
 	CONFIG.wjdr2 = wjdr2;
 	replaceSystemSheets();
-	preloadHandlebarsTemplates();
 
 	console.log("System for Warhammer Roleplay Game - Second Edition initialized");
 }

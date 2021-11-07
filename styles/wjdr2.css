@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 }
-.sheet .actorSheet .rollableAttributes {
+.sheet .actorSheet .rollableAttributesSection {
   margin-top: 5px;
   width: 100%;
   display: flex;
@@ -10,7 +10,7 @@
   align-content: center space-evenly;
   justify-content: center;
 }
-.sheet .actorSheet .rollableAttributes .rollableAttribute {
+.sheet .actorSheet .rollableAttributesSection .rollableAttributeButton {
   flex-basis: auto;
   border-radius: 10px;
 }
