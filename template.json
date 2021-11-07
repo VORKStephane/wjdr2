@@ -32,14 +32,30 @@
               }
             },
             "nonRollable" : {
-              "a": 0,
-              "w": 0,
-              "sb": 0,
-              "tb": 0,
-              "m": 0,
-              "mag": 0,
-              "ip": 0,
-              "fp": 0
+              "a": {
+                "value" : 0
+              },
+              "w": {
+                "value" : 0
+              },
+              "sb": {
+                "value" : 0
+              },
+              "tb": {
+                "value" : 0
+              },
+              "m": {
+                "value" : 0
+              },
+              "mag": {
+                "value" : 0
+              },
+              "ip": {
+                "value" : 0
+              },
+              "fp": {
+                "value" : 0
+              }
             }
           },
           "inventory" : [],
