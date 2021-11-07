@@ -24,9 +24,7 @@ export default class WjdrActor extends Actor {
      */
      setAttributesLabel(data) {
         // Rollable attributes
-        console.log(data);
         for (let [a, attribute] of Object.entries(data.attributes.rollable)) {
-            console.log(`${a} : ${CONFIG.wjdr2.rollableCharacteristic[a]}`);
             attribute.label = CONFIG.wjdr2.rollableCharacteristic[a];
         }
 
