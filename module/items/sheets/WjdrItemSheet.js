@@ -3,6 +3,14 @@
 // } from "../../module/html-utils.js" ;
 
 export default class WjdrItemSheet extends ItemSheet {
+	static get defaultOptions() {
+        return mergeObject(super.defaultOptions, {
+            width : 530,
+			height : 320,
+			classes : ["wjdrv2", "sheet", "item"]
+        });
+    }
+
 	get template() {
 		// Template for Item sheet has to be in the same folder
 		return `./systems/wjdr2/templates/items/${this.item.data.type}-sheet.html`;
