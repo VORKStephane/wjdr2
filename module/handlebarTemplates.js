@@ -12,6 +12,9 @@
       "systems/wjdr2/templates/actors/parts/spells.html",
       "systems/wjdr2/templates/actors/parts/afflictions.html",
       "systems/wjdr2/templates/actors/parts/description.html",
-      "systems/wjdr2/templates/actors/parts/upgrade.html"
+      "systems/wjdr2/templates/actors/parts/upgrade.html",
+
+      //Item Sheet Partials
+      "systems/wjdr2/templates/items/parts/description.html"
     ]);
   };
