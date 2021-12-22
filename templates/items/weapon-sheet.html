@@ -10,7 +10,7 @@
 			<h2>{{ localize "wjdr2.items.header.weapon" }}</h2>
 			{{ localize "wjdr2.items.weapon.label.group" }}
 			<select name="data.group">
-				{{#select data.group}}
+				{{#select data.data.group}}
 				{{#each config.weaponGroups as |name type| }}
 					<option value="{{type}}">{{localize name }}</option>
 				{{/each }}
@@ -18,11 +18,9 @@
 			</select>
 			<br>
 			{{ localize "wjdr2.items.weapon.label.damage" }}
-			<input name="data.damage" type="text" value="{{data.damage}}"/>
+			<input name="data.damage" type="text" value="{{data.data.damage}}"/>
 
 			{{ localize "wjdr2.items.weapon.label.attributes" }}
-		
-
 			<h3>{{ localize "wjdr2.items.weapon.header.range" }}</h3>
 			<table>
 				<tr>
@@ -31,9 +29,9 @@
 					<th>{{ localize "wjdr2.items.weapon.label.isOnlyCloseRange" }}</th>
 				</tr>
 				<tr>
-					<td><input name="data.closeCombat" type="checkbox" {{checked data.closeCombat}} data-dtype="Boolean"/></td>
-					<td><input name="data.range" type="text" value="{{data.range}}"/></td>
-					<td><input name="data.onlyCloseRange" type="checkbox" {{checked data.onlyCloseRange}} data-dtype="Boolean"/></td>
+					<td><input name="data.closeCombat" type="checkbox" {{checked data.data.closeCombat}} data-dtype="Boolean"/></td>
+					<td><input name="data.range" type="text" value="{{data.data.range}}"/></td>
+					<td><input name="data.onlyCloseRange" type="checkbox" {{checked data.data.onlyCloseRange}} data-dtype="Boolean"/></td>
 				</tr>
 			</table>
 		</article>
