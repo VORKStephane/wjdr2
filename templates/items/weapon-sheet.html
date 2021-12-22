@@ -4,39 +4,7 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <section class="itemSheet">
-		<article class="itemCommonSection">
-			<h2>{{ localize "wjdr2.items.header.commonValues" }}</h2>
-			<table>
-				<tr>
-					<th>{{ localize "wjdr2.items.label.price" }}</th>
-					<th>{{ localize "wjdr2.items.label.weight" }}</th>
-					<th>{{ localize "wjdr2.items.label.rarity" }}</th>
-					<th>{{ localize "wjdr2.items.label.quality" }}</th>
-				</tr>
-				<tr>
-					<td><input name="data.itemPrice" type="text" value="{{data.itemPrice}}"/></td>
-					<td><input name="data.itemWeight" type="text" value="{{data.itemWeight}}" data-dtype="Number"/></td>
-					<td>
-						<select name="data.itemRarity">
-						{{#select data.itemRarity}}
-						{{#each config.rarity as |name type|}}
-							<option value="{{type}}">{{ localize name }}</option>
-						{{/each}}
-						{{/select}}
-						</select>
-					</td>
-					<td>
-						<select name="data.itemQuality">
-							{{#select data.itemQuality}}
-							{{#each config.quality as |name type|}}
-								<option value="{{type}}">{{ localize name }}</option>
-							{{/each}}
-							{{/select}}
-						</select>
-					</td>
-				</tr>
-			</table>
-		</article>
+		{{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
 
 		<article id="weaponDescriptionSection">
 			<h2>{{ localize "wjdr2.items.header.weapon" }}</h2>

@@ -15,6 +15,7 @@
       "systems/wjdr2/templates/actors/parts/upgrade.html",
 
       //Item Sheet Partials
-      "systems/wjdr2/templates/items/parts/description.html"
+      "systems/wjdr2/templates/items/parts/description.html",
+      "systems/wjdr2/templates/items/parts/item-properties.html"
     ]);
   };
