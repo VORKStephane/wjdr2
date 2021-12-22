@@ -14,14 +14,14 @@
                 <tr>
                     <td>
                         <select name="data.characteristic">
-                            {{#select data.characteristic }}
+                            {{#select data.data.characteristic }}
                             {{#each config.rollableCharacteristic as |name type| }}
                                 <option value="{{type}}">{{ localize name }}</option>
                             {{/each }}
                             {{/select }}
                         </select>
                     </td>
-                    <td><input name="data.isAdvanced" type="checkbox" {{checked data.isAdvanced}} data-dtype="Boolean"/></td>
+                    <td><input name="data.isAdvanced" type="checkbox" {{checked data.data.isAdvanced}} data-dtype="Boolean"/></td>
                 </tr>
             </table>
         </article>
