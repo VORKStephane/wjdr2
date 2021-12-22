@@ -2,18 +2,6 @@
   display: flex;
   flex-direction: column;
 }
-.sheet .actorSheet .rollableAttributesSection {
-  margin-top: 5px;
-  width: 100%;
-  display: flex;
-  align-items: stretch center;
-  align-content: center space-evenly;
-  justify-content: center;
-}
-.sheet .actorSheet .rollableAttributesSection .rollableAttributeButton {
-  flex-basis: auto;
-  border-radius: 10px;
-}
 .sheet .itemSheet {
   height: 100%;
   display: flex;
@@ -40,4 +28,16 @@
 }
 .sheet .itemSheet .mutationVariantsDescription .editor {
   height: 100%;
+}
+.sheet .actorSheet .rollableAttributesSection {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: stretch center;
+  align-content: center space-evenly;
+  justify-content: center;
+}
+.sheet .actorSheet .rollableAttributesSection .rollableAttributeButton {
+  flex-basis: auto;
+  border-radius: 50%;
 }
