@@ -1,12 +1,11 @@
 <div>
-    <p>BIOGRAPHY AND PERSONAL DETAILS</p>
-    
     <article id="basicInfo">
         <!--AGE, HEIGHT, WEIGHT on one line -->
-
+        <h2>{{ localize "wjdr2.actors.description.basicInfo" }}</h2>
+        
     </article>
     <article class="biography">
-        <h2>Biographie</h2>
+        <h2>{{ localize "wjdr2.actors.description.biography" }}</h2>
         {{editor content=data.data.biography target="data.data.biography" button=true owner=owner editable="editable" }}
     </article>
 </div>

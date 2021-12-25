@@ -41,6 +41,10 @@
                 "mag": "Mag",
                 "ip": "PF",
                 "fp": "PD"
+            },
+            "description" : {
+                "basicInfo" : "Informations basiques",
+                "biography" : "Biographie"
             }
         },
         "items": {
