@@ -49,6 +49,9 @@
   flex-basis: auto;
   border-radius: 50%;
 }
+.sheet .actorSheet .hairColor {
+  width: 100%;
+}
 .sheet .actorSheet .biography {
   height: 100%;
   display: flex;
