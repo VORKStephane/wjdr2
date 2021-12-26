@@ -57,6 +57,21 @@
                     "lightDarkBlond" : "Châtain clair",
                     "redhead" : "Roux",
                     "silver" : "Argenté"
+                },
+                "eyeColor" : "Couleur des yeux",
+                "eye" : {
+                    "black" : "Noir",
+                    "blue" : "Bleu",
+                    "brown" : "Marron",
+                    "cooper" : "Cuivre",
+                    "darkBrown" : "Marron foncé",
+                    "grayBlue" : "Bleu-gris",
+                    "green" : "Vert",
+                    "hazel" : "Noisette",
+                    "lightBrown" : "Marron clair",
+                    "lightGray" : "Gris clair",
+                    "purple" : "Mauve",
+                    "silver" : "Argenté"
                 }
             }
         },

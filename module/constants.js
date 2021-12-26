@@ -86,6 +86,21 @@ wjdr2.rarity = {
     rare : "wjdr2.items.rarity.rare" 
 };
 
+wjdr2.eye = {
+	black : "wjdr2.actors.description.eye.black",
+	blue : "wjdr2.actors.description.eye.blue",
+	brown : "wjdr2.actors.description.eye.brown",
+	cooper : "wjdr2.actors.description.eye.cooper",
+	darkBrown : "wjdr2.actors.description.eye.darkBrown",
+	grayBlue : "wjdr2.actors.description.eye.grayBlue",
+	green : "wjdr2.actors.description.eye.green",
+	hazel : "wjdr2.actors.description.eye.hazel",
+	lightBrown : "wjdr2.actors.description.eye.lightBrown",
+	lightGray : "wjdr2.actors.description.eye.lightGray",
+	purple : "wjdr2.actors.description.eye.purple",
+	silver : "wjdr2.actors.description.eye.silver"
+};
+
 wjdr2.hair = {
 	ashBlond : "wjdr2.actors.description.hair.ashBlond",
 	auburn : "wjdr2.actors.description.hair.auburn",
