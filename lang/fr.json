@@ -44,7 +44,20 @@
             },
             "description" : {
                 "basicInfo" : "Informations basiques",
-                "biography" : "Biographie"
+                "biography" : "Biographie",
+                "hairColor" : "Couleur des cheveux",
+                "hair" : {
+                    "ashBlond" : "Blond cendré",
+                    "auburn" : "Auburn",
+                    "black" : "Noir",
+                    "blond" : "Blond",
+                    "brown" : "Brun",
+                    "darkBlond" : "Châtain",
+                    "darkBlue" : "Bleu foncé",
+                    "lightDarkBlond" : "Châtain clair",
+                    "redhead" : "Roux",
+                    "silver" : "Argenté"
+                }
             }
         },
         "items": {
