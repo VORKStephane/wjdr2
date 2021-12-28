@@ -86,6 +86,19 @@ wjdr2.rarity = {
     rare : "wjdr2.items.rarity.rare" 
 };
 
+wjdr2.race = {
+	dwarf : "wjdr2.actors.description.race.dwarf",
+	elf : "wjdr2.actors.description.race.elf",
+	halfling : "wjdr2.actors.description.race.halfling",
+	human : "wjdr2.actors.description.race.human"
+};
+
+wjdr2.gender = {
+	male : "wjdr2.actors.description.gender.male",
+	female : "wjdr2.actors.description.gender.female",
+	hermaphrodite : "wjdr2.actors.description.gender.hermaphrodite"
+}
+
 wjdr2.eye = {
 	black : "wjdr2.actors.description.eye.black",
 	blue : "wjdr2.actors.description.eye.blue",

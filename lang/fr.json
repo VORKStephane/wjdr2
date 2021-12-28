@@ -44,6 +44,22 @@
             },
             "description" : {
                 "basicInfo" : "Informations basiques",
+                "raceLabel" : "Race",
+                "race" : {
+                    "dwarf" : "Nain",
+                    "elf" : "Elf",
+                    "halfling" : "Halfling",
+                    "human" : "Humain"
+                },
+                "genderLabel" : "Genre",
+                "gender" : {
+                    "male" : "Mâle",
+                    "female" : "Femme",
+                    "hermaphrodite" : "Hermaphrodite"
+                },
+                "physicalInfo" : "Informations physiques",
+                "background" : "Background",
+                "origin" : "Origines",
                 "biography" : "Biographie",
                 "hairColor" : "Couleur des cheveux",
                 "hair" : {

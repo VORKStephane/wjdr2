@@ -1,8 +1,35 @@
 <div>
-    <p>BIOGRAPHY AND PERSONAL DETAILS</p>
-    
     <article id="basicInfo">
+        <h2>{{ localize "wjdr2.actors.description.basicInfo" }}</h2>
+        <!-- RACE, GENDER -->
+        <table>
+            <tr>
+                <th>{{ localize "wjdr2.actors.description.raceLabel" }}</th>
+                <th>{{ localize "wjdr2.actors.description.genderLabel" }}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.race" class="race">
+                        {{#select data.data.race }}
+                        {{#each config.race as |name type| }}
+                            <option value="{{type}}">{{ localize name }}</option>
+                        {{/each }}
+                        {{/select }}
+                    </select>
+                </td>
+                <td>
+                    <select name="data.gender" class="gender">
+                        {{#select data.data.gender }}
+                        {{#each config.gender as |name type| }}
+                            <option value="{{type}}">{{ localize name }}</option>
+                        {{/each }}
+                        {{/select }}
+                    </select>
+                </td>
+            </tr>
+        </table>
         <!--AGE, HEIGHT, WEIGHT on one line -->
+        <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
         <table>
             <tr>
                 <th>{{ localize "wjdr2.actors.description.eyeColor" }}</th>
@@ -30,10 +57,12 @@
             </tr>
         </table>
         <!--EYES, HAIR, DISTINCTIVE SIGN-->
-
     </article>
     <article class="biography">
-        <h2>Biographie</h2>
+        <h2>{{ localize "wjdr2.actors.description.background" }}</h2>
+        <h3>{{ localize "wjdr2.actors.description.origin" }}</h3>
+        <!--PROVENANCE, FAMILLE-->
+        <h3>{{ localize "wjdr2.actors.description.biography" }}</h3>
         {{editor content=data.data.biography target="data.data.biography" button=true owner=owner editable="editable" }}
     </article>
 </div>
