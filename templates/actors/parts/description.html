@@ -1,73 +1,68 @@
-<div>
-    <article id="basicInfo">
-        <h2>{{ localize "wjdr2.actors.description.basicInfo" }}</h2>
-        <!-- RACE, GENDER -->
-        <table>
-            <tr>
-                <th>{{ localize "wjdr2.actors.description.raceLabel" }}</th>
-                <th>{{ localize "wjdr2.actors.description.genderLabel" }}</th>
-            </tr>
-            <tr>
-                <td>
-                    <select name="data.race" class="race">
-                        {{#select data.data.race }}
-                        {{#each config.race as |name type| }}
-                            <option value="{{type}}">{{ localize name }}</option>
-                        {{/each }}
-                        {{/select }}
-                    </select>
-                </td>
-                <td>
-                    <select name="data.gender" class="gender">
-                        {{#select data.data.gender }}
-                        {{#each config.gender as |name type| }}
-                            <option value="{{type}}">{{ localize name }}</option>
-                        {{/each }}
-                        {{/select }}
-                    </select>
-                </td>
-            </tr>
-        </table>
-    </article>
-    <article class="physicalInfo">
-        <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
-        <div class="oneLineInfo">
-            <label for="data.age" class="resource-label">{{ localize "wjdr2.actors.description.age" }}</label>
-            <input type="text" name="data.age" value="{{data.data.age}}" data-dtype="Number" />
-            <label for="data.height" class="resource-label">{{ localize "wjdr2.actors.description.height" }}</label>
-            <input type="text" name="data.height" value="{{data.data.height}}" data-dtype="Number" />
-            <label for="data.weight" class="resource-label">{{ localize "wjdr2.actors.description.weight" }}</label>
-            <input type="text" name="data.weight" value="{{data.data.weight}}" data-dtype="Number" />
-        </div>
-        <table>
-            <tr>
-                <th>{{ localize "wjdr2.actors.description.eyeColor" }}</th>
-                <th>{{ localize "wjdr2.actors.description.hairColor" }}</th>
-            </tr>
-            <tr>
-                <td>
-                    <select name="data.eyeColor" class="eyeColor">
-                        {{#select data.data.eyeColor }}
-                        {{#each config.eye as |name type| }}
-                            <option value="{{type}}">{{ localize name }}</option>
-                        {{/each }}
-                        {{/select }}
-                    </select>
-                </td>
-                <td>
-                    <select name="data.hairColor" class="hairColor">
-                        {{#select data.data.hairColor }}
-                        {{#each config.hair as |name type| }}
-                            <option value="{{type}}">{{ localize name }}</option>
-                        {{/each }}
-                        {{/select }}
-                    </select>
-                </td>
-            </tr>
-        </table>
-        <h3>{{ localize "wjdr2.actors.description.distinctiveSignLabel" }}</h3>
-        {{editor content=data.data.specialTrait target="data.specialTrait" button=true owner=owner editable="editable" }}
-    </article>
+<div class="characterDescription">
+    <div class="basicInfo">
+        <article class="characterInfo basicInfoItem">
+            <h2>{{ localize "wjdr2.actors.description.basicInfo" }}</h2>
+            <div class="oneLineInfo">
+                <label for="data.race" class="resource-label">{{ localize "wjdr2.actors.description.raceLabel" }}</label>
+                <select name="data.race" class="race">
+                    {{#select data.data.race }}
+                    {{#each config.race as |name type| }}
+                        <option value="{{type}}">{{ localize name }}</option>
+                    {{/each }}
+                    {{/select }}
+                </select>
+            </div>
+            <div class="oneLineInfo">
+                <label for="data.gender" class="resource-label">{{ localize "wjdr2.actors.description.genderLabel" }}</label>
+                <select name="data.gender" class="gender">
+                    {{#select data.data.gender }}
+                    {{#each config.gender as |name type| }}
+                        <option value="{{type}}">{{ localize name }}</option>
+                    {{/each }}
+                    {{/select }}
+                </select>
+            </div>
+        </article>
+        <article class="physicalInfo basicInfoItem">
+            <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
+            <div class="oneLineInfo">
+                <label for="data.age" class="resource-label">{{ localize "wjdr2.actors.description.age" }}</label>
+                <input type="text" name="data.age" value="{{data.data.age}}" data-dtype="Number" />
+                <label for="data.height" class="resource-label">{{ localize "wjdr2.actors.description.height" }}</label>
+                <input type="text" name="data.height" value="{{data.data.height}}" data-dtype="Number" />
+                <label for="data.weight" class="resource-label">{{ localize "wjdr2.actors.description.weight" }}</label>
+                <input type="text" name="data.weight" value="{{data.data.weight}}" data-dtype="Number" />
+            </div>
+            <table>
+                <tr>
+                    <th>{{ localize "wjdr2.actors.description.eyeColor" }}</th>
+                    <th>{{ localize "wjdr2.actors.description.hairColor" }}</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="data.eyeColor" class="eyeColor">
+                            {{#select data.data.eyeColor }}
+                            {{#each config.eye as |name type| }}
+                                <option value="{{type}}">{{ localize name }}</option>
+                            {{/each }}
+                            {{/select }}
+                        </select>
+                    </td>
+                    <td>
+                        <select name="data.hairColor" class="hairColor">
+                            {{#select data.data.hairColor }}
+                            {{#each config.hair as |name type| }}
+                                <option value="{{type}}">{{ localize name }}</option>
+                            {{/each }}
+                            {{/select }}
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <h3>{{ localize "wjdr2.actors.description.distinctiveSignLabel" }}</h3>
+            {{editor content=data.data.specialTrait target="data.specialTrait" button=true owner=owner editable="editable" }}
+        </article>
+    </div>
     <article class="biography">
         <h2>{{ localize "wjdr2.actors.description.background" }}</h2>
         <h3>{{ localize "wjdr2.actors.description.origin" }}</h3>

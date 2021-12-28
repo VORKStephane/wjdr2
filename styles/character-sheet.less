@@ -11,29 +11,60 @@
             align-items: stretch center;
             align-content: center space-evenly;
             justify-content: center;
+
             .rollableAttributeButton {
                 flex-basis: auto;
                 border-radius: 50%;
             }
         }
 
-        .oneLineInfo {
-            .shrinked {
-                width: 50%;
-            }
-
-            .numberOfSiblings {
-                width: 30px;
-            }
-        }
-
-        .biography {
-            height: 100%;
+        .characterDescription {
             display: flex;
             flex-direction: column;
-            
-            .editor {
+            width: 100%;
+            padding: 5px;
+
+            h2 {
+                text-align: center;
+            }
+
+            .basicInfo {
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: row;
+
+                .basicInfoItem {
+                    border: 1px solid black;
+                    flex-basis: 100%;
+                    
+                    padding: 5px;
+                }
+            }
+
+            .biography {
                 height: 100%;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                padding: 5px;
+                
+                .editor {
+                    height: 100%;
+                }
+            }
+
+            .oneLineInfo {
+                select {
+                    width: 100%;
+                }
+
+                .shrinked {
+                    width: 50%;
+                }
+    
+                .numberOfSiblings {
+                    width: 30px;
+                }
             }
         }
     }

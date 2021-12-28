@@ -61,17 +61,41 @@
   flex-basis: auto;
   border-radius: 50%;
 }
-.sheet .actorSheet .oneLineInfo .shrinked {
-  width: 50%;
+.sheet .actorSheet .characterDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
 }
-.sheet .actorSheet .oneLineInfo .numberOfSiblings {
-  width: 30px;
+.sheet .actorSheet .characterDescription h2 {
+  text-align: center;
 }
-.sheet .actorSheet .biography {
+.sheet .actorSheet .characterDescription .basicInfo {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sheet .actorSheet .characterDescription .basicInfo .basicInfoItem {
+  border: 1px solid black;
+  flex-basis: 100%;
+  padding: 5px;
+}
+.sheet .actorSheet .characterDescription .biography {
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
 }
-.sheet .actorSheet .biography .editor {
+.sheet .actorSheet .characterDescription .biography .editor {
   height: 100%;
+}
+.sheet .actorSheet .characterDescription .oneLineInfo select {
+  width: 100%;
+}
+.sheet .actorSheet .characterDescription .oneLineInfo .shrinked {
+  width: 50%;
+}
+.sheet .actorSheet .characterDescription .oneLineInfo .numberOfSiblings {
+  width: 30px;
 }
