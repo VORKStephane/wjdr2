@@ -128,14 +128,17 @@
           }
         },
         "gender" : "",
-        "age" : 30,
+        "age" : 0,
         "eyeColor" : "",
         "hairColor" : "",
         "height" : "",
         "weight" : "",
         "specialTrait" : "",
         "astralSign" : "",
-        "biography" : ""
+        "biography" : "",
+        "numberOfBrother" : 0,
+        "numberOfSister" : 0,
+        "placeOfOrigin" : ""
       },
       "npc" : {
         "templates" : ["basic"]

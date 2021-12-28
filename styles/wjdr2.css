@@ -50,11 +50,19 @@
   flex-basis: auto;
   border-radius: 50%;
 }
-.sheet .actorSheet .eyeColor {
+.sheet .actorSheet .oneLineInfo {
   width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center space-evenly;
+  column-gap: 10px;
 }
-.sheet .actorSheet .hairColor {
-  width: 100%;
+.sheet .actorSheet .oneLineInfo .numberOfSiblings {
+  width: 30px;
 }
 .sheet .actorSheet .biography {
   height: 100%;

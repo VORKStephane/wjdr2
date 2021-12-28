@@ -28,8 +28,17 @@
                 </td>
             </tr>
         </table>
-        <!--AGE, HEIGHT, WEIGHT on one line -->
+    </article>
+    <article class="physicalInfo">
         <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
+        <div class="oneLineInfo">
+            <label for="data.age" class="resource-label">{{ localize "wjdr2.actors.description.age" }}</label>
+            <input type="text" name="data.age" value="{{data.data.age}}" data-dtype="Number" />
+            <label for="data.height" class="resource-label">{{ localize "wjdr2.actors.description.height" }}</label>
+            <input type="text" name="data.height" value="{{data.data.height}}" data-dtype="Number" />
+            <label for="data.weight" class="resource-label">{{ localize "wjdr2.actors.description.weight" }}</label>
+            <input type="text" name="data.weight" value="{{data.data.weight}}" data-dtype="Number" />
+        </div>
         <table>
             <tr>
                 <th>{{ localize "wjdr2.actors.description.eyeColor" }}</th>
@@ -56,13 +65,22 @@
                 </td>
             </tr>
         </table>
-        <!--EYES, HAIR, DISTINCTIVE SIGN-->
+        <h3>{{ localize "wjdr2.actors.description.distinctiveSignLabel" }}</h3>
+        {{editor content=data.data.specialTrait target="data.specialTrait" button=true owner=owner editable="editable" }}
     </article>
     <article class="biography">
         <h2>{{ localize "wjdr2.actors.description.background" }}</h2>
         <h3>{{ localize "wjdr2.actors.description.origin" }}</h3>
-        <!--PROVENANCE, FAMILLE-->
+        <div class="oneLineInfo">
+            <!--PROVENANCE, FAMILLE-->
+            <label for="data.placeOfOrigin" class="resource-label">{{ localize "wjdr2.actors.description.placeOfBirth"}}</label>
+            <input type="text" name="data.placeOfOrigin" value="{{data.data.placeOfOrigin}}" data-dtype="Text" class="shrinked"/>
+            <label for="data.numberOfBrother" class="resource-label">{{ localize "wjdr2.actors.description.numberOfSiblings" }}</label>
+            <input type="text" name="data.numberOfBrother" value="{{data.data.numberOfBrother}}" data-dtype="Number" class="numberOfSiblings"/>
+            <label for="data.numberOfSister" class="resource-label">/</label>
+            <input type="text" name="data.numberOfSister" value="{{data.data.numberOfSister}}" data-dtype="Number" class="numberOfSiblings"/>
+        </div>
         <h3>{{ localize "wjdr2.actors.description.biography" }}</h3>
-        {{editor content=data.data.biography target="data.data.biography" button=true owner=owner editable="editable" }}
+        {{editor content=data.data.biography target="data.biography" button=true owner=owner editable="editable" }}
     </article>
 </div>

@@ -44,6 +44,9 @@
             },
             "description" : {
                 "basicInfo" : "Informations basiques",
+                "age" : "Age",
+                "weight" : "Poids",
+                "height" : "Taille",
                 "raceLabel" : "Race",
                 "race" : {
                     "dwarf" : "Nain",
@@ -88,7 +91,10 @@
                     "lightGray" : "Gris clair",
                     "purple" : "Mauve",
                     "silver" : "Argenté"
-                }
+                },
+                "distinctiveSignLabel" : "Signes distinctifs",
+                "numberOfSiblings" : "Nombre de frères / Soeurs",
+                "placeOfBirth" : "Lieu de naissance"
             }
         },
         "items": {
