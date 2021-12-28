@@ -12,6 +12,17 @@
   min-height: 50px;
   height: 100%;
 }
+.sheet form .oneLineInfo {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  column-gap: 10px;
+}
 .sheet .itemSheet {
   height: 100%;
   display: flex;
@@ -50,16 +61,8 @@
   flex-basis: auto;
   border-radius: 50%;
 }
-.sheet .actorSheet .oneLineInfo {
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center space-evenly;
-  column-gap: 10px;
+.sheet .actorSheet .oneLineInfo .shrinked {
+  width: 50%;
 }
 .sheet .actorSheet .oneLineInfo .numberOfSiblings {
   width: 30px;
