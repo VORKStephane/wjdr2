@@ -22,9 +22,6 @@
                     {{/select }}
                 </select>
             </div>
-        </article>
-        <article class="physicalInfo basicInfoItem">
-            <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
             <div class="oneLineInfo">
                 <label for="data.age" class="resource-label">{{ localize "wjdr2.actors.description.age" }}</label>
                 <input type="text" name="data.age" value="{{data.data.age}}" data-dtype="Number" />
@@ -33,6 +30,9 @@
                 <label for="data.weight" class="resource-label">{{ localize "wjdr2.actors.description.weight" }}</label>
                 <input type="text" name="data.weight" value="{{data.data.weight}}" data-dtype="Number" />
             </div>
+        </article>
+        <article class="physicalInfo basicInfoItem">
+            <h2>{{ localize "wjdr2.actors.description.physicalInfo" }}</h2>
             <table>
                 <tr>
                     <th>{{ localize "wjdr2.actors.description.eyeColor" }}</th>

@@ -1,6 +1,7 @@
 .sheet form {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .sheet form table tr td {
   text-align: center;
@@ -9,8 +10,8 @@
   width: 100%;
 }
 .sheet form .editor {
-  min-height: 50px;
   height: 100%;
+  overflow: scroll;
 }
 .sheet form .oneLineInfo {
   width: 100%;
@@ -61,41 +62,56 @@
   flex-basis: auto;
   border-radius: 50%;
 }
-.sheet .actorSheet .characterDescription {
+.sheet .actorSheet .sheet-body {
+  height: 100%;
+}
+.sheet .actorSheet .sheet-body .tab {
+  height: 100%;
+}
+.sheet .actorSheet .sheet-body .tab .editor {
+  height: 100%;
+}
+.sheet .actorSheet .sheet-body .tab .characterDescription {
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
   padding: 5px;
 }
-.sheet .actorSheet .characterDescription h2 {
+.sheet .actorSheet .sheet-body .tab .characterDescription h2 {
   text-align: center;
 }
-.sheet .actorSheet .characterDescription .basicInfo {
+.sheet .actorSheet .sheet-body .tab .characterDescription .basicInfo {
   flex-basis: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
-.sheet .actorSheet .characterDescription .basicInfo .basicInfoItem {
+.sheet .actorSheet .sheet-body .tab .characterDescription .basicInfo .basicInfoItem {
   border: 1px solid black;
+  height: 100%;
   flex-basis: 100%;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.sheet .actorSheet .characterDescription .biography {
+.sheet .actorSheet .sheet-body .tab .characterDescription .basicInfo .basicInfoItem .editor {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.sheet .actorSheet .sheet-body .tab .characterDescription .biography {
   height: 100%;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   padding: 5px;
 }
-.sheet .actorSheet .characterDescription .biography .editor {
-  height: 100%;
-}
-.sheet .actorSheet .characterDescription .oneLineInfo select {
+.sheet .actorSheet .sheet-body .tab .characterDescription .oneLineInfo select {
   width: 100%;
 }
-.sheet .actorSheet .characterDescription .oneLineInfo .shrinked {
+.sheet .actorSheet .sheet-body .tab .characterDescription .oneLineInfo .shrinked {
   width: 50%;
 }
-.sheet .actorSheet .characterDescription .oneLineInfo .numberOfSiblings {
+.sheet .actorSheet .sheet-body .tab .characterDescription .oneLineInfo .numberOfSiblings {
   width: 30px;
 }
