@@ -16,6 +16,9 @@
 
       //Item Sheet Partials
       "systems/wjdr2/templates/items/parts/description.html",
-      "systems/wjdr2/templates/items/parts/item-properties.html"
+      "systems/wjdr2/templates/items/parts/item-properties.html",
+      "systems/wjdr2/templates/items/parts/career-buyable.html",
+      "systems/wjdr2/templates/items/parts/career-requirement.html",
+      "systems/wjdr2/templates/items/parts/career-description.html"
     ]);
   };

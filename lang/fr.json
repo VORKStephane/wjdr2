@@ -114,6 +114,11 @@
                 "madness" : "Folie",
                 "mutation" : "Mutation"
             },
+            "navLabel" : {
+                "buyable" : "Upgrades",
+                "requirement" : "Pré-requis",
+                "description" : "Description"
+            },
             "label": {
                 "newItem" : "Nouveau {itemType}", 
                 "price" : "Prix",
@@ -238,7 +243,9 @@
             },
             "career" : {
                 "fromCareerLabel" : "Accès",
-                "toCareerLabel" : "Débouchés"
+                "toCareerLabel" : "Débouchés",
+                "itemsNeededLabel" : "Dotations",
+                "isAdvancedLabel" : "Carrière avancée ?"
             }
         }
     }
