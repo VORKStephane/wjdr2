@@ -7,7 +7,8 @@ export default class WjdrItemSheet extends ItemSheet {
         return mergeObject(super.defaultOptions, {
             width : 530,
 			height : 480,
-			classes : ["wjdrv2", "sheet", "item"]
+			classes : ["wjdrv2", "sheet", "item"],
+			tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body"}]
         });
     }
 
