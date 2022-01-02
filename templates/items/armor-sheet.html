@@ -1,0 +1,31 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+
+    <section class="itemSheet">
+        {{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+
+        <article class="armorProperties">
+            <table>
+                <tr>
+                    <th>{{ localize "wjdr2.items.header.coveredZones" }}</th>
+                    <th>{{ localize "wjdr2.items.header.defense" }}</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="data.protectedZones">
+                            {{#select data.data.protectedZones }}
+                            {{#each config.damageLocation as |name type| }}
+                                <option value="{{type}}">{{ localize name }}</option>
+                            {{/each }}
+                            {{/select }}
+                        </select>
+                    </td>
+                    <td><input type="text" name="data.protectionValue" value="{{data.data.protectionValue}}" data-dtype="Number" /></td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</form>

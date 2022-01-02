@@ -96,13 +96,24 @@
                 "distinctiveSignLabel" : "Signes distinctifs",
                 "numberOfSiblings" : "Nombre de frères / Soeurs",
                 "placeOfBirth" : "Lieu de naissance"
+            },
+            "damageLocation" : {
+                "head" : "Tête",
+                "body" : "Corps",
+                "leftArm" : "Bras gauche",
+                "rightArm" : "Bras droit",
+                "leftLeg" : "Jambe gauche",
+                "rightLeg" : "Jambe droite",
+                "all" : "Toutes"
             }
         },
         "items": {
             "header": {
                 "commonValues": "Propriétés de l'objet",
                 "weapon": "Propriété de l'arme",
-                "description": "Description"
+                "description": "Description",
+                "defense" : "Points d'armure",
+                "coveredZones" : "Zones couvertes"
             },
             "itemType": {
                 "item": "Objet",

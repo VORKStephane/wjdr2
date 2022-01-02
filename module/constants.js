@@ -126,3 +126,13 @@ wjdr2.hair = {
 	redhead : "wjdr2.actors.description.hair.redhead",
 	silver : "wjdr2.actors.description.hair.silver",
 };
+
+wjdr2.damageLocation = {
+	all : "wjdr2.actors.damageLocation.all",
+	head : "wjdr2.actors.damageLocation.head",
+	body : "wjdr2.actors.damageLocation.body",
+	leftArm : "wjdr2.actors.damageLocation.leftArm",
+	rightArm : "wjdr2.actors.damageLocation.rightArm",
+	leftLeg : "wjdr2.actors.damageLocation.leftLeg",
+	rightLeg : "wjdr2.actors.damageLocation.rightLeg"
+}
