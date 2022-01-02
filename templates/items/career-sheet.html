@@ -1,0 +1,35 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <table>
+      <tr>
+        <th>{{ localize "wjdr2.actors.characteristics.ws" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.bs" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.s" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.t" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.ag" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.int" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.wp" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.fel" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.a" }}</th>
+        <th>{{ localize "wjdr2.actors.characteristics.mag" }}</th>
+      </tr>
+      <tr>
+        <td><input type="text" name="data.profile.ws" value="{{data.data.profile.ws}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.bs" value="{{data.data.profile.bs}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.s" value="{{data.data.profile.s}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.t" value="{{data.data.profile.t}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.ag" value="{{data.data.profile.ag}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.int" value="{{data.data.profile.int}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.wp" value="{{data.data.profile.wp}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.fel" value="{{data.data.profile.fel}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.a" value="{{data.data.profile.a}}" data-dtype="Number" /></td>
+        <td><input type="text" name="data.profile.mag" value="{{data.data.profile.mag}}" data-dtype="Number" /></td>
+      </tr>
+    </table>
+    <section class="itemSheet">
+		{{> "systems/wjdr2/templates/items/parts/description.html" }}
+    </section>
+</form>

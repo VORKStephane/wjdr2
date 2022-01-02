@@ -145,7 +145,7 @@
       }
     },
     "Item": {
-      "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness"],
+      "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness", "career"],
       "templates" : {
         "itemPrice" : { "price" : 0 },
         "itemWeight" : { "weight" : 0 },
@@ -206,7 +206,8 @@
         "variantes" : ""
       }, 
       "career" : {
-        "description" : "",
+        "templates" : ["itemDescription"],
+        "advanced" : false,
         "profile" : {
           "ws" : 0,
           "bs" : 0,
