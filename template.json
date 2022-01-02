@@ -204,6 +204,26 @@
         "fearIndex" : 1,
         "multiple" : false,
         "variantes" : ""
+      }, 
+      "career" : {
+        "description" : "",
+        "profile" : {
+          "ws" : 0,
+          "bs" : 0,
+          "s" : 0,
+          "t" : 0,
+          "ag" : 0,
+          "int" : 0,
+          "wp" : 0,
+          "fel" : 0,
+          "a" : 0,
+          "mag" : 0
+        },
+        "skills" : [],
+        "traits" : [],
+        "itemsNeeded" : [],
+        "fromCareer" : [],
+        "toCareer" : []
       }
     }
   }

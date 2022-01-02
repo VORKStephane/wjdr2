@@ -11,7 +11,8 @@
         "TypeSkill" : "Compétence",
         "TypeSpell" : "Sort",
         "TypeMutation" : "Mutation",
-        "TypeMadness" : "Folie"
+        "TypeMadness" : "Folie",
+        "TypeCareer" : "Carrière"
     },
     "wjdr2": {
         "actors": {
