@@ -45,6 +45,15 @@
 .sheet .itemSheet .mutationVariantsDescription .editor {
   height: 100%;
 }
+.sheet .itemSheet .careerElements .tableRow {
+  display: flex;
+  flex-direction: row;
+}
+.sheet .itemSheet .careerElements .tableRow article {
+  border: 1px solid black;
+  padding: 5px;
+  flex-grow: 1;
+}
 .sheet .actorSheet {
   height: 100%;
   display: flex;

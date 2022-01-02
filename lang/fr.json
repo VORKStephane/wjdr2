@@ -235,6 +235,10 @@
                 "variantHeader" : "Variantes",
                 "fearIndex" : "Indice de peur",
                 "isMultiple" : "Mutation multiple ?"
+            },
+            "career" : {
+                "fromCareerLabel" : "Accès",
+                "toCareerLabel" : "Débouchés"
             }
         }
     }
