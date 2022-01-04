@@ -8,19 +8,28 @@
 
 		<article id="weaponDescriptionSection">
 			<h2>{{ localize "wjdr2.items.header.weapon" }}</h2>
-			{{ localize "wjdr2.items.weapon.label.group" }}
-			<select name="data.group">
-				{{#select data.data.group}}
-				{{#each config.weaponGroups as |name type| }}
-					<option value="{{type}}">{{localize name }}</option>
-				{{/each }}
-				{{/select }}
-			</select>
-			<br>
-			{{ localize "wjdr2.items.weapon.label.damage" }}
-			<input name="data.damage" type="text" value="{{data.data.damage}}"/>
-
-			{{ localize "wjdr2.items.weapon.label.attributes" }}
+			<h3>{{ localize "wjdr2.items.header.weaponStats" }}</h3>
+			<table>
+				<tr>
+					<th>{{ localize "wjdr2.items.weapon.label.group" }}</th>
+					<th>{{ localize "wjdr2.items.weapon.label.damage" }}</th>
+					<th>{{ localize "wjdr2.items.weapon.label.attributes" }}</th>
+				</tr>	
+				<tr>
+					<td>
+						<select name="data.group">
+							{{#select data.data.group}}
+							{{#each config.weaponGroups as |name type| }}
+								<option value="{{type}}">{{localize name }}</option>
+							{{/each }}
+							{{/select }}
+						</select>
+					</td>
+					<td><input name="data.damage" type="text" value="{{data.data.damage}}"/></td>
+					<td></td>
+				</tr>
+			</table>
+			
 			<h3>{{ localize "wjdr2.items.weapon.header.range" }}</h3>
 			<table>
 				<tr>
