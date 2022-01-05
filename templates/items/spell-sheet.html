@@ -4,52 +4,18 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <section class="itemSheet">
-        <article id="spellDescriptionSection">
-            <h2>{{ localize "wjdr2.items.spell.header.spellValues" }}</h2>
-            <table>
-                <tr>
-                    <th>{{ localize "wjdr2.items.spell.label.magicType"}}</th>
-                    <th>{{ localize "wjdr2.items.spell.label.school" }}</th>
-                    <th>{{ localize "wjdr2.items.spell.label.difficulty" }}</th>
-                    <th>{{ localize "wjdr2.items.spell.label.incantationTime" }}</th>
-                </tr>
-                <tr>
-                    <td>
-                        <select name="data.magicType" class="magicTypeSelect">
-                            {{#select data.data.magicType }}
-                            {{#each config.magicTypes as |name type| }}
-                                <option value="{{type}}">{{ localize name }}</option>
-                            {{/each }}
-                            {{/select }}
-                        </select>
-                    </td>
-                    <td>
-                        <!-- TODO Add handling of magic type change -->
-                        <select name="data.school" class="spellSchoolSelect">
-                            {{#select data.data.school }}
-                            {{#each config.arcaneMagicSchools as |name type| }}
-                                <option value="{{type}}">{{ localize name }}</option>
-                            {{/each }}
-                            {{/select }}
-                        </select>
-                    </td>
-                    <td><input name="data.difficulty" type="text" value="{{data.data.difficulty}}" data-dtype="Number"/></td>
-                    <td><input name="data.incantationTime" type="text" value="{{data.data.incantationTime}}" data-dtype="Number"/></td>
-                </tr>
-            </table>
-            <h3>{{ localize "wjdr2.items.spell.header.ingredient"}}</h3>
-            <table>
-                <tr>
-                    <th>{{ localize "wjdr2.items.spell.label.ingredientName" }}</th>
-                    <th>{{ localize "wjdr2.items.spell.label.ingredientBonus" }}</th>
-                </tr>
-                <tr>
-                    <td><input type="text" name="data.ingredient" value="{{data.data.ingredient}}"/></td>
-                    <td><input type="text" name="data.ingredientBonus" value="{{data.data.ingredientBonus}}" data-dtype="Number"/></td>
-                </tr>
-            </table>
-        </article>
-        
-        {{> "systems/wjdr2/templates/items/parts/description.html" }}
+        <nav class="sheet-tabs tabs" data-group="primary">
+			<a class="item" data-tab="spell-property">{{ localize "wjdr2.items.spell.header.spellValues" }}</a>
+			<a class="item" data-tab="description">{{ localize "wjdr2.items.navLabel.description" }}</a>
+		</nav>
+
+		<section class="sheet-body">
+			<div class="tab spell-property" data-group="primary" data-tab="spell-property">
+				{{> "systems/wjdr2/templates/items/parts/spell-properties.html" }}
+			</div>
+			<div class="tab description" data-group="primary" data-tab="description">
+				{{> "systems/wjdr2/templates/items/parts/description.html" }}
+			</div>
+		</section>
     </section>
 </form>
