@@ -4,7 +4,19 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <section class="itemSheet">
-      {{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
-		  {{> "systems/wjdr2/templates/items/parts/description.html" }}
+
+        <nav class="sheet-tabs tabs" data-group="primary">
+			<a class="item" data-tab="common-item-property">{{ localize "wjdr2.items.header.commonValues" }}</a>
+			<a class="item" data-tab="description">{{ localize "wjdr2.items.navLabel.description" }}</a>
+		</nav>
+
+		<section class="sheet-body">
+			<div class="tab common-item-property" data-group="primary" data-tab="common-item-property">
+				{{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+			</div>
+			<div class="tab description" data-group="primary" data-tab="description">
+				{{> "systems/wjdr2/templates/items/parts/description.html" }}
+			</div>
+		</section>
     </section>
 </form>
