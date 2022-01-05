@@ -5,27 +5,18 @@
     </header>
 
     <section class="itemSheet">
-        {{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+        <nav class="sheet-tabs tabs" data-group="primary">
+			<a class="item active" data-tab="armor-property">{{ localize "wjdr2.items.navLabel.buyable" }}</a>
+			<a class="item" data-tab="common-item-property">{{ localize "wjdr2.items.navLabel.requirement" }}</a>
+		</nav>
 
-        <article class="armorProperties">
-            <table>
-                <tr>
-                    <th>{{ localize "wjdr2.items.header.coveredZones" }}</th>
-                    <th>{{ localize "wjdr2.items.header.defense" }}</th>
-                </tr>
-                <tr>
-                    <td>
-                        <select name="data.protectedZones">
-                            {{#select data.data.protectedZones }}
-                            {{#each config.damageLocation as |name type| }}
-                                <option value="{{type}}">{{ localize name }}</option>
-                            {{/each }}
-                            {{/select }}
-                        </select>
-                    </td>
-                    <td><input type="text" name="data.protectionValue" value="{{data.data.protectionValue}}" data-dtype="Number" /></td>
-                </tr>
-            </table>
-        </article>
+		<section class="sheet-body">
+			<div class="tab armor-property" data-group="primary" data-tab="armor-property">
+				{{> "systems/wjdr2/templates/items/parts/armor-properties.html" }}
+			</div>
+			<div class="tab common-item-property" data-group="primary" data-tab="common-item-property">
+				{{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+			</div>
+		</section>
     </section>
 </form>
