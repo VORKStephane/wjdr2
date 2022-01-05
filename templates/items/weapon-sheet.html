@@ -4,47 +4,22 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <section class="itemSheet">
-		{{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+		<nav class="sheet-tabs tabs" data-group="primary">
+			<a class="item active" data-tab="weapon-property">{{ localize "wjdr2.items.navLabel.buyable" }}</a>
+			<a class="item" data-tab="common-item-property">{{ localize "wjdr2.items.navLabel.requirement" }}</a>
+			<a class="item" data-tab="description">{{ localize "wjdr2.items.navLabel.description" }}</a>
+		</nav>
 
-		<article id="weaponDescriptionSection">
-			<h2>{{ localize "wjdr2.items.header.weapon" }}</h2>
-			<h3>{{ localize "wjdr2.items.header.weaponStats" }}</h3>
-			<table>
-				<tr>
-					<th>{{ localize "wjdr2.items.weapon.label.group" }}</th>
-					<th>{{ localize "wjdr2.items.weapon.label.damage" }}</th>
-					<th>{{ localize "wjdr2.items.weapon.label.attributes" }}</th>
-				</tr>	
-				<tr>
-					<td>
-						<select name="data.group">
-							{{#select data.data.group}}
-							{{#each config.weaponGroups as |name type| }}
-								<option value="{{type}}">{{localize name }}</option>
-							{{/each }}
-							{{/select }}
-						</select>
-					</td>
-					<td><input name="data.damage" type="text" value="{{data.data.damage}}"/></td>
-					<td></td>
-				</tr>
-			</table>
-			
-			<h3>{{ localize "wjdr2.items.weapon.header.range" }}</h3>
-			<table>
-				<tr>
-					<th>{{ localize "wjdr2.items.weapon.label.isCloseCombat" }}</th>
-					<th>{{ localize "wjdr2.items.weapon.label.range" }}</th>
-					<th>{{ localize "wjdr2.items.weapon.label.isOnlyCloseRange" }}</th>
-				</tr>
-				<tr>
-					<td><input name="data.closeCombat" type="checkbox" {{checked data.data.closeCombat}} data-dtype="Boolean"/></td>
-					<td><input name="data.range" type="text" value="{{data.data.range}}"/></td>
-					<td><input name="data.onlyCloseRange" type="checkbox" {{checked data.data.onlyCloseRange}} data-dtype="Boolean"/></td>
-				</tr>
-			</table>
-		</article>
-
-		{{> "systems/wjdr2/templates/items/parts/description.html" }}
+		<section class="sheet-body">
+			<div class="tab weapon-property" data-group="primary" data-tab="weapon-property">
+				{{> "systems/wjdr2/templates/items/parts/weapon-properties.html" }}
+			</div>
+			<div class="tab common-item-property" data-group="primary" data-tab="common-item-property">
+				{{> "systems/wjdr2/templates/items/parts/item-properties.html" }}
+			</div>
+			<div class="tab description" data-group="primary" data-tab="description">
+				{{> "systems/wjdr2/templates/items/parts/description.html" }}
+			</div>
+		</section>
     </section>
 </form>
