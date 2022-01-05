@@ -111,6 +111,7 @@
             "header": {
                 "commonValues": "Propriétés de l'objet",
                 "weapon": "Propriété de l'arme",
+                "armor": "Propriété de l'armure",
                 "weaponStats" : "Statistiques de l'arme",
                 "description": "Description",
                 "defense" : "Points d'armure",
