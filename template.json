@@ -80,7 +80,7 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness", "career"],
+    "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness", "career", "mechanics"],
     "templates": {
       "itemCommon": {
         "price": 0,
@@ -160,5 +160,8 @@
     "itemsNeeded": [],
     "fromCareer": [],
     "toCareer": []
+  },
+  "mechanics" : {
+    "templates": ["itemDescription"]
   }
 }

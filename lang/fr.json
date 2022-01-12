@@ -12,7 +12,8 @@
         "TypeSpell" : "Sort",
         "TypeMutation" : "Mutation",
         "TypeMadness" : "Folie",
-        "TypeCareer" : "Carrière"
+        "TypeCareer" : "Carrière",
+        "TypeMechanics" : "Mécanique de jeu"
     },
     "wjdr2": {
         "actors": {
