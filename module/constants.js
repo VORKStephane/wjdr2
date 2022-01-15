@@ -25,16 +25,16 @@ wjdr2.referenceBooks = {
 };
 
 wjdr2.ruleType = {
-	"Item" : "ITEM.TypeItem",
-	"Weapon" : "ITEM.TypeWeapon",
-	"Armor" : "ITEM.TypeArmor",
-	"Talent" : "ITEM.TypeTalent",
-	"Skill" : "ITEM.TypeSkill",
-	"Spell" : "ITEM.TypeSpell",
-	"Mutation" : "ITEM.TypeMutation",
-	"Madness" : "ITEM.TypeMadness",
-	"Career" : "ITEM.TypeCareer",
-	"Mechanics" : "ITEM.TypeMechanics"
+	"item" : "ITEM.TypeItem",
+	"weapon" : "ITEM.TypeWeapon",
+	"armor" : "ITEM.TypeArmor",
+	"talent" : "ITEM.TypeTalent",
+	"skill" : "ITEM.TypeSkill",
+	"spell" : "ITEM.TypeSpell",
+	"mutation" : "ITEM.TypeMutation",
+	"madness" : "ITEM.TypeMadness",
+	"career" : "ITEM.TypeCareer",
+	"mechanics" : "ITEM.TypeMechanics"
 }
 
 wjdr2.rollableCharacteristic = {
