@@ -7,7 +7,7 @@
         "TypeItem" : "Objet",
         "TypeWeapon" : "Arme",
         "TypeArmor" : "Armure",
-        "TypeTrait" : "Talent",
+        "TypeTalent" : "Talent",
         "TypeSkill" : "Compétence",
         "TypeSpell" : "Sort",
         "TypeMutation" : "Mutation",
@@ -146,7 +146,7 @@
                 "weapon": "Arme",
                 "armor": "Armure",
                 "spell": "Sort",
-                "trait": "Talent",
+                "talent": "Talent",
                 "skill": "Compétence",
                 "madness" : "Folie",
                 "mutation" : "Mutation"

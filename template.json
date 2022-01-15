@@ -80,7 +80,7 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "armor", "trait", "skill", "spell", "mutation", "madness", "career", "mechanics"],
+    "types": ["item", "weapon", "armor", "talent", "skill", "spell", "mutation", "madness", "career", "mechanics"],
     "templates": {
       "itemCommon": {
         "price": 0,
@@ -118,7 +118,7 @@
     "protectionValue": 1,
     "protectedZones": []
   },
-  "trait": {
+  "talent": {
     "templates": ["itemDescription", "ruleCommon","editable"]
   },
   "skill": {
@@ -126,7 +126,7 @@
     "isAdvanced": false,
     "specialization": "",
     "characteristic": "",
-    "traits": []
+    "talents": []
   },
   "spell": {
     "templates": ["itemDescription", "ruleCommon","editable"],
@@ -163,7 +163,7 @@
       "mag": 0
     },
     "skills": [],
-    "traits": [],
+    "talents": [],
     "itemsNeeded": [],
     "fromCareer": [],
     "toCareer": []

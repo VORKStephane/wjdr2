@@ -28,7 +28,7 @@ wjdr2.ruleType = {
 	"Item" : "ITEM.TypeItem",
 	"Weapon" : "ITEM.TypeWeapon",
 	"Armor" : "ITEM.TypeArmor",
-	"Trait" : "ITEM.TypeTrait",
+	"Talent" : "ITEM.TypeTalent",
 	"Skill" : "ITEM.TypeSkill",
 	"Spell" : "ITEM.TypeSpell",
 	"Mutation" : "ITEM.TypeMutation",
