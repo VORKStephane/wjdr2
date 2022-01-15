@@ -94,15 +94,18 @@
       "ruleCommon" : {
         "reference" : "",
         "ruleType" : ""
+      },
+      "editable" : {
+        "editable" : true
       }
     }
   },
   "item": {
-    "templates": ["itemCommon","itemDescription"],
+    "templates": ["itemCommon","itemDescription","editable"],
     "group": ""
   },
   "weapon": {
-    "templates": ["itemCommon","itemDescription"],
+    "templates": ["itemCommon","itemDescription","editable"],
     "group": "wjdr2.items.weapon.wGroup.none",
     "damage": "",
     "weaponAttributes": [],
@@ -111,22 +114,22 @@
     "onlyCloseRange": false
   },
   "armor": {
-    "templates": ["itemCommon","itemDescription"],
+    "templates": ["itemCommon","itemDescription","editable"],
     "protectionValue": 1,
     "protectedZones": []
   },
   "trait": {
-    "templates": ["itemDescription", "ruleCommon"]
+    "templates": ["itemDescription", "ruleCommon","editable"]
   },
   "skill": {
-    "templates": ["itemDescription", "ruleCommon"],
+    "templates": ["itemDescription", "ruleCommon","editable"],
     "isAdvanced": false,
     "specialization": "",
     "characteristic": "",
     "traits": []
   },
   "spell": {
-    "templates": ["itemDescription", "ruleCommon"],
+    "templates": ["itemDescription", "ruleCommon","editable"],
     "magicType": "",
     "school": "",
     "difficulty": 0,
@@ -135,16 +138,16 @@
     "ingredientBonus": 1
   },
   "madness": {
-    "templates": ["itemDescription", "ruleCommon"]
+    "templates": ["itemDescription", "ruleCommon","editable"]
   },
   "mutation": {
-    "templates": ["itemDescription", "ruleCommon"],
+    "templates": ["itemDescription", "ruleCommon","editable"],
     "fearIndex": 1,
     "multiple": false,
     "variantes": ""
   },
   "career": {
-    "templates": ["itemDescription", "ruleCommon"],
+    "templates": ["itemDescription", "ruleCommon","editable"],
     "advanced": false,
     "profile": {
       "ws": 0,
@@ -166,6 +169,6 @@
     "toCareer": []
   },
   "mechanics" : {
-    "templates": ["itemDescription", "ruleCommon"]
+    "templates": ["itemDescription", "ruleCommon","editable"]
   }
 }
