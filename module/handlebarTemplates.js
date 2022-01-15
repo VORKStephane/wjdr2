@@ -22,6 +22,7 @@
       "systems/wjdr2/templates/items/parts/armor-properties.html",
       "systems/wjdr2/templates/items/parts/career-buyable.html",
       "systems/wjdr2/templates/items/parts/career-requirement.html",
+      "systems/wjdr2/templates/items/parts/rule-elements.html",
       "systems/wjdr2/templates/items/parts/career-description.html"
     ]);
   };

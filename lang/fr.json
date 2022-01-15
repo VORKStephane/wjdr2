@@ -16,6 +16,29 @@
         "TypeMechanics" : "Mécanique de jeu"
     },
     "wjdr2": {
+        "references" : {
+            "BoD" : "Le Duché des Damnés",
+            "KA" : "Karak Azgal",
+            "KoG" : "Les Chevaliers du Graal",
+            "RIC" : "La Reine des Glaces",
+            "NDM" : "Les Maîtres de la Nuit",
+            "RC" : "Les Royaumes Renégats",
+            "SH" : "Les Héritiers de Sigmar",
+            "PoD1" : "Les Voies de la Damnation: Les Cendres de Middenheim",
+            "PoD2" : "Les Voies de la Damnation: Les Tours d'Altdorf",
+            "PoD3" : "Les Voies de la Damnation: Les Forges de Nuln",
+            "CHR" : "Les Fils du Roi Cornu",
+            "TC" : "Le Tome de la Corruption",
+            "RS" : "Le Royaume de la Sorcellerie",
+            "TS" : "Le Tome de la Rédemption",
+            "TT" : "Les Milles Trônes",
+            "TiT" : "Terreur à Talabheim",
+            "SoE" : "Shades of Empire",
+            "OWA" : "Arsenal du Vieux Monde",
+            "OWB" : "Le Bestiaire du Vieux Monde",
+            "C" : "Le Compagnon",
+            "WJDR" : "Warhammer - Le Livre de base"
+        },
         "actors": {
             "navLabel" : {
                 "abilities" : "Capacités",
@@ -134,6 +157,8 @@
                 "description" : "Description"
             },
             "label": {
+                "reference" : "Livre de référence",
+                "itemType" : "Type de mécanique",
                 "newItem" : "Nouveau {itemType}", 
                 "price" : "Prix",
                 "weight" : "Enc",

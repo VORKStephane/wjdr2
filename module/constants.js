@@ -1,5 +1,42 @@
 export const wjdr2 = {};
 
+wjdr2.referenceBooks = {
+	"BoD" : "wjdr2.references.BoD",
+	"KA" : "wjdr2.references.KA",
+	"KoG" : "wjdr2.references.KoG",
+	"RIC" : "wjdr2.references.RIC",
+	"NDM" : "wjdr2.references.NDM",
+	"RC" : "wjdr2.references.RC",
+	"SH" : "wjdr2.references.SH",
+	"PoD1" : "wjdr2.references.PoD1",
+	"PoD2" : "wjdr2.references.PoD2",
+	"PoD3" : "wjdr2.references.PoD3",
+	"CHR" : "wjdr2.references.CHR",
+	"TC" : "wjdr2.references.TC",
+	"RS" : "wjdr2.references.RS",
+	"TS" : "wjdr2.references.TS",
+	"TT" : "wjdr2.references.TT",
+	"TiT" : "wjdr2.references.TiT",
+	"SoE" : "wjdr2.references.SoE",
+	"OWA" : "wjdr2.references.OWA",
+	"OWB" : "wjdr2.references.OWB",
+	"C" : "wjdr2.references.C",
+	"WJDR" : "wjdr2.references.WJDR"
+};
+
+wjdr2.ruleType = {
+	"Item" : "ITEM.TypeItem",
+	"Weapon" : "ITEM.TypeWeapon",
+	"Armor" : "ITEM.TypeArmor",
+	"Trait" : "ITEM.TypeTrait",
+	"Skill" : "ITEM.TypeSkill",
+	"Spell" : "ITEM.TypeSpell",
+	"Mutation" : "ITEM.TypeMutation",
+	"Madness" : "ITEM.TypeMadness",
+	"Career" : "ITEM.TypeCareer",
+	"Mechanics" : "ITEM.TypeMechanics"
+}
+
 wjdr2.rollableCharacteristic = {
 	"ws" : "wjdr2.actors.characteristics.ws",
 	"bs" : "wjdr2.actors.characteristics.bs",

@@ -90,6 +90,10 @@
       },
       "itemDescription": {
         "description": ""
+      },
+      "ruleCommon" : {
+        "reference" : "",
+        "ruleType" : ""
       }
     }
   },
@@ -112,17 +116,17 @@
     "protectedZones": []
   },
   "trait": {
-    "templates": ["itemDescription"]
+    "templates": ["itemDescription", "ruleCommon"]
   },
   "skill": {
-    "templates": ["itemDescription"],
+    "templates": ["itemDescription", "ruleCommon"],
     "isAdvanced": false,
     "specialization": "",
     "characteristic": "",
     "traits": []
   },
   "spell": {
-    "templates": ["itemDescription"],
+    "templates": ["itemDescription", "ruleCommon"],
     "magicType": "",
     "school": "",
     "difficulty": 0,
@@ -131,16 +135,16 @@
     "ingredientBonus": 1
   },
   "madness": {
-    "templates": ["itemDescription"]
+    "templates": ["itemDescription", "ruleCommon"]
   },
   "mutation": {
-    "templates": ["itemDescription"],
+    "templates": ["itemDescription", "ruleCommon"],
     "fearIndex": 1,
     "multiple": false,
     "variantes": ""
   },
   "career": {
-    "templates": ["itemDescription"],
+    "templates": ["itemDescription", "ruleCommon"],
     "advanced": false,
     "profile": {
       "ws": 0,
@@ -162,6 +166,6 @@
     "toCareer": []
   },
   "mechanics" : {
-    "templates": ["itemDescription"]
+    "templates": ["itemDescription", "ruleCommon"]
   }
 }
