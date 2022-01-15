@@ -1,0 +1,428 @@
+{
+    "skill": {
+        "WJDR": {
+            "academicKnowledge": {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [
+                    "arts",
+                    "astronomy",
+                    "daemonology",
+                    "engineering",
+                    "genealogy/heraldry",
+                    "history",
+                    "law",
+                    "magic",
+                    "necromancy",
+                    "philosophy",
+                    "runes",
+                    "science",
+                    "strategy/tactics",
+                    "theology"
+                ],
+                "relatedTalents": []
+            },
+            "animalCare": {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "animalTraining": {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "blather": {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "channelling": {
+                "isAdvanced": true,
+                "characteristics": "wp",
+                "variants": [],
+                "relatedTalents": ["aethyricAttunement"]
+            },
+            "charm": {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "charmAnimal": {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": [
+                    "etiquette",
+                    "masterOrator",
+                    "publicSpeaking",
+                    "schemer",
+                    "streetwise"
+                ]
+            },
+            "command" : {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "commonKnowledge" : {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [
+                    "borderPrinces",
+                    "bretonnia",
+                    "dwarfs",
+                    "elves",
+                    "empire",
+                    "estalia",
+                    "halflings",
+                    "kislev",
+                    "norsca",
+                    "ogres",
+                    "tilea",
+                    "wasteland"
+                ],
+                "relatedTalents": ["seasonedTraveller"]
+            },
+            "concealment" : {
+                "isAdvanced": false,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": [
+                    "alleyCat",
+                    "rover",
+                    "tunnelRat"
+                ]
+            },
+            "consumeAlcohol" : {
+                "isAdvanced": false,
+                "characteristics": "t",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "disguise" : {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": ["mimic"]
+            },
+            "dodgeBlow" : {
+                "isAdvanced": true,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "drive" : {
+                "isAdvanced": false,
+                "characteristics": "s",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "evaluate" : {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": [
+                    "artistic", 
+                    "dealmaker"
+                ]
+            },
+            "followTrail" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "gamble" : {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": ["superNumerate"]
+            },
+            "gossip" : {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": [
+                    "etiquette",
+                    "streetwise"
+                ]
+            },
+            "haggle" : {
+                "isAdvanced": false,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": ["dealmaker"]
+            },
+            "heal" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": ["surgery"]
+            },
+            "hypnotysm" : {
+                "isAdvanced": true,
+                "characteristics": "wp",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "intimidate" : {
+                "isAdvanced": false,
+                "characteristics": "s",
+                "variants": [],
+                "relatedTalents": ["menacing"]
+            },
+            "lipReading" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": ["excellentVision"]
+            },
+            "magicalSense" : {
+                "isAdvanced": true,
+                "characteristics": "wp",
+                "variants": [],
+                "relatedTalents": ["aethyricAttunement"]
+            },
+            "navigation" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": [
+                    "orientation",
+                    "superNumerate"
+                ]
+            },
+            "outdoorSurvival" : {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "perception" : {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": [
+                    "acuteHearing",
+                    "excellentVision",
+                    "superNumerate",
+                    "trapfinder"
+                ]
+            },
+            "performer" : {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [
+                    "acrobat",
+                    "actor",
+                    "clown",
+                    "comedian",
+                    "dancer",
+                    "fireEater",
+                    "jester",
+                    "juggler",
+                    "mime",
+                    "musician",
+                    "palmReader",
+                    "singer",
+                    "storyteller"
+                ],
+                "relatedTalents": [
+                    "contortionist",
+                    "mimic"
+                ]
+            },
+            "pickLocks" : {
+                "isAdvanced": true,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": ["trapfinder"]
+            },
+            "preparePoison" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "readWrite" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": ["linguistics"]
+            },
+            "ride" : {
+                "isAdvanced": false,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": ["trickRiding"]
+            },
+            "row" : {
+                "isAdvanced": false,
+                "characteristics": "s",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "sail" : {
+                "isAdvanced": true,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "scaleSheerSurface" : {
+                "isAdvanced": false,
+                "characteristics": "s",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "search" : {
+                "isAdvanced": false,
+                "characteristics": "int",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "secretLanguage" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [
+                    "battleTongue",
+                    "guildTongue",
+                    "thievesTongue",
+                    "rangerTongue"
+                ],
+                "relatedTalents": []
+            },
+            "secretSigns" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [
+                    "scout",
+                    "templar",
+                    "thief",
+                    "ranger"
+                ],
+                "relatedTalents": []
+            },
+            "setTrap" : {
+                "isAdvanced": true,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "silentMove" : {
+                "isAdvanced": false,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": [
+                    "alleyCat",
+                    "rover",
+                    "tunnelRat"
+                ]
+            },
+            "shadowing" : {
+                "isAdvanced": true,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "sleightOfHand" : {
+                "isAdvanced": false,
+                "characteristics": "ag",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "speakArcaneLanguage" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [
+                    "magick",
+                    "daemonic",
+                    "arcaneElf"
+                ],
+                "relatedTalents": []
+            },
+            "speakLanguage" : {
+                "isAdvanced": true,
+                "characteristics": "int",
+                "variants": [
+                    "breton",
+                    "eltharin",
+                    "estalian",
+                    "halfling",
+                    "khazalid",
+                    "kislevian",
+                    "norse",
+                    "reikspiel",
+                    "tilean",
+                    "classical",
+                    "darkTongue",
+                    "goblinTongue",
+                    "grumbarth"
+                ],
+                "relatedTalents": [
+                    "linguistics",
+                    "mimic",
+                    "seasonedTraveller"
+                ]
+            },
+            "swim" : {
+                "isAdvanced": false,
+                "characteristics": "s",
+                "variants": [],
+                "relatedTalents": []
+            },
+            "torture" : {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": ["menacing"]
+            },
+            "trade" : {
+                "isAdvanced": true,
+                "characteristics": "",
+                "variants": [
+                    {"apothecary" : "int"},
+                    {"armourer" : "s"},
+                    {"artist" : "ag"},
+                    {"bowyer" : "ag"},
+                    {"brewer" : "int"},
+                    {"calligrapher" : "ag"},
+                    {"candlemaker" : "ag"},
+                    {"carpenter" : "ag"},
+                    {"cartographer" : "ag"},
+                    {"cook" : "int"},
+                    {"cooper" : "s"},
+                    {"embalmer" : "int"},
+                    {"farmer" : "s"},
+                    {"gemCutter" : "ag"},
+                    {"goldsmith" : "ag"},
+                    {"gunsmith" : "ag"},
+                    {"herbalist" : "int"},
+                    {"merchant" : "fel"},
+                    {"miller" : "s"},
+                    {"miner" : "s"},
+                    {"prospector" : "s"},
+                    {"shipwright" : "int"},
+                    {"shoemaker" : "ag"},
+                    {"smith" : "s"},
+                    {"stoneworker" : "ag"},
+                    {"tailor" : "ag"},
+                    {"tanner" : "s"},
+                    {"weaponsmith" : "s"}
+                ],
+                "relatedTalents": []
+            },
+            "ventriloquism" : {
+                "isAdvanced": true,
+                "characteristics": "fel",
+                "variants": [],
+                "relatedTalents": []
+            }
+        }
+    }
+}
