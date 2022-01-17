@@ -187,12 +187,15 @@
                     "range": "Portée de l'arme"
                 },
                 "label": {
-                    "group": "Groupe d'arme : ",
-                    "damage": "Dégâts : ",
+                    "use" : "Utiliser cette arme",
+                    "weapon" : "Armes",
+                    "twoHand" : "Arme à deux mains",
+                    "group": "Groupe d'arme",
+                    "damage": "Dégâts",
                     "range": "Portée",
                     "isCloseCombat": "Arme de contact ? ",
                     "isOnlyCloseRange": "Courte portée uniquement ? ",
-                    "attributes": "Attributs : "
+                    "attributes": "Attributs"
                 },
                 "wGroup": {
                     "none": "-",

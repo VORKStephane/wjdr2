@@ -110,6 +110,7 @@
     "damage": "",
     "weaponAttributes": [],
     "closeCombat": true,
+    "twoHand" : false,
     "range": "",
     "onlyCloseRange": false
   },

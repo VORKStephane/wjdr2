@@ -4,8 +4,8 @@
     <table>
         <tr>
             <th>{{ localize "wjdr2.items.weapon.label.group" }}</th>
+            <th>{{ localize "wjdr2.items.weapon.label.twoHand" }}</th>
             <th>{{ localize "wjdr2.items.weapon.label.damage" }}</th>
-            <th>{{ localize "wjdr2.items.weapon.label.attributes" }}</th>
         </tr>	
         <tr>
             <td>
@@ -17,8 +17,8 @@
                     {{/select }}
                 </select>
             </td>
+            <td><input name="data.twoHand" type="checkbox" {{checked data.data.twoHand}} data-dtype="Boolean"/></td>
             <td><input name="data.damage" type="text" value="{{data.data.damage}}"/></td>
-            <td></td>
         </tr>
     </table>
     
