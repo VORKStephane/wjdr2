@@ -71,6 +71,30 @@
 .sheet .actorSheet .sheet-body .tab .editor {
   height: 100%;
 }
+.sheet .actorSheet .sheet-body .tab .combat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sheet .actorSheet .sheet-body .tab .combat > * {
+  flex-basis: 100%;
+  border: 1px solid black;
+  padding: 5px;
+}
+.sheet .actorSheet .sheet-body .tab .combat > * .combat-header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.sheet .actorSheet .sheet-body .tab .combat > * .combat-header h2 {
+  flex-basis: 100%;
+}
+.sheet .actorSheet .sheet-body .tab .combat > * .combat-header .item-controller {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 100%;
+}
 .sheet .actorSheet .sheet-body .tab .characterDescription {
   display: flex;
   flex-direction: column;

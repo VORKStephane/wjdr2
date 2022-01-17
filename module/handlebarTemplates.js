@@ -19,6 +19,7 @@
       "systems/wjdr2/templates/items/parts/item-properties.html",
       "systems/wjdr2/templates/items/parts/spell-properties.html",
       "systems/wjdr2/templates/items/parts/weapon-properties.html",
+      "systems/wjdr2/templates/items/parts/equipped-weapon.html",
       "systems/wjdr2/templates/items/parts/armor-properties.html",
       "systems/wjdr2/templates/items/parts/career-buyable.html",
       "systems/wjdr2/templates/items/parts/career-requirement.html",

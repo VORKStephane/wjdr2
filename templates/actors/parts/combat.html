@@ -1,3 +1,41 @@
-<div>
-    <p>COMBAT</p>
+<div class="combat">
+    <article class="weapons">
+        <div class="combat-header">
+            <h2>{{ localize "wjdr2.items.weapon.label.weapon" }}</h2>
+            <div class="item-controller">
+                <a class="weapon-add"><i class="fas fa-plus"></i></a>
+                <a class="weapon-edit"><i class="fas fa-edit"></i></a>
+            </div>
+        </div>
+        
+        {{#each weapons as |weapon id|}}
+        <div class="weapon-card">
+            <div class="weapon">
+                <span class="weapon-name">{{weapon.name}}</span>
+                <a class="lWeaponEquipped"><i class="fas fa-toggle-on"></i></a>
+                <a class="rWeaponEquipped"><i class="fas fa-toggle-on"></i></a>
+                <a class="weapon-delete"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+        {{/each}}
+    </article>
+
+    <article class="armor">
+        <div class="combat-header">
+            <h2>{{ localize "wjdr2.items.itemType.armor" }}</h2>
+            <div class="item-controller">
+                <a class="armor-add"><i class="fas fa-plus"></i></a>
+                <a class="armor-edit"><i class="fas fa-edit"></i></a>
+            </div>
+        </div>
+
+        {{#each armors as |armor id|}}
+        <div class="armor-card">
+            <div class="armor">
+                <span class="armor-name">{{armor.name}}</span>
+                <a class="armorEquipped"><i class="fas fa-shield-alt"></i></a>
+            </div>
+        </div>
+        {{/each}}
+    </article>
 </div>
