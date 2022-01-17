@@ -35,4 +35,13 @@
             <td><input name="data.onlyCloseRange" type="checkbox" {{checked data.data.onlyCloseRange}} data-dtype="Boolean"/></td>
         </tr>
     </table>
+    <h3>
+        {{localize "wjdr2.items.weapon.label.attributes" }}
+        <a class="attributes-selector"><i class="fas fa-edit"></i></a>
+    </h3>
+    <ul class="attributes-list">
+        {{#each data.data.attributes as |attribute id|}}
+            <li class="{{id}} tag">{{ localize attribute }}</li>
+        {{/each}}
+    </ul>
 </article>
