@@ -4,13 +4,12 @@
             <h2>{{ localize "ITEM.TypeWeapon" }}s</h2>
             <div class="item-controller">
                 <a class="weapon-add"><i class="fas fa-plus"></i></a>
-                <a class="weapon-edit"><i class="fas fa-edit"></i></a>
             </div>
         </div>
         
-        {{#each weapons as |weapon id|}}
-        <div class="weapon-card">
-            <div class="weapon" data-item-id={{weapon._id}}>
+        <ul>
+            {{#each weapons as |weapon id|}}
+            <li class="weapon flexrow" data-item-id={{weapon._id}}>
                 <span class="weapon-name">{{weapon.name}}</span>
                 <div class="weapon-controller">
                     {{#if weapon.data.twoHand}}
@@ -19,11 +18,12 @@
                         <a class="left-weapon weapon-equipped"><i class="fas fa-toggle-on"></i></a>
                         <a class="right-weapon weapon-equipped"><i class="fas fa-toggle-on"></i></a>
                     {{/if}}
+                    <a class="weapon-edit"><i class="fas fa-edit"></i></a>
                     <a class="weapon-delete"><i class="fas fa-trash-alt"></i></a>    
                 </div>
-            </div>
-        </div>
-        {{/each}}
+            </li>
+            {{/each}}
+        </ul>
     </article>
 
     <article class="armor">
@@ -31,20 +31,20 @@
             <h2>{{ localize "ITEM.TypeArmor" }}s</h2>
             <div class="item-controller">
                 <a class="armor-add"><i class="fas fa-plus"></i></a>
-                <a class="armor-edit"><i class="fas fa-edit"></i></a>
             </div>
         </div>
-
-        {{#each armors as |armor id|}}
-        <div class="armor-card">
-            <div class="armor">
+        
+        <ul>
+            {{#each armors as |armor id|}}
+            <li class="armor flexrow">
                 <span class="armor-name">{{armor.name}}</span>
                 <div class="armor-controller">
                     <a class="armor-equipped"><i class="fas fa-shield-alt"></i></a>
+                    <a class="armor-edit"><i class="fas fa-edit"></i></a>
                     <a class="armor-delete"><i class="fas fa-trash-alt"></i></a>
                 </div>
-            </div>
-        </div>
-        {{/each}}
+            </li>
+            {{/each}}
+        </ul>
     </article>
 </div>
