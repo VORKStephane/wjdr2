@@ -165,7 +165,6 @@ wjdr2.hair = {
 };
 
 wjdr2.damageLocation = {
-	all : "wjdr2.actors.damageLocation.all",
 	head : "wjdr2.actors.damageLocation.head",
 	body : "wjdr2.actors.damageLocation.body",
 	leftArm : "wjdr2.actors.damageLocation.leftArm",
