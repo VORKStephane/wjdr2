@@ -165,9 +165,9 @@
     },
     "skills": [],
     "talents": [],
-    "itemsNeeded": [],
-    "fromCareer": [],
-    "toCareer": []
+    "trappings": [],
+    "entries": [],
+    "exits": []
   },
   "mechanics" : {
     "templates": ["itemDescription", "ruleCommon","editable"]
