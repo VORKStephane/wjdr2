@@ -8,8 +8,8 @@
         <article>
             <table>
                 <tr>
-                    <th>{{ localize "wjdr2.items.mutation.fearIndex" }}</th>
-                    <th>{{ localize "wjdr2.items.mutation.isMultiple" }}</th>
+                    <th>{{ localize "wjdr2.label.fearIndex" }}</th>
+                    <th>{{ localize "wjdr2.label.isMultiple" }}</th>
                 </tr>
                 <tr>
                     <td><input type="text" name="data.fearIndex" value="{{data.data.fearIndex}}" data-dtype="Number" /></td>
@@ -22,7 +22,7 @@
         {{> "systems/wjdr2/templates/items/parts/description.html" }}
 
         <article class="mutationVariantsDescription">
-            <h2>{{ localize "wjdr2.items.mutation.variantHeader" }}</h2>
+            <h2>{{ localize "wjdr2.label.variantHeader" }}</h2>
             {{editor content=data.data.variantes target="data.variantes" button=true owner=owner editable="editable" }}
         </article>
     </section>

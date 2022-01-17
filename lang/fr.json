@@ -16,6 +16,79 @@
         "TypeMechanics" : "Mécanique de jeu"
     },
     "wjdr2": {
+        "label" : {
+            "reference" : "Livre de référence",
+            "itemType" : "Type de mécanique", 
+            "description": "Description",
+            "use" : "Utiliser",
+            "buyable" : "Upgrades",
+            "requirement" : "Pré-requis",
+
+            "commonValues": "Propriétés de l'objet",
+            "price" : "Prix",
+            "enc" : "Enc",
+            "rarity" : "Disponibilité",
+            "quality" : "Qualité",
+
+            "weaponProperties": "Propriété de l'arme",
+            "weaponStats" : "Statistiques de l'arme",
+            "weapon" : "Armes",
+            "twoHand" : "Arme à deux mains",
+            "group": "Groupe d'arme",
+            "damage": "Dégâts",
+            "range": "Portée",
+            "isCloseCombat": "Arme de contact ? ",
+            "isOnlyCloseRange": "Courte portée uniquement ? ",
+            "attributes": "Attributs",
+
+            "armor": "Propriété de l'armure",
+            "defense" : "Points d'armure",
+            "coveredZones" : "Zones couvertes",
+
+            "characteristic" : "Caractéristique",
+            "isAdvanced" : "Compétence avancée",
+
+            "spellValues" : "Description du sort",
+            "ingredient" : "Ingrédient",
+            "magicType" : "Type de magie",
+            "school" : "Ecole de magie",
+            "difficulty" : "Difficulté",
+            "ingredientName" : "Nom de l'ingrédient",
+            "ingredientBonus" : "Bonus",
+            "incantationTime" : "Temps d'incantation",
+            
+            "variantHeader" : "Variantes",
+            "fearIndex" : "Indice de peur",
+            "isMultiple" : "Mutation multiple ?",
+            
+            "careerEntries" : "Accès",
+            "careerExits" : "Débouchés",
+            "trappings" : "Dotations",
+            "isAdvancedLabel" : "Carrière avancée ?",
+            
+            "abilities" : "Capacités",
+            "combat" : "Combat",
+            "afflictions" : "Afflictions",
+            "inventory" : "Inventaire",
+            "spells" : "Sorts",
+            "upgrade" : "Améliorations",
+            
+            "basicInfo" : "Informations basiques",
+            "physicalInfo" : "Informations physiques",
+            "age" : "Age",
+            "weight" : "Poids",
+            "height" : "Taille",
+            "raceLabel" : "Race",
+            "genderLabel" : "Genre",
+            "distinctiveSignLabel" : "Signes distinctifs",
+            "eyeColor" : "Couleur des yeux",
+            "hairColor" : "Couleur des cheveux",
+            "background" : "Background",
+            "origin" : "Origines",
+            "biography" : "Biographie",
+            "numberOfSiblings" : "Nombre de frères / Soeurs",
+            "placeOfBirth" : "Lieu de naissance"
+        },
         "references" : {
             "BoD" : "Le Duché des Damnés",
             "KA" : "Karak Azgal",
@@ -40,15 +113,6 @@
             "WJDR" : "Warhammer - Le Livre de base"
         },
         "actors": {
-            "navLabel" : {
-                "abilities" : "Capacités",
-                "combat" : "Combat",
-                "afflictions" : "Afflictions",
-                "inventory" : "Inventaire",
-                "spells" : "Sorts",
-                "description" : "Description",
-                "upgrade" : "Améliorations"
-            },
             "characteristics": {
                 "ws": "CC",
                 "bs": "CT",
@@ -68,28 +132,17 @@
                 "fp": "PD"
             },
             "description" : {
-                "basicInfo" : "Informations basiques",
-                "age" : "Age",
-                "weight" : "Poids",
-                "height" : "Taille",
-                "raceLabel" : "Race",
                 "race" : {
                     "dwarf" : "Nain",
                     "elf" : "Elf",
                     "halfling" : "Halfling",
                     "human" : "Humain"
                 },
-                "genderLabel" : "Genre",
                 "gender" : {
                     "male" : "Mâle",
                     "female" : "Femme",
                     "hermaphrodite" : "Hermaphrodite"
                 },
-                "physicalInfo" : "Informations physiques",
-                "background" : "Background",
-                "origin" : "Origines",
-                "biography" : "Biographie",
-                "hairColor" : "Couleur des cheveux",
                 "hair" : {
                     "ashBlond" : "Blond cendré",
                     "auburn" : "Auburn",
@@ -102,7 +155,6 @@
                     "redhead" : "Roux",
                     "silver" : "Argenté"
                 },
-                "eyeColor" : "Couleur des yeux",
                 "eye" : {
                     "black" : "Noir",
                     "blue" : "Bleu",
@@ -116,10 +168,7 @@
                     "lightGray" : "Gris clair",
                     "purple" : "Mauve",
                     "silver" : "Argenté"
-                },
-                "distinctiveSignLabel" : "Signes distinctifs",
-                "numberOfSiblings" : "Nombre de frères / Soeurs",
-                "placeOfBirth" : "Lieu de naissance"
+                }
             },
             "damageLocation" : {
                 "head" : "Tête",
@@ -132,39 +181,6 @@
             }
         },
         "items": {
-            "header": {
-                "commonValues": "Propriétés de l'objet",
-                "weapon": "Propriété de l'arme",
-                "armor": "Propriété de l'armure",
-                "weaponStats" : "Statistiques de l'arme",
-                "description": "Description",
-                "defense" : "Points d'armure",
-                "coveredZones" : "Zones couvertes"
-            },
-            "itemType": {
-                "item": "Objet",
-                "weapon": "Arme",
-                "armor": "Armure",
-                "spell": "Sort",
-                "talent": "Talent",
-                "skill": "Compétence",
-                "madness" : "Folie",
-                "mutation" : "Mutation"
-            },
-            "navLabel" : {
-                "buyable" : "Upgrades",
-                "requirement" : "Pré-requis",
-                "description" : "Description"
-            },
-            "label": {
-                "reference" : "Livre de référence",
-                "itemType" : "Type de mécanique",
-                "newItem" : "Nouveau {itemType}", 
-                "price" : "Prix",
-                "weight" : "Enc",
-                "rarity" : "Disponibilité",
-                "quality" : "Qualité"
-            },
             "rarity": {
                 "none": "-",
                 "mainstream": "Banal",
@@ -183,20 +199,6 @@
                 "outstanding" : "Qualité exceptionnelle"
             },
             "weapon": {
-                "header": {
-                    "range": "Portée de l'arme"
-                },
-                "label": {
-                    "use" : "Utiliser cette arme",
-                    "weapon" : "Armes",
-                    "twoHand" : "Arme à deux mains",
-                    "group": "Groupe d'arme",
-                    "damage": "Dégâts",
-                    "range": "Portée",
-                    "isCloseCombat": "Arme de contact ? ",
-                    "isOnlyCloseRange": "Courte portée uniquement ? ",
-                    "attributes": "Attributs"
-                },
                 "wGroup": {
                     "none": "-",
                     "crossbows": "Arbalètes",
@@ -229,25 +231,7 @@
                     "special": "Spéciale"
                 }
             },
-            "skill" : {
-                "label" : {
-                    "characteristic" : "Caractéristique",
-                    "isAdvanced" : "Compétence avancée"
-                }
-            },
             "spell" : {
-                "header" : {
-                    "spellValues" : "Description du sort",
-                    "ingredient" : "Ingrédient"
-                },
-                "label" : {
-                    "magicType" : "Type de magie",
-                    "school" : "Ecole de magie",
-                    "difficulty" : "Difficulté",
-                    "ingredientName" : "Nom de l'ingrédient",
-                    "ingredientBonus" : "Bonus",
-                    "incantationTime" : "Temps d'incantation"
-                },
                 "magicTypes" : {
                     "petty" : "Magie commune",
                     "arcanic" : "Magie occulte",
@@ -277,17 +261,6 @@
                     "ulric" : "Domaine d'Ulric",
                     "verena" : "Domaine de Verena"
                 }
-            },
-            "mutation" : {
-                "variantHeader" : "Variantes",
-                "fearIndex" : "Indice de peur",
-                "isMultiple" : "Mutation multiple ?"
-            },
-            "career" : {
-                "fromCareerLabel" : "Accès",
-                "toCareerLabel" : "Débouchés",
-                "itemsNeededLabel" : "Dotations",
-                "isAdvancedLabel" : "Carrière avancée ?"
             }
         }
     }
