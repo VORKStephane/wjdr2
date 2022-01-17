@@ -73,11 +73,8 @@
 }
 .sheet .actorSheet .sheet-body .tab .combat {
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .sheet .actorSheet .sheet-body .tab .combat > * {
-  flex-basis: 100%;
   border: 1px solid black;
   padding: 5px;
 }
