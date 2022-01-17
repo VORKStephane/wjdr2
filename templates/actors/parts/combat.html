@@ -10,7 +10,7 @@
         
         {{#each weapons as |weapon id|}}
         <div class="weapon-card">
-            <div class="weapon">
+            <div class="weapon" data-item-id={{weapon._id}}>
                 <span class="weapon-name">{{weapon.name}}</span>
                 <div class="weapon-controller">
                     {{#if weapon.data.twoHand}}
