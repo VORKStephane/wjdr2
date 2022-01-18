@@ -60,44 +60,44 @@ wjdr2.nonRollableCharacteristic = {
 };
 
 wjdr2.magicTypes = {
+	none : "-",
 	petty : "wjdr2.items.spell.magicTypes.petty",
 	divine : "wjdr2.items.spell.magicTypes.divine",
-	arcanic : "wjdr2.items.spell.magicTypes.arcanic",
-	darkMagic : "wjdr2.items.spell.magicTypes.darkMagic"
+	arcane : "wjdr2.items.spell.magicTypes.arcanic",
+	dark : "wjdr2.items.spell.magicTypes.darkMagic"
 };
 
-wjdr2.pettyMagicSchools = {
-	divine : "wjdr2.items.spell.schools.pettyDivine",
-	occult : "wjdr2.items.spell.schools.pettyArcane",
-	hedge : "wjdr2.items.spell.schools.pettyHedge"
-};
-
-wjdr2.arcaneMagicSchools = {
-	fire : "wjdr2.items.spell.schools.fire",
-	light : "wjdr2.items.spell.schools.light",
-	death : "wjdr2.items.spell.schools.death",
-	shadow : "wjdr2.items.spell.schools.shadow",
-	life : "wjdr2.items.spell.schools.life",
-	metal : "wjdr2.items.spell.schools.metal",
-	beast : "wjdr2.items.spell.schools.beast",
-	sky : "wjdr2.items.spell.schools.heaven"
-};
-
-wjdr2.divineMagicSchools = {
-	manann : "wjdr2.items.spell.schools.manann",
-	morr : "wjdr2.items.spell.schools.morr",
-	myrmidia : "wjdr2.items.spell.schools.myrmidia",
-	ranald : "wjdr2.items.spell.schools.ranald",
-	shallya : "wjdr2.items.spell.schools.shallya",
-	taalRhya : "wjdr2.items.spell.schools.taalRhya",
-	ulric : "wjdr2.items.spell.schools.ulric",
-	verena : "wjdr2.items.spell.schools.verena"
-};
-
-wjdr2.darkMagicSchools = {
-	chaos : "wjdr2.items.spell.schools.chaos",
-	necromancy : "wjdr2.items.spell.schools.necromancy"	
-};
+wjdr2.magicSchools = {
+	petty : {
+		divine : "wjdr2.items.spell.schools.pettyDivine",
+		occult : "wjdr2.items.spell.schools.pettyArcane",
+		hedge : "wjdr2.items.spell.schools.pettyHedge"
+	},
+	arcane : {
+		fire : "wjdr2.items.spell.schools.fire",
+		light : "wjdr2.items.spell.schools.light",
+		death : "wjdr2.items.spell.schools.death",
+		shadow : "wjdr2.items.spell.schools.shadow",
+		life : "wjdr2.items.spell.schools.life",
+		metal : "wjdr2.items.spell.schools.metal",
+		beast : "wjdr2.items.spell.schools.beast",
+		sky : "wjdr2.items.spell.schools.heaven"
+	},
+	divine : {
+		manann : "wjdr2.items.spell.schools.manann",
+		morr : "wjdr2.items.spell.schools.morr",
+		myrmidia : "wjdr2.items.spell.schools.myrmidia",
+		ranald : "wjdr2.items.spell.schools.ranald",
+		shallya : "wjdr2.items.spell.schools.shallya",
+		taalRhya : "wjdr2.items.spell.schools.taalRhya",
+		ulric : "wjdr2.items.spell.schools.ulric",
+		verena : "wjdr2.items.spell.schools.verena"
+	},
+	dark : {
+		chaos : "wjdr2.items.spell.schools.chaos",
+		necromancy : "wjdr2.items.spell.schools.necromancy"	
+	}
+}
 
 wjdr2.weaponGroups = {
     none : "wjdr2.items.weapon.wGroup.none",

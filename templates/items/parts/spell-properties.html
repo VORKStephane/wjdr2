@@ -21,7 +21,7 @@
                 <!-- TODO Add handling of magic type change -->
                 <select name="data.school" class="spellSchoolSelect">
                     {{#select data.data.school }}
-                    {{#each config.arcaneMagicSchools as |name type| }}
+                    {{#each magicSchools as |name type| }}
                         <option value="{{type}}">{{ localize name }}</option>
                     {{/each }}
                     {{/select }}

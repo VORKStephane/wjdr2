@@ -20,35 +20,38 @@ export default class WjdrItemSheet extends ItemSheet {
 	getData() {
 		const data = super.getData();
 		data.config = CONFIG.wjdr2;
+
+		if (this.item.data.type == 'spell'){
+			data.magicSchools = this.handleSpellSchools(data);
+		}
+
 		return data;
 	}
 
-	activateListeners(html) {
-		super.activateListeners(html);
-		if (!this.options.editable) return;
+	handleSpellSchools(data) {
+		let magicType = data.data.data.magicType;
+		let prefix = "wjdr2.magicSchools.";
+		let magicCategories =  [];
+		
+		if (magicType == 'none') {
+			for (const category in data.config.magicSchools) {
+				magicCategories.push(category);
+			}			
+		}
+		else magicCategories.push(magicType);
 
-		// TODO Add Handling of change magic type
-		/*html.find('.magicTypeSelect').change(event => {
-			const data = this.getData();
-			let magicTypeSelectInput = document.getElementsByClassName("magicTypeSelect");
-			let magicSchoolSelectInput = document.getElementsByClassName("spellSchoolSelect");
-
-			console.log(`Magic type:${magicTypeSelectInput} / Magic School: ${magicSchoolSelectInput}`);
-
-			switch (magicTypeSelectInput) {
-				case data.config.magicTypes.petty:
-					replaceOptionList(magicSchoolSelectInput, data.config.pettyMagicSchools);
-					break;
-				case data.config.magicTypes.divine:
-					replaceOptionList(magicSchoolSelectInput, data.config.divineMagicSchools);
-					break;
-				case data.config.magicTypes.arcanic:
-					replaceOptionList(magicSchoolSelectInput, data.config.arcaneMagicSchools);
-					break;
-				case data.config.magicTypes.darkMagic:
-					replaceOptionList(magicSchoolSelectInput, data.config.darkMagicSchools);
-					break;
+		data.magicSchools = []
+		for (const category of magicCategories) {
+			for (const school in data.config.magicSchools[category]) {
+				data.magicSchools.push(data.config.magicSchools[category][school]);
 			}
-		});*/
+		}
+
+		return data.magicSchools;
+	}
+
+	activateListeners(html) {
+		if (!this.options.editable) return;
+		super.activateListeners(html);
 	}
 }
