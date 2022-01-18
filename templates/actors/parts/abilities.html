@@ -1,9 +1,40 @@
-<div class="abilities flexcol">
+<div class="abilities flexrow">
     <section class="skills">
-        <h2>{{ localize "ITEM.TypeSkill" }}</h2>
+        <div class="item-list-header flexrow">
+            <h2>{{ localize "ITEM.TypeSkill" }}s</h2>
+            <div class="item-list-controller">
+                <a class="item-list-add"><i class="fas fa-plus"></i></a>
+            </div>
+            <ul>
+                {{#each skills as |skill id|}}
+                <li class="item flexrow" data-item-id={{skill._id}}>
+                    <span class="item-name">{{skill.name}}</span>
+                    <div class="item-controller">
+                        <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
     </section>
     
     <section class="talents">
-        <h2>{{ localize "ITEM.TypeTalent" }}</h2>
+        <div class="item-list-header flexrow">
+            <h2>{{ localize "ITEM.TypeTalent" }}s</h2>
+            <div class="item-list-controller">
+                <a class="item-list-add"><i class="fas fa-plus"></i></a>
+            </div>
+            <ul>
+                {{#each talents as |talent id|}}
+                <li class="item flexrow" data-item-id={{talent._id}}>
+                    <span class="item-name">{{talent.name}}</span>
+                    <div class="item-controller">
+                        <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
     </section>
 </div>

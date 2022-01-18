@@ -29,17 +29,13 @@ export default class WjdrActorSheet extends ActorSheet {
     }
 
     activateListeners(html) {
-        html.find(".weapon-delete").click(this.onDeleteWeapon.bind(this));
+        html.find(".item-delete").click(this.onDeleteItem.bind(this));
         super.activateListeners(html);
     }
 
-    onDeleteWeapon(event) {
-        return this.onDeleteItem(event, ".weapon");
-    }
-
-    onDeleteItem(event, selector) {
+    onDeleteItem(event) {
         event.preventDefault();
-        let itemId = event.currentTarget.closest(selector).dataset.itemId;
+        let itemId = event.currentTarget.closest(".item").dataset.itemId;
         let item = this.actor.items.get(itemId);
         if ( item ) return item.delete();
     }

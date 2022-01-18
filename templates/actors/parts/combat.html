@@ -1,45 +1,45 @@
 <div class="combat flexcol">
     <article class="weapons">
-        <div class="combat-header">
+        <div class="item-list-header">
             <h2>{{ localize "ITEM.TypeWeapon" }}s</h2>
-            <div class="item-controller">
-                <a class="weapon-add"><i class="fas fa-plus"></i></a>
+            <div class="item-list-controller">
+                <a class="item-list-add"><i class="fas fa-plus"></i></a>
             </div>
         </div>
         
         <ul>
             {{#each weapons as |weapon id|}}
-            <li class="weapon flexrow" data-item-id={{weapon._id}}>
-                <span class="weapon-name">{{weapon.name}}</span>
-                <div class="weapon-controller">
+            <li class="item flexrow" data-item-id={{weapon._id}}>
+                <span class="item-name">{{weapon.name}}</span>
+                <div class="item-controller">
                     {{#if weapon.data.twoHand}}
                         <a class="weapon-equipped"><i class="fas fa-toggle-on"></i></a>
                     {{else}}
                         <a class="left-weapon weapon-equipped"><i class="fas fa-toggle-on"></i></a>
                         <a class="right-weapon weapon-equipped"><i class="fas fa-toggle-on"></i></a>
                     {{/if}}
-                    <a class="weapon-delete"><i class="fas fa-trash-alt"></i></a>    
+                    <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
                 </div>
             </li>
             {{/each}}
         </ul>
     </article>
 
-    <article class="armor">
-        <div class="combat-header">
+    <article class="armors">
+        <div class="item-list-header">
             <h2>{{ localize "ITEM.TypeArmor" }}s</h2>
-            <div class="item-controller">
-                <a class="armor-add"><i class="fas fa-plus"></i></a>
+            <div class="item-list-controller">
+                <a class="item-list-add"><i class="fas fa-plus"></i></a>
             </div>
         </div>
         
         <ul>
             {{#each armors as |armor id|}}
-            <li class="armor flexrow">
-                <span class="armor-name">{{armor.name}}</span>
-                <div class="armor-controller">
+            <li class="item flexrow" data-item-id="{{armor._id}}">
+                <span class="item-name">{{armor.name}}</span>
+                <div class="item-controller">
                     <a class="armor-equipped"><i class="fas fa-shield-alt"></i></a>
-                    <a class="armor-delete"><i class="fas fa-trash-alt"></i></a>
+                    <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
                 </div>
             </li>
             {{/each}}
