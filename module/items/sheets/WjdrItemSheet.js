@@ -23,7 +23,6 @@ export default class WjdrItemSheet extends ItemSheet {
 
 		if (this.item.data.type == 'spell'){
 			data.magicSchools = this.handleSpellSchools(data);
-			console.log(data.magicSchools);
 		}
 
 		return data;
