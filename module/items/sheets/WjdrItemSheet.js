@@ -23,6 +23,7 @@ export default class WjdrItemSheet extends ItemSheet {
 
 		if (this.item.data.type == 'spell'){
 			data.magicSchools = this.handleSpellSchools(data);
+			console.log(data.magicSchools);
 		}
 
 		return data;
@@ -30,20 +31,14 @@ export default class WjdrItemSheet extends ItemSheet {
 
 	handleSpellSchools(data) {
 		let magicType = data.data.data.magicType;
-		let prefix = "wjdr2.magicSchools.";
-		let magicCategories =  [];
 		
-		if (magicType == 'none') {
-			for (const category in data.config.magicSchools) {
-				magicCategories.push(category);
-			}			
-		}
-		else magicCategories.push(magicType);
-
-		data.magicSchools = []
-		for (const category of magicCategories) {
-			for (const school in data.config.magicSchools[category]) {
-				data.magicSchools.push(data.config.magicSchools[category][school]);
+		if (magicType != 'none') 
+			return data.config.magicSchools[magicType];
+		
+		data.magicSchools = {};
+		for (const cat in data.config.magicSchools) {
+			for (const [school, label] of Object.entries(data.config.magicSchools[cat])) {
+				 data.magicSchools[school] = label;
 			}
 		}
 
