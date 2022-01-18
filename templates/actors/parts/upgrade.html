@@ -1,3 +1,34 @@
 <div>
-    <p>UPGRADE</p>
+    <div class="profiles flexrow">
+        <div class="flex-center">
+            <h2>{{localize "wjdr2.label.mainProfile"}}</h2>    
+            <table class="main-profile">
+                <tr>
+                    {{#each data.data.attributes.rollable as |attribute id|}}
+                        <th>{{localize attribute.label}}</th>
+                    {{/each}}
+                </tr>
+                <tr>
+                    {{#each data.data.attributes.rollable as |attribute id|}}
+                        <td><input type="text" name="data.attributes.rollable.{{id}}.value" value="{{attribute.value}}" data-dtype="Number" /></td>
+                    {{/each}}
+                </tr>
+            </table>
+        </div>
+        <div class="flex-center">
+            <h2>{{localize "wjdr2.label.secondaryProfile"}}</h2>    
+            <table class="secondary-profile">
+                <tr>
+                    {{#each data.data.attributes.nonRollable as |attribute id|}}
+                        <th>{{localize attribute.label}}</th>
+                    {{/each}}
+                </tr>
+                <tr>
+                    {{#each data.data.attributes.nonRollable as |attribute id|}}
+                        <td><input type="text" name="data.attributes.nonRollable.{{id}}.value" value="{{attribute.value}}" data-dtype="Number" /></td>
+                    {{/each}}
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>

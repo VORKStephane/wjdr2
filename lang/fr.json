@@ -71,7 +71,6 @@
             "afflictions" : "Afflictions",
             "inventory" : "Inventaire",
             "spells" : "Sorts",
-            "upgrade" : "Améliorations",
             
             "basicInfo" : "Informations basiques",
             "physicalInfo" : "Informations physiques",
@@ -87,7 +86,11 @@
             "origin" : "Origines",
             "biography" : "Biographie",
             "numberOfSiblings" : "Nombre de frères / Soeurs",
-            "placeOfBirth" : "Lieu de naissance"
+            "placeOfBirth" : "Lieu de naissance",
+
+            "upgrade" : "Améliorations",
+            "mainProfile" : "Profil principal",
+            "secondaryProfile" : "Profil secondaire"
         },
         "references" : {
             "BoD" : "Le Duché des Damnés",

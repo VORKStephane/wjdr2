@@ -15,7 +15,6 @@ export default class WjdrActor extends Actor {
 
         data.basic.attributes.nonRollable.sb = Math.floor(data.s / 10);
         data.basic.attributes.nonRollable.tb = Math.floor(data.t / 10);
-        data.basic.attributes.nonRollable.fortune = data.fp;
     }
 
     /**
@@ -23,16 +22,12 @@ export default class WjdrActor extends Actor {
      * @param {Object} data represents the sheet's data 
      */
      setAttributesLabel(data) {
-        // Rollable attributes
         for (let [a, attribute] of Object.entries(data.attributes.rollable)) {
             attribute.label = CONFIG.wjdr2.rollableCharacteristic[a];
         }
 
-        // TO DO
-        // Non-Rollable attributes
-        // for (let [a, attribute] of Object.entries(data.actor.data.data.attributes.nonRollable)) {
-        //     console.log(`${a} : ${data.config.rollableCharacteristic[a]}`);
-        //     attribute.label = data.config.rollableCharacteristic[a];
-        // }
+        for (let [a, attribute] of Object.entries(data.attributes.nonRollable)) {
+            attribute.label = CONFIG.wjdr2.nonRollableCharacteristic[a];
+        }
     }
 }
