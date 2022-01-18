@@ -74,24 +74,20 @@
 .sheet .actorSheet .sheet-body .tab div {
   height: 100%;
 }
-.sheet .actorSheet .sheet-body .tab div > section,
-.sheet .actorSheet .sheet-body .tab div article {
+.sheet .actorSheet .sheet-body .tab div > article {
   border: 1px solid black;
   padding: 5px;
 }
-.sheet .actorSheet .sheet-body .tab div > section .item-list-header,
-.sheet .actorSheet .sheet-body .tab div article .item-list-header {
+.sheet .actorSheet .sheet-body .tab div > article .item-list-header {
   height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
-.sheet .actorSheet .sheet-body .tab div > section .item-list-header h2,
-.sheet .actorSheet .sheet-body .tab div article .item-list-header h2 {
+.sheet .actorSheet .sheet-body .tab div > article .item-list-header h2 {
   flex-basis: 100%;
 }
-.sheet .actorSheet .sheet-body .tab div > section .item-list-header .item-list-controller,
-.sheet .actorSheet .sheet-body .tab div article .item-list-header .item-list-controller {
+.sheet .actorSheet .sheet-body .tab div > article .item-list-header .item-list-controller {
   display: flex;
   flex-direction: row;
   align-self: center;

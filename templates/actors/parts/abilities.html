@@ -1,40 +1,39 @@
 <div class="abilities flexrow">
-    <section class="skills">
-        <div class="item-list-header flexrow">
+    <article class="skills">
+        <div class="item-list-header">
             <h2>{{ localize "ITEM.TypeSkill" }}s</h2>
             <div class="item-list-controller">
                 <a class="item-list-add"><i class="fas fa-plus"></i></a>
             </div>
-            <ul>
-                {{#each skills as |skill id|}}
-                <li class="item flexrow" data-item-id={{skill._id}}>
-                    <span class="item-name">{{skill.name}}</span>
-                    <div class="item-controller">
-                        <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
-                    </div>
-                </li>
-                {{/each}}
-            </ul>
         </div>
-
-    </section>
+        <ul>
+            {{#each skills as |skill id|}}
+            <li class="item flexrow" data-item-id={{skill._id}}>
+                <span class="item-name">{{skill.name}}</span>
+                <div class="item-controller">
+                    <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </article>
     
-    <section class="talents">
-        <div class="item-list-header flexrow">
+    <article class="talents">
+        <div class="item-list-header">
             <h2>{{ localize "ITEM.TypeTalent" }}s</h2>
             <div class="item-list-controller">
                 <a class="item-list-add"><i class="fas fa-plus"></i></a>
             </div>
-            <ul>
-                {{#each talents as |talent id|}}
-                <li class="item flexrow" data-item-id={{talent._id}}>
-                    <span class="item-name">{{talent.name}}</span>
-                    <div class="item-controller">
-                        <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
-                    </div>
-                </li>
-                {{/each}}
-            </ul>
         </div>
-    </section>
+        <ul>
+            {{#each talents as |talent id|}}
+            <li class="item flexrow" data-item-id={{talent._id}}>
+                <span class="item-name">{{talent.name}}</span>
+                <div class="item-controller">
+                    <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </article>
 </div>
