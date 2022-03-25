@@ -24,10 +24,14 @@ export default class WjdrActor extends Actor {
      setAttributesLabel(data) {
         for (let [a, attribute] of Object.entries(data.attributes.rollable)) {
             attribute.label = CONFIG.wjdr2.rollableCharacteristic[a];
+            attribute.endValue = attribute.base;
+            attribute.endValue += attribute.promotion * 5;
         }
 
         for (let [a, attribute] of Object.entries(data.attributes.nonRollable)) {
             attribute.label = CONFIG.wjdr2.nonRollableCharacteristic[a];
+            attribute.endValue = attribute.base;
+            attribute.endValue += attribute.promotion * 1;
         }
     }
 }
