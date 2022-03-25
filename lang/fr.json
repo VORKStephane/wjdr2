@@ -75,6 +75,7 @@
             "basicInfo" : "Informations basiques",
             "physicalInfo" : "Informations physiques",
             "age" : "Age",
+            "astralSign" : "Signe astral",
             "weight" : "Poids",
             "height" : "Taille",
             "raceLabel" : "Race",
@@ -171,6 +172,28 @@
                     "lightGray" : "Gris clair",
                     "purple" : "Mauve",
                     "silver" : "Argenté"
+                },
+                "starSign" : {
+                    "wymundTheAnachorite" : "Wymund l'Anachorète",
+                    "theBigCross" : "La Grande Croix",
+                    "theLimnersLine" : "Le Trait du Peintre",
+                    "gnuthusTheOx" : "Gnuthus le Buffle",
+                    "dragomasTheDrake" : "Dragomas le Dragon",
+                    "theGloaming" : "Le Crépuscule",
+                    "grungnisBaldric" : "Le Fourreau de Grungni",
+                    "mammitTheWise" : "Mammit le Sage",
+                    "mummiTheFool" : "Mummit le Fou",
+                    "theTwoBullocks" : "Les Deux Boeufs",
+                    "theDancer" : "Le Danseur",
+                    "theDrummer" : "Le Tambour",
+                    "thePiper" : "Le Flûtiste",
+                    "vobistTheFaint" : "Vobist le Pâle",
+                    "theBrokenCart" : "La Charrette Brisée",
+                    "theGreasedGoat" : "La Chèvre Sauvage",
+                    "rhyasCauldron" : "Le Chaudron de Rhya",
+                    "cackelfaxTheCockerel" : "Cackelfax le Coq",
+                    "theBonesaw" : "Le Grimoire",
+                    "theWitchlingStar" : "L'Etoile du Sorcier"
                 }
             },
             "damageLocation" : {
