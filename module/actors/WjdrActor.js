@@ -10,20 +10,41 @@ export default class WjdrActor extends Actor {
         if (actorData.type === 'character') this.calculateDerivedValues(data);
 
         this.setReductionDamage(data);
+
+        // Compute encumbrance
+        this.setEncumbrance(data);
     }
 
     calculateDerivedValues(data) {
-        // Compute encumbrance
-        this.setEncumbrance(data);
-
         data.attributes.sb = Math.floor(data.attributes.rollable["s"]["endValue"] / 10);
         data.attributes.tb = Math.floor(data.attributes.rollable["t"]["endValue"] / 10);
     }
 
     setEncumbrance(data) {
-        data.encumbrance = data.attributes.rollable["s"]["endValue"] * 10;
-        if (data.race == 'dwarf') data.encumbrance *= 2;
-        else if (data.race == 'horse') data.encumbrance *= 3;
+        data.maxEncumbrance = data.attributes.rollable["s"]["endValue"] * 10;
+        if (data.race == 'dwarf') data.maxEncumbrance *= 2;
+        else if (data.race == 'horse') data.maxEncumbrance *= 3;
+
+        data.encumbrance = 0;  
+        
+        // Handle money encumbrance
+        let numberOfCoins = 0;
+        for (let [coin, number] of Object.entries(data.money)) numberOfCoins += number;
+        
+        while(numberOfCoins >= 50) {
+            data.encumbrance += 5;
+            numberOfCoins -= 50;
+        }
+
+        // Handle equipement encumbrance
+
+
+        // Applying malus to Movement if encumbrance for every 50 excedent encumbrance points 
+        let tempEncumbrance = data.encumbrance;
+        while (tempEncumbrance >= data.maxEncumbrance + 50) {
+            data.attributes.nonUpgradable.m -= 1;
+            tempEncumbrance -= 50;
+        }
     }
 
     setReductionDamage(data) {

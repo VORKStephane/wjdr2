@@ -1,7 +1,16 @@
 <div>
-
-    <p>ACTOR'S INVENTORY</p>
-    
-    <h3>{{ localize "wjdr2.label.maxEnc" }} : {{ data.data.encumbrance }}</h3>
-
+    <h2>{{ localize "wjdr2.label.maxEnc" }} : {{ data.data.encumbrance }} / {{ data.data.maxEncumbrance }}</h2>
+    <h2>{{ localize "wjdr2.label.purse" }}</h2>
+    <table>
+        <tr>
+            <th>{{ localize "wjdr2.label.gc" }}</th>
+            <th>{{ localize "wjdr2.label.s" }}</th>
+            <th>{{ localize "wjdr2.label.p" }}</th>
+        </tr>
+        <tr>
+            <td><input name="data.money.goldCrown" type="text" value="{{data.data.money.goldCrown}}" data-dtype="Number" /></td>
+            <td><input name="data.money.silverShilling" type="text" value="{{data.data.money.silverShilling}}" data-dtype="Number" /></td> 
+            <td><input name="data.money.brassPennies" type="text" value="{{data.data.money.brassPennies}}" data-dtype="Number" /></td>
+        </tr>
+    </table>
 </div>

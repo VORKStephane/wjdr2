@@ -39,6 +39,11 @@
           "fp": 0 
         }
       },
+      "money": {
+        "goldCrown": 0,
+        "silverShilling": 0,
+        "brassPennies": 0
+      },
       "gender": "",
       "age": 0,
       "eyeColor": "",
@@ -60,7 +65,11 @@
     "types": ["item", "weapon", "armor", "talent", "skill", "spell", "mutation", "madness", "career", "mechanics"],
     "templates": {
       "itemCommon": {
-        "price": 0,
+        "price": {
+          "goldCrown": 0,
+          "silverShilling": 0,
+          "brassPennies": 0
+        },
         "weight": 0,
         "rarity": "ordinary",
         "quality": ""

@@ -26,6 +26,10 @@
 
             "commonValues": "Propriétés de l'objet",
             "price" : "Prix",
+            "gc" : "Couronnes d'Or",
+            "s" : "Pistoles d'Argent",
+            "p" : "Sous de Cuivre",
+            "purse" : "Bourse", 
             "enc" : "Enc",
             "maxEnc" : "Encombrement maximum",
             "rarity" : "Disponibilité",

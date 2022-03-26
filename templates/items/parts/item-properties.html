@@ -2,13 +2,11 @@
     <h2>{{ localize "wjdr2.label.commonValues" }}</h2>
     <table>
         <tr>
-            <th>{{ localize "wjdr2.label.price" }}</th>
             <th>{{ localize "wjdr2.label.weight" }}</th>
             <th>{{ localize "wjdr2.label.rarity" }}</th>
             <th>{{ localize "wjdr2.label.quality" }}</th>
         </tr>
         <tr>
-            <td><input name="data.price" type="text" value="{{data.data.price}}"/></td>
             <td><input name="data.weight" type="text" value="{{data.data.weight}}" data-dtype="Number"/></td>
             <td>
                 <select name="data.rarity">
@@ -28,6 +26,19 @@
                     {{/select}}
                 </select>
             </td>
+        </tr>
+    </table>
+    <h2>{{ localize "wjdr2.label.price" }}</h2>
+    <table>
+        <tr>
+            <th>{{ localize "wjdr2.label.gc" }}</th>
+            <th>{{ localize "wjdr2.label.s" }}</th>
+            <th>{{ localize "wjdr2.label.p" }}</th>
+        </tr>
+        <tr>
+            <td><input name="data.price.goldCrown" type="text" value="{{data.data.price.goldCrown}}" data-dtype="Number" /></td>
+            <td><input name="data.price.silverShilling" type="text" value="{{data.data.price.silverShilling}}" data-dtype="Number" /></td> 
+            <td><input name="data.price.brassPennies" type="text" value="{{data.data.price.brassPennies}}" data-dtype="Number" /></td>
         </tr>
     </table>
 </article>
