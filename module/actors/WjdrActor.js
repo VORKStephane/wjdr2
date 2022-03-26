@@ -8,6 +8,8 @@ export default class WjdrActor extends Actor {
 
         this.setAttributesLabel(data);
         if (actorData.type === 'character') this.calculateDerivedValues(data);
+
+        this.setReductionDamage(data);
     }
 
     calculateDerivedValues(data) {
@@ -22,6 +24,16 @@ export default class WjdrActor extends Actor {
         data.encumbrance = data.attributes.rollable["s"]["endValue"] * 10;
         if (data.race == 'dwarf') data.encumbrance *= 2;
         else if (data.race == 'horse') data.encumbrance *= 3;
+    }
+
+    setReductionDamage(data) {
+        data.bodyLocation = [];
+        data.bodyLocation.head = data.attributes.tb;
+        data.bodyLocation.body = data.attributes.tb;
+        data.bodyLocation.leftLeg = data.attributes.tb;
+        data.bodyLocation.rightLeg = data.attributes.tb;
+        data.bodyLocation.leftArm = data.attributes.tb;
+        data.bodyLocation.rightArm = data.attributes.tb;
     }
 
     /**

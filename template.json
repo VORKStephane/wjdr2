@@ -8,15 +8,7 @@
         "talents": [],
         "skills": [],
         "armors": [],
-        "weapons": [],
-        "damageReduction": {
-          "head": 0,
-          "rightArm": 0,
-          "leftArm": 0,
-          "body": 0,
-          "rightLeg": 0,
-          "leftLeg": 0
-        }
+        "weapons": []
       },
       "careers": [],
       "mutations": [],
