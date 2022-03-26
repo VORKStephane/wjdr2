@@ -10,15 +10,18 @@ export default class WjdrActor extends Actor {
         if (actorData.type === 'character') this.calculateDerivedValues(data);
     }
 
-    calculateDerivedValues(actorData) {
-        const data = actorData.data;
-
+    calculateDerivedValues(data) {
         // Compute encumbrance
-        actorData.encumbrance = actorData.attributes.rollable["s"]["endValue"] * 10;
-        if (actorData.race == 'dwarf') actorData.encumbrance *= 2;
+        this.setEncumbrance(data);
 
-        // data.basic.attributes.nonRollable.sb = Math.floor(data.s / 10);
-        // data.basic.attributes.nonRollable.tb = Math.floor(data.t / 10);
+        data.attributes.sb = Math.floor(data.attributes.rollable["s"]["endValue"] / 10);
+        data.attributes.tb = Math.floor(data.attributes.rollable["t"]["endValue"] / 10);
+    }
+
+    setEncumbrance(data) {
+        data.encumbrance = data.attributes.rollable["s"]["endValue"] * 10;
+        if (data.race == 'dwarf') data.encumbrance *= 2;
+        else if (data.race == 'horse') data.encumbrance *= 3;
     }
 
     /**

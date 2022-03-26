@@ -4,28 +4,6 @@
     "templates": {
       "basic": {
         "race": "",
-        "attributes": {
-          "rollable": {
-            "ws": { "value": 0 },
-            "bs": { "value": 0 },
-            "s": { "value": 0 },
-            "t": { "value": 0 },
-            "ag": { "value": 0 },
-            "int": { "value": 0 },
-            "wp": { "value": 0 },
-            "fel": { "value": 0 }
-          },
-          "nonRollable": {
-            "a": { "value": 0 },
-            "w": { "value": 0 },
-            "sb": { "value": 0 },
-            "tb": { "value": 0 },
-            "m": { "value": 0 },
-            "mag": { "value": 0 },
-            "ip": { "value": 0 },
-            "fp": { "value": 0 }
-          }
-        },
         "inventory": [],
         "talents": [],
         "skills": [],
@@ -60,8 +38,13 @@
         },
         "nonRollable": {
           "a": {"base": 1, "promotion": 0},
-          "w": {"base": 8, "promotion": 0},
+          "w": {"base": 0, "promotion": 0},
           "mag": {"base": 0, "promotion": 0}
+        },
+        "nonUpgradable": {
+          "m": 4,
+          "ip": 0,
+          "fp": 0 
         }
       },
       "gender": "",

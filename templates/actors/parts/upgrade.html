@@ -1,39 +1,31 @@
 <div>
     <div class="profiles flexrow">
         <div class="flex-center">
-            <h2>{{localize "wjdr2.label.mainProfile"}}</h2>    
+            <h2>{{localize "wjdr2.label.upgradableProfile"}}</h2>    
             <table class="main-profile">
                 <tr>
+                    <td></td>
                     {{#each data.data.attributes.rollable as |attribute id|}}
                         <th>{{localize attribute.label}}</th>
                     {{/each}}
-                </tr>
-                <tr>
-                    {{#each data.data.attributes.rollable as |attribute id|}}
-                        <td><input type="text" name="data.attributes.rollable.{{id}}.base" value="{{attribute.base}}" data-dtype="Number" /></td>
-                    {{/each}}
-                </tr>
-                <tr>
-                    {{#each data.data.attributes.rollable as |attribute id|}}
-                        <td><input type="text" name="data.attributes.rollable.{{id}}.promotion" value="{{attribute.promotion}}" data-dtype="Number" /></td>
-                    {{/each}}
-                </tr>
-            </table>
-        </div>
-        <div class="flex-center">
-            <h2>{{localize "wjdr2.label.secondaryProfile"}}</h2>    
-            <table class="secondary-profile">
-                <tr>
                     {{#each data.data.attributes.nonRollable as |attribute id|}}
                         <th>{{localize attribute.label}}</th>
                     {{/each}}
                 </tr>
                 <tr>
+                    <td>Base</td>
+                    {{#each data.data.attributes.rollable as |attribute id|}}
+                        <td><input type="text" name="data.attributes.rollable.{{id}}.base" value="{{attribute.base}}" data-dtype="Number" /></td>
+                    {{/each}}
                     {{#each data.data.attributes.nonRollable as |attribute id|}}
                         <td><input type="text" name="data.attributes.nonRollable.{{id}}.base" value="{{attribute.base}}" data-dtype="Number" /></td>
                     {{/each}}
                 </tr>
                 <tr>
+                    <td>Promotion</td>
+                    {{#each data.data.attributes.rollable as |attribute id|}}
+                        <td><input type="text" name="data.attributes.rollable.{{id}}.promotion" value="{{attribute.promotion}}" data-dtype="Number" /></td>
+                    {{/each}}
                     {{#each data.data.attributes.nonRollable as |attribute id|}}
                         <td><input type="text" name="data.attributes.nonRollable.{{id}}.promotion" value="{{attribute.promotion}}" data-dtype="Number" /></td>
                     {{/each}}

@@ -48,15 +48,18 @@ wjdr2.rollableCharacteristic = {
 	"fel" : "wjdr2.actors.characteristics.fel"
 };
 
-wjdr2.nonRollableCharacteristic = {
-	"a" : "wjdr2.actors.characteristics.a",
-	"w" : "wjdr2.actors.characteristics.w",
+wjdr2.nonRollableNonUpgradableCharacteristic = {
 	"sb" : "wjdr2.actors.characteristics.sb",
 	"tb" : "wjdr2.actors.characteristics.tb",
 	"m" : "wjdr2.actors.characteristics.m",
-	"mag" : "wjdr2.actors.characteristics.mag",
 	"ip" : "wjdr2.actors.characteristics.ip",
 	"fp" : "wjdr2.actors.characteristics.fp"
+};
+
+wjdr2.nonRollableCharacteristic = {
+	"a" : "wjdr2.actors.characteristics.a",
+	"w" : "wjdr2.actors.characteristics.w",
+	"mag" : "wjdr2.actors.characteristics.mag",
 };
 
 wjdr2.magicTypes = {

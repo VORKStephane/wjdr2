@@ -91,8 +91,7 @@
             "placeOfBirth" : "Lieu de naissance",
 
             "upgrade" : "Améliorations",
-            "mainProfile" : "Profil principal",
-            "secondaryProfile" : "Profil secondaire"
+            "upgradableProfile" : "Profil améliorable"
         },
         "references" : {
             "BoD" : "Le Duché des Damnés",
