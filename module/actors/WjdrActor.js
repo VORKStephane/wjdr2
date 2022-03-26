@@ -7,14 +7,18 @@ export default class WjdrActor extends Actor {
         const flags = actorData.flags;
 
         this.setAttributesLabel(data);
-        // if (actorData.type === 'pc') this.calculateDerivedValues(actorData);
+        if (actorData.type === 'character') this.calculateDerivedValues(data);
     }
 
     calculateDerivedValues(actorData) {
         const data = actorData.data;
 
-        data.basic.attributes.nonRollable.sb = Math.floor(data.s / 10);
-        data.basic.attributes.nonRollable.tb = Math.floor(data.t / 10);
+        // Compute encumbrance
+        actorData.encumbrance = actorData.attributes.rollable["s"]["endValue"] * 10;
+        if (actorData.race == 'dwarf') actorData.encumbrance *= 2;
+
+        // data.basic.attributes.nonRollable.sb = Math.floor(data.s / 10);
+        // data.basic.attributes.nonRollable.tb = Math.floor(data.t / 10);
     }
 
     /**

@@ -27,6 +27,7 @@
             "commonValues": "Propriétés de l'objet",
             "price" : "Prix",
             "enc" : "Enc",
+            "maxEnc" : "Encombrement maximum",
             "rarity" : "Disponibilité",
             "quality" : "Qualité",
 
