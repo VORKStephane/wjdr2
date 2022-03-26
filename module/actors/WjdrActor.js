@@ -28,12 +28,16 @@ export default class WjdrActor extends Actor {
 
     setReductionDamage(data) {
         data.bodyLocation = [];
+
+        // Damage reduction via Toughness Bonus
         data.bodyLocation.head = data.attributes.tb;
         data.bodyLocation.body = data.attributes.tb;
         data.bodyLocation.leftLeg = data.attributes.tb;
         data.bodyLocation.rightLeg = data.attributes.tb;
         data.bodyLocation.leftArm = data.attributes.tb;
         data.bodyLocation.rightArm = data.attributes.tb;
+
+        // Damage reduction via armors
     }
 
     /**
