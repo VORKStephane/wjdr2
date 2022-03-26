@@ -13,4 +13,24 @@
             <td><input name="data.money.brassPennies" type="text" value="{{data.data.money.brassPennies}}" data-dtype="Number" /></td>
         </tr>
     </table>
+
+    <article class="items">
+        <div class="item-list-header">
+            <h2>{{ localize "ITEM.TypeItem" }}s</h2>
+            <div class="item-list-controller">
+                <a class="item-list-add"><i class="fas fa-plus"></i></a>
+            </div>
+        </div>
+        
+        <ul>
+            {{#each items as |item id|}}
+            <li class="item flexrow" data-item-id={{item._id}}>
+                <span class="item-name">{{item.name}}</span>
+                <div class="item-controller">
+                    <a class="item-delete"><i class="fas fa-trash-alt"></i></a>    
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </article>
 </div>
