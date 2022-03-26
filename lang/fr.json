@@ -95,7 +95,10 @@
             "placeOfBirth" : "Lieu de naissance",
 
             "upgrade" : "Améliorations",
-            "upgradableProfile" : "Profil améliorable"
+            "upgradableProfile" : "Profil améliorable",
+
+            "testFailed" : "Echec",
+            "testSucceeded" : "Réussi"
         },
         "references" : {
             "BoD" : "Le Duché des Damnés",

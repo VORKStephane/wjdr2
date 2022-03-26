@@ -1,3 +1,5 @@
+import { wjdr2 } from "../../constants.js";
+
 export default class WjdrActorSheet extends ActorSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
@@ -30,7 +32,28 @@ export default class WjdrActorSheet extends ActorSheet {
 
     activateListeners(html) {
         html.find(".item-delete").click(this.onDeleteItem.bind(this));
+        html.find(".rollableAttributeButton").click(this.onAttributeRoll.bind(this));
         super.activateListeners(html);
+    }
+
+    async onAttributeRoll(event) {
+        event.preventDefault();
+        const element = event.currentTarget;
+        const characteristic = element.dataset.label;
+        let label = game.i18n.format(wjdr2.rollableCharacteristic[characteristic]) + " (" + 
+            this.actor.data.data.attributes.rollable[characteristic]["endValue"] + ") Check ";
+
+        let roll = new Roll("1d100");
+        await roll.evaluate({"async":true});
+        label += roll.total <= this.actor.data.data.attributes.rollable[characteristic]["endValue"] ?
+            game.i18n.format("wjdr2.label.testSucceeded"):
+            game.i18n.format("wjdr2.label.testFailed");
+        
+        roll.toMessage({
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+            flavor: label
+        });
+
     }
 
     onDeleteItem(event) {

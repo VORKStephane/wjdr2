@@ -8,7 +8,7 @@
 
     <section class="rollableAttributesSection">
         {{#each data.data.attributes.rollable as |attribute id|}}
-            <button name="button_{{id}}" class="rollableAttributeButton">{{localize attribute.label}} : {{attribute.endValue}}</button>
+            <button name="button_{{id}}" class="rollableAttributeButton" data-label="{{id}}">{{localize attribute.label}} : {{attribute.endValue}}</button>
         {{/each}}
     </section>
 
