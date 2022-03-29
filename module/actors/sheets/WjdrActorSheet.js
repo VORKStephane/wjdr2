@@ -22,6 +22,7 @@ export default class WjdrActorSheet extends ActorSheet {
         data.skills = this.getItemBasedOnType(data, 'skill');
         data.armors = this.getItemBasedOnType(data, 'armor');
         data.weapons = this.getItemBasedOnType(data, 'weapon');
+        data.items = this.getItemBasedOnType(data, 'item');
         //data.leftWeapon
         //data.rightWeapon
         data.mutations = this.getItemBasedOnType(data, 'mutation');
@@ -41,13 +42,14 @@ export default class WjdrActorSheet extends ActorSheet {
         const element = event.currentTarget;
         const characteristic = element.dataset.label;
         let label = game.i18n.format(wjdr2.rollableCharacteristic[characteristic]) + " (" + 
-            this.actor.data.data.attributes.rollable[characteristic]["endValue"] + ") Check ";
+            this.actor.data.data.attributes.rollable[characteristic]["endValue"] + ") => ";
 
         let roll = new Roll("1d100");
         await roll.evaluate({"async":true});
-        label += roll.total <= this.actor.data.data.attributes.rollable[characteristic]["endValue"] ?
-            game.i18n.format("wjdr2.label.testSucceeded"):
-            game.i18n.format("wjdr2.label.testFailed");
+        let result = roll.total <= this.actor.data.data.attributes.rollable[characteristic]["endValue"] ?
+            "wjdr2.label.testSucceeded" : 
+            "wjdr2.label.testFailed";
+        label += game.i18n.format(result).toUpperCase();
         
         roll.toMessage({
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
