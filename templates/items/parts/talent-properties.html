@@ -1,5 +1,12 @@
-<article id="talentProperties">
+<article class="talentProperties">
     <div class="talentTypes">
         <h2>{{ localize "wjdr2.label.talent.types" }}</h2>
+        <select name="talentType" id="talentType">
+            {{#select data.data.ruleType}}
+            {{#each config.talent.types as |name type|}}
+                <option value="{{type}}">{{ localize name }}</option>
+            {{/each}}
+            {{/select}}
+        </select>
     </div>
 </article>

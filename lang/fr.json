@@ -48,7 +48,8 @@
 
             "talent" : {
                 "rule" : "Gestion du talent",
-                "types" : "Types de talent"
+                "types" : "Types de talent",
+                "rollableAttributeTalent" : "Talent impactant le profil principal"
             },
 
             "characteristic" : "Caractéristique",

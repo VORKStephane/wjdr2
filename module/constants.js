@@ -219,3 +219,9 @@ wjdr2.armorMaterial = {
 	ithilmar : "wjdr2.label.armor.ithilmar",
 	gromril : "wjdr2.label.armor.gromril"
 }
+
+wjdr2.talent = {
+	types : {
+		rollableAttributeTalent : "wjdr2.label.talent.rollableAttributeTalent"
+	}
+}
