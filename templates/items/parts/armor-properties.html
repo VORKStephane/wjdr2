@@ -1,14 +1,18 @@
 <article class="armorProperties">
     <div class="armorProtection oneLineInfo">
-        <div class="level">
-            <h2>{{ localize "wjdr2.label.armor.level" }}</h2>
-            <select name="data.category">
-                {{#select data.data.category }}
-                {{#each config.armorLevel as |name type| }}
+        <div class="material">
+            <h2>{{ localize "wjdr2.label.armor.material" }}</h2>
+            <select name="data.material">
+                {{#select data.data.material }}
+                {{#each config.armorMaterial as |name type| }}
                     <option value="{{type}}">{{ localize name }}</option>
                 {{/each }}
                 {{/select }}
             </select>
+        </div>
+        <div class="level">
+            <h2>{{ localize "wjdr2.label.armor.level" }}</h2>
+            {{ localize data.data.categoryLabel }}
         </div>
         <div class="protection">
             <h2>{{ localize "wjdr2.label.armor.defense" }}</h2>

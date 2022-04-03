@@ -210,8 +210,12 @@ wjdr2.damageLocation = {
 	rightLeg : "wjdr2.actors.damageLocation.rightLeg"
 }
 
-wjdr2.armorLevel = {
+wjdr2.armorMaterial = {
 	leather : "wjdr2.label.armor.leather",
+	studdedLeather : "wjdr2.label.armor.studdedLeather",
 	chain : "wjdr2.label.armor.chain",
-	plate : "wjdr2.label.armor.plate"
+	scale : "wjdr2.label.armor.scale",
+	plate : "wjdr2.label.armor.plate",
+	ithilmar : "wjdr2.label.armor.ithilmar",
+	gromril : "wjdr2.label.armor.gromril"
 }

@@ -103,7 +103,7 @@
   "armor": {
     "templates": ["itemCommon","itemDescription","editable"],
     "protectionValue": 1,
-    "category" : "",  
+    "material" : "",
     "protectedZones": []
   },
   "talent": {

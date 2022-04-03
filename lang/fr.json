@@ -98,9 +98,17 @@
 
             "armor" : {
                 "level" : "Niveau de protection",
+                "material" : "Matière",
                 "leather" : "Cuir",
+                "studdedLeather" : "Cuir clouté",
                 "chain" : "Maille",
+                "scale" : "Ecailles",
                 "plate" : "Plaque",
+                "ithilmar" : "Ithilmar",
+                "gromril" : "Gromril",
+                "light" : "Armure légère", 
+                "medium" : "Armure moyenne", 
+                "heavy" : "Armure lourde",
                 "prop": "Propriété de l'armure",
                 "defense" : "Points d'armure",
                 "coveredZones" : "Zones couvertes"
