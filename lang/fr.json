@@ -46,8 +46,11 @@
             "isOnlyCloseRange": "Courte portée uniquement ? ",
             "attributes": "Attributs",
 
-            "talentRule" : "Gestion du talent",
-            "talentTypes" : "Types de talent",
+            "talent" : {
+                "rule" : "Gestion du talent",
+                "types" : "Types de talent"
+            },
+
             "characteristic" : "Caractéristique",
             "isAdvanced" : "Compétence avancée",
 
