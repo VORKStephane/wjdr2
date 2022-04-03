@@ -46,14 +46,10 @@
             "isOnlyCloseRange": "Courte portée uniquement ? ",
             "attributes": "Attributs",
 
-            "armor": "Propriété de l'armure",
-            "defense" : "Points d'armure",
-            "coveredZones" : "Zones couvertes",
-
             "characteristic" : "Caractéristique",
             "isAdvanced" : "Compétence avancée",
 
-            "spellValues" : "Description du sort",
+            "spellValues" : "Descriptiowjdr2.label.armorn du sort",
             "ingredient" : "Ingrédient",
             "magicType" : "Type de magie",
             "school" : "Ecole de magie",
@@ -98,7 +94,17 @@
             "upgradableProfile" : "Profil améliorable",
 
             "testFailed" : "Echec",
-            "testSucceeded" : "Réussi"
+            "testSucceeded" : "Réussi",
+
+            "armor" : {
+                "level" : "Niveau de protection",
+                "leather" : "Cuir",
+                "chain" : "Maille",
+                "plate" : "Plaque",
+                "prop": "Propriété de l'armure",
+                "defense" : "Points d'armure",
+                "coveredZones" : "Zones couvertes"
+            }
         },
         "references" : {
             "BoD" : "Le Duché des Damnés",

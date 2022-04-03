@@ -1,20 +1,28 @@
 <article class="armorProperties">
-    <table>
-        <tr>
-            <th>{{ localize "wjdr2.label.coveredZones" }}</th>
-            <th>{{ localize "wjdr2.label.defense" }}</th>
-        </tr>
-        <tr>
-            <td>
-                <select name="data.protectedZones">
-                    {{#select data.data.protectedZones }}
-                    {{#each config.damageLocation as |name type| }}
-                        <option value="{{type}}">{{ localize name }}</option>
-                    {{/each }}
-                    {{/select }}
-                </select>
-            </td>
-            <td><input type="text" name="data.protectionValue" value="{{data.data.protectionValue}}" data-dtype="Number" /></td>
-        </tr>
-    </table>
+    <div class="armorProtection oneLineInfo">
+        <div class="level">
+            <h2>{{ localize "wjdr2.label.armor.level" }}</h2>
+            <select name="data.category">
+                {{#select data.data.category }}
+                {{#each config.armorLevel as |name type| }}
+                    <option value="{{type}}">{{ localize name }}</option>
+                {{/each }}
+                {{/select }}
+            </select>
+        </div>
+        <div class="protection">
+            <h2>{{ localize "wjdr2.label.armor.defense" }}</h2>
+            <input type="text" name="data.protectionValue" value="{{data.data.protectionValue}}" data-dtype="Number" disabled/>
+        </div>
+    </div>
+    <div class="coveredZones">
+        <h2>{{ localize "wjdr2.label.armor.coveredZones" }}</h2>
+        <select name="data.protectedZones">
+            {{#select data.data.protectedZones }}
+            {{#each config.damageLocation as |name type| }}
+                <option value="{{type}}">{{ localize name }}</option>
+            {{/each }}
+            {{/select }}
+        </select>
+    </div>
 </article>
