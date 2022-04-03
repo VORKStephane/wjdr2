@@ -29,6 +29,9 @@
   display: flex;
   flex-direction: column;
 }
+.sheet .itemSheet .talentProperties .talentTypes select {
+  width: 100%;
+}
 .sheet .itemSheet .armorProtection {
   width: 100%;
 }

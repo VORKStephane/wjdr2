@@ -17,6 +17,7 @@
       //Item Sheet Partials
       "systems/wjdr2/templates/items/parts/description.html",
       "systems/wjdr2/templates/items/parts/item-properties.html",
+      "systems/wjdr2/templates/items/parts/talent-properties.html",
       "systems/wjdr2/templates/items/parts/spell-properties.html",
       "systems/wjdr2/templates/items/parts/weapon-properties.html",
       "systems/wjdr2/templates/items/parts/equipped-weapon.html",

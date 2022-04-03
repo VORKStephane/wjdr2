@@ -106,7 +106,8 @@
     "protectedZones": []
   },
   "talent": {
-    "templates": ["itemDescription", "ruleCommon","editable"]
+    "templates": ["itemDescription", "ruleCommon","editable"],
+    "rollableAttributeImprovement": false
   },
   "skill": {
     "templates": ["itemDescription", "ruleCommon","editable"],

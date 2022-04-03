@@ -46,10 +46,12 @@
             "isOnlyCloseRange": "Courte portée uniquement ? ",
             "attributes": "Attributs",
 
+            "talentRule" : "Gestion du talent",
+            "talentTypes" : "Types de talent",
             "characteristic" : "Caractéristique",
             "isAdvanced" : "Compétence avancée",
 
-            "spellValues" : "Descriptiowjdr2.label.armorn du sort",
+            "spellValues" : "Description du sort",
             "ingredient" : "Ingrédient",
             "magicType" : "Type de magie",
             "school" : "Ecole de magie",

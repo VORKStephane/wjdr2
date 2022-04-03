@@ -5,7 +5,19 @@
     </header>
 
     <section class="itemSheet">
-        {{> "systems/wjdr2/templates/items/parts/rule-elements.html" }}
-        {{> "systems/wjdr2/templates/items/parts/description.html" }}
+        <nav class="sheet-tabs tabs" data-group="primary">
+			<a class="item active" data-tab="talent-description">{{ localize "wjdr2.label.description" }}</a>
+			<a class="item" data-tab="talent-property">{{ localize "wjdr2.label.talentRule" }}</a>
+		</nav>
+
+		<section class="sheet-body">
+			<div class="tab talent-description" data-group="primary" data-tab="talent-description">
+				{{> "systems/wjdr2/templates/items/parts/rule-elements.html" }}
+                {{> "systems/wjdr2/templates/items/parts/description.html" }}
+			</div>
+			<div class="tab talent-property" data-group="primary" data-tab="talent-property">
+				{{> "systems/wjdr2/templates/items/parts/talent-properties.html" }}
+			</div>
+		</section>
     </section>
 </form>
