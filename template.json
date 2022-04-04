@@ -107,7 +107,7 @@
   },
   "talent": {
     "templates": ["itemDescription", "ruleCommon","editable"],
-    "rollableAttributeImprovement": false
+    "group" : ""
   },
   "skill": {
     "templates": ["itemDescription", "ruleCommon","editable"],

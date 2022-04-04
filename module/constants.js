@@ -222,6 +222,7 @@ wjdr2.armorMaterial = {
 
 wjdr2.talent = {
 	types : {
+		none : "wjdr2.label.none",
 		rollableAttributeTalent : "wjdr2.label.talent.rollableAttributeTalent"
 	}
 }

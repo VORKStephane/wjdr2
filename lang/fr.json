@@ -17,6 +17,7 @@
     },
     "wjdr2": {
         "label" : {
+            "none" : "-",
             "reference" : "Livre de référence",
             "itemType" : "Type de mécanique", 
             "description": "Description",
