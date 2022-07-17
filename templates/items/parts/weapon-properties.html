@@ -31,8 +31,8 @@
         </tr>
         <tr>
             <td><input name="data.closeCombat" type="checkbox" {{checked data.data.closeCombat}} data-dtype="Boolean"/></td>
-            <td><input name="data.range" type="text" value="{{data.data.range}}"/></td>
-            <td><input name="data.onlyCloseRange" type="checkbox" {{checked data.data.onlyCloseRange}} data-dtype="Boolean"/></td>
+            <td><input name="data.range" type="text" value="{{data.data.range}}" {{disabled data.data.closeCombat}}/></td>
+            <td><input name="data.onlyCloseRange" type="checkbox" {{checked data.data.onlyCloseRange}} {{disabled data.data.closeCombat}} data-dtype="Boolean"/></td>
         </tr>
     </table>
     <h3>
