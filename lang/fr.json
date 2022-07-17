@@ -83,7 +83,7 @@
             "basicInfo" : "Informations basiques",
             "physicalInfo" : "Informations physiques",
             "age" : "Age",
-            "astralSign" : "Signe astral",
+            "starSign" : "Signe astral",
             "weight" : "Poids",
             "height" : "Taille",
             "raceLabel" : "Race",
