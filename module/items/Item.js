@@ -1,3 +1,5 @@
+import { prepareConfiguration } from "../DataHandler.js";
+
 export const availability = {
     veryRare : {
         modifier : -30
@@ -24,12 +26,5 @@ export const availability = {
 }
 
 export const prepareAvailabilityConfiguration = function() {
-    let toReturn = [];
-    for (let av in availability) {
-        let label = av == 'none' ?
-            "-" : "wjdr2.items.availability." + av;
-
-        toReturn.push([av, label]);
-    }
-    return Object.fromEntries(new Map(toReturn));
+    return prepareConfiguration(availability, "wjdr2.items.availability.");
 }
