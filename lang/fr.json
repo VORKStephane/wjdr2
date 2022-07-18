@@ -252,19 +252,19 @@
             },
             "weapon": {
                 "wGroup": {
-                    "none": "-",
-                    "crossbows": "Arbalètes",
-                    "longBows": "Arcs longs",
-                    "heavy": "Armes lourdes",
-                    "powder": "Armes à poudre",
+                    "ordinary" : "Ordinaire",
                     "cavalry": "Armes de cavalerie",
-                    "throwing": "Armes de jet",
-                    "parying": "Armes de parade",
+                    "crossbow": "Arbalètes",
+                    "engineer": "Armes mécaniques",
+                    "entangling": "Armes paralysantes",
                     "fencing": "Armes d'escrime",
-                    "mechanical": "Armes mécaniques",
-                    "stunning": "Armes paralysantes",
                     "flail": "Fléaux",
-                    "rockThrowing": "Lance-pierres"
+                    "gunpowder": "Armes à poudre",
+                    "longbow": "Arcs longs",
+                    "parrying": "Armes de parade",
+                    "sling": "Lance-pierres",
+                    "throwing": "Armes de jet",
+                    "twoHanded": "Armes lourdes"
                 },
                 "wAttributes": {
                     "grapeShot": "A mitraille",

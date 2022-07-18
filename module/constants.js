@@ -1,5 +1,6 @@
 import { prepareArmorConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
+import { prepareWeaponGroupConfiguration } from "./items/Weapon.js";
 
 export const wjdr2 = {};
 
@@ -105,21 +106,7 @@ wjdr2.magicSchools = {
 	}
 }
 
-wjdr2.weaponGroups = {
-    none : "wjdr2.items.weapon.wGroup.none",
-	crossbows : "wjdr2.items.weapon.wGroup.crossbows",
-	longBows : "wjdr2.items.weapon.wGroup.longBows",
-	heavy : "wjdr2.items.weapon.wGroup.heavy",
-	powder : "wjdr2.items.weapon.wGroup.powder",
-	cavalry : "wjdr2.items.weapon.wGroup.cavalry",
-	throwing : "wjdr2.items.weapon.wGroup.throwing",
-	parying : "wjdr2.items.weapon.wGroup.parying",
-	fencing : "wjdr2.items.weapon.wGroup.fencing",
-	mechanical : "wjdr2.items.weapon.wGroup.mechanical",
-	stunning : "wjdr2.items.weapon.wGroup.stunning",
-	flail : "wjdr2.items.weapon.wGroup.flail",
-	rockThrowing : "wjdr2.items.weapon.wGroup.rockThrowing"
-};
+wjdr2.weaponGroups = prepareWeaponGroupConfiguration();
 
 wjdr2.quality = {
 	medium : "wjdr2.items.quality.medium",
