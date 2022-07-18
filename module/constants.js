@@ -1,4 +1,5 @@
 import { prepareArmorConfiguration } from "./items/Armor.js";
+import { prepareAvailabilityConfiguration } from "./items/Item.js";
 
 export const wjdr2 = {};
 
@@ -127,17 +128,7 @@ wjdr2.quality = {
 	outstanding : "wjdr2.items.quality.outstanding"
 }
 
-wjdr2.rarity = {
-    none : "wjdr2.items.rarity.none",
-    mainstream : "wjdr2.items.rarity.mainstream",
-	veryOrdinary : "wjdr2.items.rarity.veryOrdinary", 
-    prettyOrdinary : "wjdr2.items.rarity.prettyOrdinary", 
-    ordinary : "wjdr2.items.rarity.ordinary", 
-    unusual : "wjdr2.items.rarity.unusual", 
-    veryRare : "wjdr2.items.rarity.veryRare", 
-    prettyRare : "wjdr2.items.rarity.prettyRare", 
-    rare : "wjdr2.items.rarity.rare" 
-};
+wjdr2.availability = prepareAvailabilityConfiguration();
 
 wjdr2.race = {
 	dwarf : "wjdr2.actors.description.race.dwarf",

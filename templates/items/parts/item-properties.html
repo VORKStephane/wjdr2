@@ -9,9 +9,9 @@
         <tr>
             <td><input name="data.weight" type="text" value="{{data.data.weight}}" data-dtype="Number"/></td>
             <td>
-                <select name="data.rarity">
-                {{#select data.data.rarity}}
-                {{#each config.rarity as |name type|}}
+                <select name="data.availability">
+                {{#select data.data.availability}}
+                {{#each config.availability as |name type|}}
                     <option value="{{type}}">{{ localize name }}</option>
                 {{/each}}
                 {{/select}}

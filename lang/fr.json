@@ -235,16 +235,14 @@
             }
         },
         "items": {
-            "rarity": {
-                "none": "-",
-                "mainstream": "Banal",
-                "veryOrdinary": "Très courant",
-                "prettyOrdinary": "Assez courant",
-                "ordinary": "Courant",
-                "unusual": "Inhabituel",
-                "veryRare": "Très rare",
-                "prettyRare": "Assez rare",
-                "rare": "Rare"
+            "availability": {
+                "veryRare" : "Très rare",
+                "rare" : "",
+                "scarce" : "",
+                "average": "Courant",
+                "common": "Assez courant",
+                "plentiful": "Très courant",
+                "abundant": "Banal"
             },
             "quality" : {
                 "medium" : "Qualité moyenne",
