@@ -27,7 +27,7 @@ export const prepareAvailabilityConfiguration = function() {
     let toReturn = [];
     for (let av in availability) {
         let label = av == 'none' ?
-            "-" : "wjdr2.items.availability." + av
+            "-" : "wjdr2.items.availability." + av;
 
         toReturn.push([av, label]);
     }
