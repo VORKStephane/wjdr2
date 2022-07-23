@@ -1,3 +1,4 @@
+import { prepareStarSignConfiguration } from "./actors/Description.js";
 import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
 import { prepareWeaponGroupConfiguration, prepareWeaponQualitiesConfiguration } from "./items/Weapon.js";
@@ -158,29 +159,7 @@ wjdr2.hair = {
 	silver : "wjdr2.actors.description.hair.silver",
 };
 
-wjdr2.starSign = {
-	wymundTheAnachorite : "wjdr2.actors.description.starSign.wymundTheAnachorite",
-	theBigCross : "wjdr2.actors.description.starSign.theBigCross",
-	theLimnersLine : "wjdr2.actors.description.starSign.theLimnersLine",
-	gnuthusTheOx : "wjdr2.actors.description.starSign.gnuthusTheOx",
-	dragomasTheDrake : "wjdr2.actors.description.starSign.dragomasTheDrake",
-	theGloaming : "wjdr2.actors.description.starSign.theGloaming",
-	grungnisBaldric : "wjdr2.actors.description.starSign.grungnisBaldric",
-	mammitTheWise : "wjdr2.actors.description.starSign.mammitTheWise",
-	mummiTheFool : "wjdr2.actors.description.starSign.mummiTheFool",
-	theTwoBullocks : "wjdr2.actors.description.starSign.theTwoBullocks",
-	theDancer : "wjdr2.actors.description.starSign.theDancer",
-	theDrummer : "wjdr2.actors.description.starSign.theDrummer",
-	thePiper : "wjdr2.actors.description.starSign.thePiper",
-	vobistTheFaint : "wjdr2.actors.description.starSign.vobistTheFaint",
-	theBrokenCart : "wjdr2.actors.description.starSign.theBrokenCart",
-	theGreasedGoat : "wjdr2.actors.description.starSign.theGreasedGoat",
-	rhyasCauldron : "wjdr2.actors.description.starSign.rhyasCauldron",
-	cackelfaxTheCockerel : "wjdr2.actors.description.starSign.cackelfaxTheCockerel",
-	theBonesaw : "wjdr2.actors.description.starSign.theBonesaw",
-	theWitchlingStar : "wjdr2.actors.description.starSign.theWitchlingStar"
-};
-
+wjdr2.starSign = prepareStarSignConfiguration();
 wjdr2.damageLocation = prepareArmorZoneConfiguration();
 wjdr2.armorMaterial = prepareArmorConfiguration();
 wjdr2.weaponQualities = prepareWeaponQualitiesConfiguration();
