@@ -1,4 +1,4 @@
-import { prepareArmorConfiguration } from "./items/Armor.js";
+import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
 import { prepareWeaponGroupConfiguration, prepareWeaponQualitiesConfiguration } from "./items/Weapon.js";
 
@@ -181,15 +181,7 @@ wjdr2.starSign = {
 	theWitchlingStar : "wjdr2.actors.description.starSign.theWitchlingStar"
 };
 
-wjdr2.damageLocation = {
-	head : "wjdr2.actors.damageLocation.head",
-	body : "wjdr2.actors.damageLocation.body",
-	leftArm : "wjdr2.actors.damageLocation.leftArm",
-	rightArm : "wjdr2.actors.damageLocation.rightArm",
-	leftLeg : "wjdr2.actors.damageLocation.leftLeg",
-	rightLeg : "wjdr2.actors.damageLocation.rightLeg"
-}
-
+wjdr2.damageLocation = prepareArmorZoneConfiguration();
 wjdr2.armorMaterial = prepareArmorConfiguration();
 wjdr2.weaponQualities = prepareWeaponQualitiesConfiguration();
 

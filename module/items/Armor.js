@@ -1,4 +1,10 @@
-import { prepareConfiguration } from "../DataHandler.js";
+import { prepareConfiguration, prepareConfigurationFromArray } from "../DataHandler.js";
+
+const zone = ["entireBody", "head", "body", "leftArm", "rightArm", "leftLeg", "rightLeg"];
+
+export const prepareArmorZoneConfiguration = function() {
+    return prepareConfigurationFromArray(zone, "wjdr2.actors.damageLocation.");
+}
 
 const materials = {
     leather : {
