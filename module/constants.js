@@ -1,4 +1,4 @@
-import { prepareRollableCharacteristicsConfiguration } from "./actors/Characteristics.js";
+import { prepareNonRollableCharacteristicsConfiguration, prepareNonRollableNonUpgradableCharacteristicsConfiguration, prepareRollableCharacteristicsConfiguration } from "./actors/Characteristics.js";
 import { prepareEyeColorConfiguration, prepareHairConfiguration, prepareStarSignConfiguration } from "./actors/Description.js";
 import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
@@ -23,20 +23,8 @@ wjdr2.ruleType = {
 }
 
 wjdr2.rollableCharacteristic = prepareRollableCharacteristicsConfiguration();
-
-wjdr2.nonRollableNonUpgradableCharacteristic = {
-	"sb" : "wjdr2.actors.characteristics.sb",
-	"tb" : "wjdr2.actors.characteristics.tb",
-	"m" : "wjdr2.actors.characteristics.m",
-	"ip" : "wjdr2.actors.characteristics.ip",
-	"fp" : "wjdr2.actors.characteristics.fp"
-};
-
-wjdr2.nonRollableCharacteristic = {
-	"a" : "wjdr2.actors.characteristics.a",
-	"w" : "wjdr2.actors.characteristics.w",
-	"mag" : "wjdr2.actors.characteristics.mag",
-};
+wjdr2.nonRollableNonUpgradableCharacteristic = prepareNonRollableNonUpgradableCharacteristicsConfiguration();
+wjdr2.nonRollableCharacteristic = prepareNonRollableCharacteristicsConfiguration();
 
 wjdr2.magicTypes = {
 	none : "-",
