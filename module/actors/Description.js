@@ -41,3 +41,21 @@ const hair = [
 export const prepareHairConfiguration = function() {
     return prepareConfigurationFromArray(hair, "wjdr2.actors.description.hair.");
 }
+
+const eyeColor = [	
+    "black",
+	"blue",
+	"brown",
+	"cooper",
+	"darkBrown",
+	"grayBlue",
+	"green",
+	"hazel",
+	"lightBrown",
+	"lightGray",
+	"purple",
+	"silver"
+];
+export const prepareEyeColorConfiguration = function() {
+    return prepareConfigurationFromArray(eyeColor, "wjdr2.actors.description.eye.");
+}

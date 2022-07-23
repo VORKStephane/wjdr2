@@ -1,4 +1,4 @@
-import { prepareHairConfiguration, prepareStarSignConfiguration } from "./actors/Description.js";
+import { prepareEyeColorConfiguration, prepareHairConfiguration, prepareStarSignConfiguration } from "./actors/Description.js";
 import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
 import { prepareWeaponGroupConfiguration, prepareWeaponQualitiesConfiguration } from "./items/Weapon.js";
@@ -131,21 +131,7 @@ wjdr2.gender = {
 	hermaphrodite : "wjdr2.actors.description.gender.hermaphrodite"
 }
 
-wjdr2.eye = {
-	black : "wjdr2.actors.description.eye.black",
-	blue : "wjdr2.actors.description.eye.blue",
-	brown : "wjdr2.actors.description.eye.brown",
-	cooper : "wjdr2.actors.description.eye.cooper",
-	darkBrown : "wjdr2.actors.description.eye.darkBrown",
-	grayBlue : "wjdr2.actors.description.eye.grayBlue",
-	green : "wjdr2.actors.description.eye.green",
-	hazel : "wjdr2.actors.description.eye.hazel",
-	lightBrown : "wjdr2.actors.description.eye.lightBrown",
-	lightGray : "wjdr2.actors.description.eye.lightGray",
-	purple : "wjdr2.actors.description.eye.purple",
-	silver : "wjdr2.actors.description.eye.silver"
-};
-
+wjdr2.eye = prepareEyeColorConfiguration();
 wjdr2.hair = prepareHairConfiguration();
 wjdr2.starSign = prepareStarSignConfiguration();
 wjdr2.damageLocation = prepareArmorZoneConfiguration();
