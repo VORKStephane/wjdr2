@@ -1,3 +1,4 @@
+import { prepareRollableCharacteristicsConfiguration } from "./actors/Characteristics.js";
 import { prepareEyeColorConfiguration, prepareHairConfiguration, prepareStarSignConfiguration } from "./actors/Description.js";
 import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
@@ -21,16 +22,7 @@ wjdr2.ruleType = {
 	"mechanics" : "ITEM.TypeMechanics"
 }
 
-wjdr2.rollableCharacteristic = {
-	"ws" : "wjdr2.actors.characteristics.ws",
-	"bs" : "wjdr2.actors.characteristics.bs",
-	"s" : "wjdr2.actors.characteristics.s",
-	"t" : "wjdr2.actors.characteristics.t",
-	"ag" : "wjdr2.actors.characteristics.ag",
-	"int" : "wjdr2.actors.characteristics.int",
-	"wp" : "wjdr2.actors.characteristics.wp",
-	"fel" : "wjdr2.actors.characteristics.fel"
-};
+wjdr2.rollableCharacteristic = prepareRollableCharacteristicsConfiguration();
 
 wjdr2.nonRollableNonUpgradableCharacteristic = {
 	"sb" : "wjdr2.actors.characteristics.sb",
