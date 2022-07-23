@@ -266,21 +266,21 @@
                     "throwing": "Armes de jet",
                     "twoHanded": "Armes lourdes"
                 },
-                "wAttributes": {
-                    "grapeShot": "A mitraille",
-                    "pummeling": "Assomante",
-                    "defensive": "Défensive",
-                    "tiring": "Epuisante",
+                "wQualities": {
+                    "armourPiercing" : "Perforante",
                     "balanced": "Equilibrée",
+                    "defensive": "Défensive",
                     "experimental": "Expérimentale",
-                    "immobilizing": "Immobilisante",
-                    "slow": "Lente",
-                    "impact": "Percutante",
-                    "piercing": "Perforante",
-                    "unreliable": "Peu fiable",
-                    "precise": "Précise",
                     "fast": "Rapide",
-                    "special": "Spéciale"
+                    "impact": "Percutante",
+                    "precise": "Précise",
+                    "pummeling": "Assomante",
+                    "shrapnel": "A mitraille",
+                    "slow": "Lente",
+                    "snare": "Immobilisante",
+                    "special": "Spéciale",
+                    "tiring": "Epuisante",
+                    "unreliable": "Peu fiable"
                 }
             },
             "spell" : {

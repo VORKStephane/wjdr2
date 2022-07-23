@@ -1,6 +1,6 @@
 import { prepareArmorConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
-import { prepareWeaponGroupConfiguration } from "./items/Weapon.js";
+import { prepareWeaponGroupConfiguration, prepareWeaponQualitiesConfiguration } from "./items/Weapon.js";
 
 export const wjdr2 = {};
 
@@ -191,6 +191,7 @@ wjdr2.damageLocation = {
 }
 
 wjdr2.armorMaterial = prepareArmorConfiguration();
+wjdr2.weaponQualities = prepareWeaponQualitiesConfiguration();
 
 wjdr2.talent = {
 	types : {

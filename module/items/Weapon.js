@@ -22,22 +22,54 @@ export const prepareWeaponGroupConfiguration = function() {
     return prepareConfiguration(weaponGroups, "wjdr2.items.weapon.wGroup.");
 }
 
-// const weaponQualities = {
-//     armourPiercing,
-//     balanced,
-//     defensive,
-//     experimental,
-//     fast,
-//     impact,
-//     precise,
-//     pummelling,
-//     shrapnel,
-//     slow,
-//     snare,
-//     special,
-//     tiring,
-//     unreliable
-// }
+const weaponQualities = {
+    armourPiercing : {
+        effects : []
+    },
+    balanced : {
+        effects : []
+    },
+    defensive : {
+        effects : []
+    },
+    experimental : {
+        effects : []
+    },
+    fast : {
+        effects : []
+    },
+    impact : {
+        effects : []
+    },
+    precise : {
+        effects : []
+    },
+    pummelling : {
+        effects : []
+    },
+    shrapnel : {
+        effects : []
+    },
+    slow : {
+        effects : []
+    },
+    snare : {
+        effects : []
+    },
+    special : {
+        effects : []
+    },
+    tiring : {
+        effects : []
+    },
+    unreliable : {
+        effects : []
+    }
+}
+
+export const prepareWeaponQualitiesConfiguration = function() {
+    return prepareConfiguration(weaponQualities, "wjdr2.items.weapon.wQualities.");
+}
 
 // const meleeWeapons = {
 //     buckler : {
