@@ -2,32 +2,11 @@ import { prepareEyeColorConfiguration, prepareHairConfiguration, prepareStarSign
 import { prepareArmorConfiguration, prepareArmorZoneConfiguration } from "./items/Armor.js";
 import { prepareAvailabilityConfiguration } from "./items/Item.js";
 import { prepareWeaponGroupConfiguration, prepareWeaponQualitiesConfiguration } from "./items/Weapon.js";
+import { prepareReferenceBooksConfiguration } from "./Rules.js";
 
 export const wjdr2 = {};
 
-wjdr2.referenceBooks = {
-	"BoD" : "wjdr2.references.BoD",
-	"KA" : "wjdr2.references.KA",
-	"KoG" : "wjdr2.references.KoG",
-	"RIC" : "wjdr2.references.RIC",
-	"NDM" : "wjdr2.references.NDM",
-	"RC" : "wjdr2.references.RC",
-	"SH" : "wjdr2.references.SH",
-	"PoD1" : "wjdr2.references.PoD1",
-	"PoD2" : "wjdr2.references.PoD2",
-	"PoD3" : "wjdr2.references.PoD3",
-	"CHR" : "wjdr2.references.CHR",
-	"TC" : "wjdr2.references.TC",
-	"RS" : "wjdr2.references.RS",
-	"TS" : "wjdr2.references.TS",
-	"TT" : "wjdr2.references.TT",
-	"TiT" : "wjdr2.references.TiT",
-	"SoE" : "wjdr2.references.SoE",
-	"OWA" : "wjdr2.references.OWA",
-	"OWB" : "wjdr2.references.OWB",
-	"C" : "wjdr2.references.C",
-	"WJDR" : "wjdr2.references.WJDR"
-};
+wjdr2.referenceBooks = prepareReferenceBooksConfiguration();
 
 wjdr2.ruleType = {
 	"item" : "ITEM.TypeItem",
