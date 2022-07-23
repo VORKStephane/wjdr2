@@ -22,10 +22,22 @@ const starSign = [
     "theBonesaw", 
     "theWitchlingStar"
 ];
-
 export const prepareStarSignConfiguration = function() {
     return prepareConfigurationFromArray(starSign, "wjdr2.actors.description.starSign.");
 }
 
-
-
+const hair = [
+	"ashBlond",
+	"auburn",
+	"black",
+	"blond",
+	"brown",
+	"darkBlond",
+	"darkBlue",
+	"lightDarkBlond",
+	"redhead",
+	"silver"
+];
+export const prepareHairConfiguration = function() {
+    return prepareConfigurationFromArray(hair, "wjdr2.actors.description.hair.");
+}
