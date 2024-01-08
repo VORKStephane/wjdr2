@@ -94,7 +94,7 @@
     "templates": ["itemCommon","itemDescription","editable"],
     "group": "wjdr2.items.weapon.wGroup.none",
     "damage": "",
-    "weaponAttributes": [],
+    "qualities": [],
     "closeCombat": true,
     "twoHand" : false,
     "range": "",

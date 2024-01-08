@@ -25,6 +25,37 @@ export const availability = {
     none : {}
 }
 
+const coinage = {
+    goldCrown : "gc",
+    silverShilling : "s",
+    brassPenny : "p"
+}
+
 export const prepareAvailabilityConfiguration = function() {
     return prepareConfiguration(availability, "wjdr2.items.availability.");
+}
+
+export class Item {
+    constructor(availability, encumbrance, cost) {
+        this.availability = availability;
+        this.encumbrance = encumbrance;
+        this.cost = cost == 0 ? 0 : {
+            gc : typeof cost.gc != 'undefined' ? cost.gc : 0,
+            s : typeof cost.s != 'undefined' ? cost.s : 0,
+            p : typeof cost.p != 'undefined' ? cost.p : 0
+        }
+    }
+
+    getCost() {
+        return this.cost;
+    }
+
+    getAvailability() {
+        console.log(this.availability);
+        return availability[this.availability];
+    }
+
+    getEncumbrance() {
+        return this.encumbrance;
+    }
 }

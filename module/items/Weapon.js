@@ -1,5 +1,5 @@
 import { prepareConfiguration } from "../DataHandler.js";
-import { availability } from "./Item.js"
+import { availability, Item } from "./Item.js"
 
 const weaponGroups = {
     ordinary : { requireTalent : false },
@@ -79,6 +79,7 @@ const meleeWeapons = {
         encumbrance : 10,
         weaponGroup : weaponGroups.parrying,
         damage:"SB-4",
+        twoHand : false,
         qualities:[weaponQualities.balanced, weaponQualities.defensive, weaponQualities.pummelling],
         availability : availability.average
     },
@@ -89,6 +90,7 @@ const meleeWeapons = {
         encumbrance : 10,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-3",
+        twoHand : false,
         qualities:[],
         availability : availability.common
     },
@@ -99,6 +101,7 @@ const meleeWeapons = {
         encumbrance : 75,
         weaponGroup : weaponGroups.cavalry,
         damage:"SB",
+        twoHand : false,
         qualities:[weaponQualities.fast, weaponQualities.impact, weaponQualities.tiring],
         availability : availability.scarce
     },
@@ -109,6 +112,7 @@ const meleeWeapons = {
         encumbrance : 95,
         weaponGroup : weaponGroups.flail,
         damage:"SB+1",
+        twoHand : false,
         qualities:[weaponQualities.impact, weaponQualities.tiring],
         availability : availability.scarce
     },
@@ -119,6 +123,7 @@ const meleeWeapons = {
         encumbrance : 40,
         weaponGroup : weaponGroups.fencing,
         damage:"SB-2",
+        twoHand : false,
         qualities:[weaponQualities.fast, weaponQualities.precise],
         availability : availability.rare
     },
@@ -129,6 +134,7 @@ const meleeWeapons = {
         encumbrance : 1,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-3",
+        twoHand : false,
         qualities:[weaponQualities.pummelling],
         availability : availability.common
     },
@@ -139,6 +145,7 @@ const meleeWeapons = {
         encumbrance : 1,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-3",
+        twoHand : false,
         qualities:[weaponQualities.pummelling],
         availability : availability.common
     },
@@ -149,6 +156,7 @@ const meleeWeapons = {
         encumbrance : 200,
         weaponGroup : weaponGroups.twoHanded,
         damage:"SB",
+        twoHand : true,
         qualities:[weaponQualities.impact, weaponQualities.slow],
         availability : availability.average
     },
@@ -159,6 +167,7 @@ const meleeWeapons = {
         encumbrance : 175,
         weaponGroup : weaponGroups.twoHanded,
         damage:"SB",
+        twoHand : true,
         qualities:[weaponQualities.special],
         availability : availability.common
     },
@@ -169,6 +178,7 @@ const meleeWeapons = {
         encumbrance : 50,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB",
+        twoHand : false,
         qualities:[],
         availability : availability.common
     },
@@ -177,6 +187,7 @@ const meleeWeapons = {
         encumbrance : 35,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-4",
+        twoHand : false,
         qualities:[],
         availability : ""
     },
@@ -187,6 +198,7 @@ const meleeWeapons = {
         encumbrance : 100,
         weaponGroup : weaponGroups.cavalry,
         damage:"SB+1",
+        twoHand : true,
         qualities:[weaponQualities.fast, weaponQualities.impact, weaponQualities.tiring],
         availability : availability.rare
     },
@@ -197,6 +209,7 @@ const meleeWeapons = {
         encumbrance : 15,
         weaponGroup : weaponGroups.parrying,
         damage:"SB-3",
+        twoHand : false,
         qualities:[weaponQualities.balanced, weaponQualities.defensive],
         availability : availability.scarce
     },
@@ -207,6 +220,7 @@ const meleeWeapons = {
         encumbrance : 60,
         weaponGroup : weaponGroups.flail,
         damage:"SB",
+        twoHand : false,
         qualities:[weaponQualities.impact, weaponQualities.tiring],
         availability : availability.scarce
     },
@@ -217,6 +231,7 @@ const meleeWeapons = {
         encumbrance : 50,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-2",
+        twoHand : true,
         qualities:[weaponQualities.defensive, weaponQualities.pummelling],
         availability : availability.plentiful
     },
@@ -227,6 +242,7 @@ const meleeWeapons = {
         encumbrance : 40,
         weaponGroup : weaponGroups.fencing,
         damage:"SB-1",
+        twoHand : false,
         qualities:[weaponQualities.fast],
         availability : availability.scarce
     },
@@ -237,6 +253,7 @@ const meleeWeapons = {
         encumbrance : 50,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-2",
+        twoHand : false,
         qualities:[weaponQualities.defensive, weaponQualities.special],
         availability : availability.common
     },
@@ -247,6 +264,7 @@ const meleeWeapons = {
         encumbrance : 50,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB",
+        twoHand : true,
         qualities:[weaponQualities.fast],
         availability : availability.common
     },
@@ -257,6 +275,7 @@ const meleeWeapons = {
         encumbrance : 40,
         weaponGroup : weaponGroups.parrying,
         damage:"SB-3",
+        twoHand : false,
         qualities:[weaponQualities.balanced, weaponQualities.special],
         availability : availability.scarce
     },
@@ -265,11 +284,85 @@ const meleeWeapons = {
         encumbrance : 0,
         weaponGroup : weaponGroups.ordinary,
         damage:"SB-4",
+        twoHand : true,
         qualities:[weaponQualities.special],
         availability : availability.common
     }
 }
 
-// export class Weapon {
+export const weapons = {
+    melee : [
+        meleeWeapons.buckler, 
+        meleeWeapons.dagger, 
+        meleeWeapons.demiLance,
+        meleeWeapons.flail, 
+        meleeWeapons.foil, 
+        meleeWeapons.gauntlet, 
+        meleeWeapons.greatWeapon,
+        meleeWeapons.halberd, 
+        meleeWeapons.handWeapon, 
+        meleeWeapons.improvised, 
+        meleeWeapons.knuckleDuster, 
+        meleeWeapons.lance,
+        meleeWeapons.mainGauche, 
+        meleeWeapons.morningStar,
+        meleeWeapons.quarterStaff,
+        meleeWeapons.rapier, 
+        meleeWeapons.shield,
+        meleeWeapons.spear,
+        meleeWeapons.swordBreaker,
+        meleeWeapons.unarmed
+    ]
+};
 
-// }
+export class Weapon extends Item {
+    constructor(weapon, meleeWeapon, range, onlyCloseRange) {
+        if (constructor === Weapon) 
+            throw new Error("Weapon is abstract");
+        super(weapon.availability, weapon.encumbrance, weapon.cost);
+        this.damage = weapon.damage;
+        this.weaponGroup = weapon.weaponGroup;
+        this.qualities = weapon.qualities;
+        this.twoHand = weapon.twoHand;
+
+        this.closeCombat = meleeWeapon;
+        this.range = range;
+        this.onlyCloseRange = onlyCloseRange;
+    }
+
+    getDamage() {
+        return this.damage;
+    }
+
+    getWeaponGroup() {
+        return this.weaponGroup;
+    }
+
+    getWeaponGroupObject() {
+        return weaponGroups[this.weaponGroup];
+    }
+
+    isCloseCombat() {
+        return this.closeCombat;
+    }
+
+    isTwoHand() {
+        return this.twoHand;
+    }
+
+    getQualities() {
+        let toReturn = [];
+        for (let quality in this.qualities) {
+            toReturn.push([quality, weaponQualities[quality]]);
+        }
+        return Object.fromEntries(toReturn);
+    }
+}
+
+export class MeleeWeapon extends Weapon {
+    constructor(index) {
+        if (index < 0 || index >= weapons.melee.length)
+            throw new Error("Index out of bound");
+        super(weapons.melee[index], true, null, true);
+    }
+}

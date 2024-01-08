@@ -1,4 +1,5 @@
 import { Armor } from "./Armor.js";
+import { MeleeWeapon, weapons } from "./Weapon.js";
 
 export default class WjdrItem extends Item {
     
@@ -10,6 +11,7 @@ export default class WjdrItem extends Item {
         const itemData = data.data;
 
         if (data.type == 'armor') this.setArmorData(itemData);
+        if (data.type == 'weapon') this.setWeaponData(itemData);
     }
 
     setArmorData(armorData) {
@@ -18,5 +20,14 @@ export default class WjdrItem extends Item {
         armorData.protectionValue = armor.getProtection();
         armorData.category = armor.getCategory();
         armorData.categoryLabel = armor.getCategoryLabel();
+    }
+
+    setWeaponData(weaponData) {
+        let weapon = new MeleeWeapon(0);
+        console.log(weapon);
+        console.log(weapon.getAvailability());
+        console.log(weapon.getWeaponGroup());
+        console.log(weapon.getWeaponGroupObject());
+        console.log(weapon.getQualities());
     }
 }
