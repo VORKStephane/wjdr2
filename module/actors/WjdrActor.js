@@ -2,8 +2,8 @@ export default class WjdrActor extends Actor {
     
     prepareData() {
         super.prepareData();
-        const actorData = this.data;
-        const data = actorData.data;
+        const actorData = this;
+        const data = actorData.system;
         const flags = actorData.flags;
 
         this.setAttributesLabel(data);
@@ -21,7 +21,7 @@ export default class WjdrActor extends Actor {
     }
 
     setEncumbrance(actorData) {
-        const data = actorData.data;
+        const data = actorData.system;
         data.maxEncumbrance = data.attributes.rollable["s"]["endValue"] * 10;
         if (data.race == 'dwarf') data.maxEncumbrance *= 2;
         else if (data.race == 'horse') data.maxEncumbrance *= 3;

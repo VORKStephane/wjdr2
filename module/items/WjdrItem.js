@@ -6,9 +6,9 @@ export default class WjdrItem extends Item {
     prepareData() {
         super.prepareData();
 
-        const data = this.data;
+        const data = this;
         const actorData = this.actor ? this.actor.data : {};
-        const itemData = data.data;
+        const itemData = data.system;
 
         if (data.type == 'armor') this.setArmorData(itemData);
         if (data.type == 'weapon') this.setWeaponData(itemData);

@@ -10,16 +10,16 @@ export const wjdr2 = {};
 wjdr2.referenceBooks = prepareReferenceBooksConfiguration();
 
 wjdr2.ruleType = {
-	"item" : "ITEM.TypeItem",
-	"weapon" : "ITEM.TypeWeapon",
-	"armor" : "ITEM.TypeArmor",
-	"talent" : "ITEM.TypeTalent",
-	"skill" : "ITEM.TypeSkill",
-	"spell" : "ITEM.TypeSpell",
-	"mutation" : "ITEM.TypeMutation",
-	"madness" : "ITEM.TypeMadness",
-	"career" : "ITEM.TypeCareer",
-	"mechanics" : "ITEM.TypeMechanics"
+	"item" : "TYPES.Item.TypeItem",
+	"weapon" : "TYPES.Item.TypeWeapon",
+	"armor" : "TYPES.Item.TypeArmor",
+	"talent" : "TYPES.Item.TypeTalent",
+	"skill" : "TYPES.Item.TypeSkill",
+	"spell" : "TYPES.Item.TypeSpell",
+	"mutation" : "TYPES.Item.TypeMutation",
+	"madness" : "TYPES.Item.TypeMadness",
+	"career" : "TYPES.Item.TypeCareer",
+	"mechanics" : "TYPES.Item.TypeMechanics"
 }
 
 wjdr2.rollableCharacteristic = prepareRollableCharacteristicsConfiguration();

@@ -1,19 +1,21 @@
 {
-    "ACTOR" : {
-        "TypeCharacter" : "Personnage",
-        "TypeNpc" : "PNJ"
-    },
-    "ITEM" : {
-        "TypeItem" : "Objet",
-        "TypeWeapon" : "Arme",
-        "TypeArmor" : "Armure",
-        "TypeTalent" : "Talent",
-        "TypeSkill" : "Compétence",
-        "TypeSpell" : "Sort",
-        "TypeMutation" : "Mutation",
-        "TypeMadness" : "Folie",
-        "TypeCareer" : "Carrière",
-        "TypeMechanics" : "Mécanique de jeu"
+    "TYPES": {
+        "Actor" : {
+            "TypeCharacter" : "Personnage",
+            "TypeNpc" : "PNJ"
+        },
+        "Item" : {
+            "TypeItem" : "Objet",
+            "TypeWeapon" : "Arme",
+            "TypeArmor" : "Armure",
+            "TypeTalent" : "Talent",
+            "TypeSkill" : "Compétence",
+            "TypeSpell" : "Sort",
+            "TypeMutation" : "Mutation",
+            "TypeMadness" : "Folie",
+            "TypeCareer" : "Carrière",
+            "TypeMechanics" : "Mécanique de jeu"
+        }
     },
     "wjdr2": {
         "label" : {
